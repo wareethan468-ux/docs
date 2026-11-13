@@ -1,0 +1,55 @@
+---
+title: "How to use Zone"
+description: "Two ways to talk to the bot, and how to find the right action."
+icon: "terminal"
+---
+
+Use the slash menu when you want pickers and descriptions, or the server prefix when you would rather type. Both do the same thing and enforce the same permissions; only the typing differs.
+
+## The command menu
+
+Type a forward slash in the message box and pick Zone from the list. Discord shows every action with a short description, plus pickers for channels, roles and members, so you never guess a name.
+
+Anything marked required has to be filled in. Optional fields can wait — Zone reuses the setting you saved last time.
+
+## Typing on the prefix
+
+If you would rather type, Zone also answers to the server prefix. The default is an exclamation mark, placed before the action name.
+
+Prefix actions do the same thing and check the same permissions. The only difference is that nothing is suggested for you, so spelling matters more.
+
+## Finding an action
+
+The Command list page groups every action by area — moderation, tickets, music and so on — with a search box and a plain description of what each one does.
+
+The dashboard covers the day-to-day jobs: who is banned, which tickets are open, what your logs look like.
+
+## Examples
+
+### Slash with pickers
+
+```text
+/ban user:@spammer reason:"Raid advertising"
+```
+
+Discord suggests the member and keeps the reason as one value, so spaces are never a problem.
+
+### The same action on the prefix
+
+```text
+!ban @spammer reason:"Raid advertising"
+```
+
+Quote anything containing a space; everything else is read in the order it appears.
+
+### Avoid — Unquoted spaces
+
+```text
+!ban @spammer reason:raid advertising
+```
+
+Only “raid” becomes the reason and “advertising” is treated as stray text. Quote the value and the whole sentence lands in the audit log.
+
+<Note>
+  Setup actions need someone with Manage Server. Everyday actions, like claiming a ticket, only need the staff role you picked during setup.
+</Note>

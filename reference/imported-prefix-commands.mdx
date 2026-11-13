@@ -1,0 +1,72 @@
+---
+title: "Imported prefix commands"
+description: "The prefix commands imported from the Feds.inc command pack."
+icon: "terminal"
+---
+
+Commands from the owner's Feds.inc ZIP now use Zone's response cards, state and access checks. Existing Zone commands retain their behavior. All newly imported commands are prefix-only. Profile and information lookups (`pfp`, `avatar`, `banner`, `userinfo`, `serverinfo`, `roleinfo`, `channelinfo`, `ping`, `botstatus`) are prefix-only too. `botinfo`, `status`, `health` and `bi` are aliases for `botstatus`. `/help`, the setup menu and existing moderation commands remain available.
+
+Replace `!` below with the server's actual prefix, or mention the bot instead. `!aliases command` lists aliases. `!help command` shows its arguments; `!help giveaway start` shows a specific action. Aliases are case-insensitive, hyphenated names also accept compact/underscore spellings, and `--option value`, `--option=value` and `option:value` are supported. Quote multiword arguments when several positional fields follow them. Natural speech such as `!say hello everyone` and moderation reasons such as `!ban @member Repeated spam` work without quotes.
+
+| Source group | Commands available in Zone |
+| --- | --- |
+| General | `help`, `ping`, `botstatus` (`botinfo`, `status`, `health`), `settings`, `prefix`, `setprefix`, `say`, `setlogs`, `setstaff`, `automod` |
+| Moderation | `ban`, `unban`, `kick`, `warn`, `warnings`, `clearwarnings`, `timeout`, `untimeout`, `purge`, `lock [#channel]`, `unlock [#channel]`, `modlogs [@member]` (`mh`) |
+| Information | `userinfo`, `serverinfo`, `avatar`, `pfp`, `banner`, `roleinfo`, `channelinfo` |
+| Tickets | `ticket [panel\|stats]`, `new`, `close`, `reopen`, `claim`, `add @member`, `remove @member`, `rename name`, `transcript` |
+| Voice | `voice setup`, `voice name name`, `voice limit 0–99`, `voice lock`, `voice unlock`, `voice hide`, `voice unhide`, `voice kick @member`, `voice permit @member`, `voice reject @member`, `voice transfer @member`, `voice claim`, `voice info` |
+| Command grants | `allow ban\|kick\|warn\|purge\|timeout @role`, `deny ban\|kick\|warn\|purge\|timeout @role` |
+| Honeypot | `honeypot set #channel`, `honeypot disable`, `honeypot status`, `honeypot stats`; the normal `honeypot set enabled:true/false` syntax still works |
+| Bot owner | `restart`, `shutdown`, `guilds [page]`, `leave serverID`, `blacklist add userID`, `blacklist remove userID`, `blacklist list [page]`, `botstats`, `reload [command]`, `ownerhelp`, `pfp set DiscordImageURL`, `banner set DiscordImageURL` |
+| Server layout | Administrator: `backuplayout [name]`; server owner: `restorelayout backupIDOrName`, `deleteallroles`, `deleteallserverstuff`; bot owner only: `setwhitelistrole [role]` |
+| Leveling | `leveling setup`, `leveling role add/remove/list`, `leveling rank [member]`, `leveling leaderboard [page]`; settings are also available through `/setup` → Fun & Games → Leveling |
+
+Additional prefix moderation: `superkick` is a `kick` alias; `tempban` supports durations up to 90 days; `hackban` accepts user IDs for users outside the server; `massban`, `masskick` and `massmute` accept up to 20 explicit member mentions/IDs. `roleall`, `removeroleall` and `resetnicks` require `confirm:true`. Role editing, quarantine/restore, nickname, warning, sticker, channel, DM, and moderation-stat commands use the corresponding Discord permissions. `setleave`, `setlogging`, `setappchannel`, `setautomod`, `setautorole` and `setantinuke` are prefix shortcuts to the matching settings flows.
+
+Voice shortcuts share the room menu's current ownership and staff checks. Hide/unhide preserve earlier visibility rules, and kick does not alter access. Ticket shortcuts share existing claim/close/reopen/transcript behavior; adding/removing members preserves ticket controls and the opener's access. `setstaff` changes the saved ticket support role; `setlogs` selects every log type and sets its channel. `modlogs` shows persisted bot moderation actions (up to 2,000 per server) and older saved warnings. It retains warning history after warnings are cleared; actions from before tracking started cannot be reconstructed.
+
+## Member command channels
+
+Manage Server is required to configure rules:
+
+```text
+!cmdch set commands:all channels:#bot-commands,#games
+!cmdch set commands:daily,balance channels:#economy
+!cmdch set commands:music channels:#music user:@Member
+!cmdch set commands:all channels:#members role:@Members
+!cmdch list
+!cmdch clear RULE_ID
+```
+
+Use actual Discord channel/role/member mentions or IDs. Command aliases in `commands:` are resolved to the canonical command. Rules persist across restarts. A rule with the same commands and target updates its channel list. Optional member and role targets are mutually exclusive. Member rules take priority over matching role rules, which take priority over server-wide member rules. Within that scope, exact command rules override `all`; equally specific matching role rules allow the union of their channels. Threads inherit permission from an allowed parent channel. Bot owners and members with Manage Server are exempt. Rules apply to canonical commands and aliases, including profile lookups and prefix `perms`.
+
+## Owner operations
+
+Bot ownership uses Zone's existing trusted IDs, `BOT_OWNER_IDS`, `OWNER_IDS` (compatibility alias), and the application's owner. Server administrators do not gain bot-owner access. The global blacklist blocks message commands, component interactions and new temporary rooms while retaining existing data; bot owners cannot be blacklisted. All bot profile changes use the same owner checks and Discord CDN image validation as `/bot-profile`.
+
+`restart` acknowledges and emits a shutdown request with exit code 75; the process manager must restart the process. `shutdown` exits with code 0. Hosting may restart it according to its own policy. `reload` rebuilds the command registry in place, optionally selecting one command; changes to already loaded feature modules, event handlers, providers or dependencies require a restart. No arbitrary JavaScript evaluation or dynamic file path is accepted.
+
+`allow`/`deny` grant only the selected moderation command, not Discord role permissions. Manage Server and role hierarchy checks protect grant management. Actor/target/bot hierarchy checks still apply to moderation. Removing a grant leaves native Discord permissions intact.
+
+Prefix commands also tolerate leading spaces, spaces between prefix characters and spaces inside a command name: `! server info`, `!black jack 100`, and `!m h @Member`. Only the leading command name is joined; argument text, mentions and named options are preserved. `!mh` defaults to your own moderation history; `!mh @Member` selects another member. The normal moderation permission is still required.
+
+## Custom server aliases and argument replies
+
+Server administrators, the server owner and bot owners can add and remove aliases:
+
+```text
+!aliases add speak say
+!aliases add uwlist uwulock list type:sub
+!aliases remove speak
+!aliases say
+!aliases uwulock sub
+!help say
+```
+
+Aliases persist for this server, appear in help/search, and keep the command's permissions and channel restrictions. Aliases target main commands by default; add `type:sub` to target a subcommand path. Existing command names and built-in aliases cannot be replaced. Limits: three custom aliases per command or subcommand, 100 per server, 24 characters per alias (letters, numbers, hyphens or underscores).
+
+When a prefix command is missing an argument or fails argument-type validation, reply with the requested values without repeating the command. Supply one at a time, several in order, or `name:value`; quote multi-word text when sending several values. Zone retains valid fields and attachments and rechecks access before executing. For example, after `!warn @Member`, reply `Please stop spamming` to supply the missing reason. Requests are limited to the same member/channel and expire after five minutes. `cancel`, `!cancel`, or starting another command ends the request. Execution failures are not replayed automatically.
+
+`say` and `announce` are available through the prefix only. Restart the bot to refresh Discord's registered slash commands.
+
+Use `del` for a `delete` or `remove` action, for example `!aliases del speak`, `!sticky del #channel`, or `!music del 2`. Free-text values are preserved.

@@ -1,0 +1,53 @@
+---
+title: "Welcome messages"
+description: "Say hello when someone joins, and goodbye when they leave."
+icon: "users"
+---
+
+Give Zone a channel and a message, and it greets each new member with their name, your server name and the current member count filled in. Leave messages are optional and work the same way.
+
+## Placeholders
+
+Write the message with placeholders and Zone fills them in when someone joins: the joining member, their display name, your server name and the current member count.
+
+The preview shows exactly what will be sent, typos included, so check it before you turn greetings on.
+
+## Setting a greeting
+
+Pick a channel, then write the title and message. Zone fills in the member's name, your server name and the current member count wherever you ask for them.
+
+Leave messages work the same way and are optional. Many servers keep only the greeting.
+
+## Trying it first
+
+A preview shows exactly how the message will look without mentioning or notifying anyone. Only the joining member can be mentioned in a real greeting; other mentions are switched off.
+
+## Examples
+
+### A greeting with placeholders
+
+```text
+/welcome set enabled:true channel:#welcome title:"Say hello" message:"Welcome \{user\} to \{server\}! You are member \{count\}."
+```
+
+The placeholders are replaced when the message is sent, not when you save it.
+
+### Check it privately
+
+```text
+/welcome preview type:Welcome
+```
+
+Shows the real card without pinging or mentioning anyone.
+
+### Avoid — Forgetting the switch
+
+```text
+/welcome set channel:#welcome message:"Welcome!"
+```
+
+`enabled` is required. Zone saves nothing until it knows whether greetings should be on, so the whole call is refused.
+
+<Note>
+  Bots are skipped by default so your welcome channel does not fill up with other bots.
+</Note>

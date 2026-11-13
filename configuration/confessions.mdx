@@ -1,0 +1,43 @@
+---
+title: "Confessions"
+description: "Anonymous posts that still respect your rules."
+icon: "bullhorn"
+---
+
+A panel lets members submit text that Zone reposts anonymously under a number. Categories can route serious confessions to staff and lighter ones to a public feed.
+
+## Posting the panel
+
+Place a confession panel in a channel. Members fill in the short form and Zone posts the text anonymously with a number, so nobody can trace it back.
+
+Different categories can send confessions to different channels — serious ones to staff, lighter ones to a public feed.
+
+## Keeping it clean
+
+A per-server word list stops banned phrases before they are posted. Managing confessions needs Manage Server, and the feature is off until you post a panel.
+
+## Examples
+
+### Point it at a channel
+
+```text
+!confessions add channel:#confessions
+```
+
+The channel is required — that is where posted confessions appear.
+
+### Review blocked words
+
+```text
+!confessions blacklist list
+```
+
+Anything on this list is stopped before it is posted, so it never reaches the channel.
+
+### Avoid — No channel
+
+```text
+!confessions add
+```
+
+Without a channel Zone has nowhere to post, so the command is refused rather than guessing.

@@ -1,0 +1,55 @@
+---
+title: "Music"
+description: "Queue and control audio in any voice channel."
+icon: "music"
+---
+
+Join a voice channel, ask Zone to play a search or a link, and it builds a queue you can skip, shuffle, loop and reorder. It leaves on its own when nobody is listening.
+
+## When a track fails
+
+A track that cannot be fetched is skipped instead of stalling the queue, and the reason is written to your log channel rather than into the chat.
+
+Zone disconnects when no human listeners remain, or after a couple of minutes with an empty queue — it never plays to an empty channel.
+
+## Playing something
+
+Join a voice channel, then ask Zone to play a search phrase or a YouTube link. It joins you and starts the queue.
+
+The queue view shows what is playing and what is next, with skip, shuffle, loop and volume controls on the same card.
+
+## Limits
+
+Each server keeps up to a hundred waiting tracks. Playlists, live streams and videos longer than three hours are refused.
+
+Zone leaves when nobody is listening, or after a couple of minutes with an empty queue.
+
+## Examples
+
+### Search by name
+
+```text
+!music play query:"midnight city"
+```
+
+A search phrase or a YouTube link both work; Zone joins your channel if it is not there yet.
+
+### Turn it down
+
+```text
+!music volume percent:60
+```
+
+Volume is per server and survives track changes.
+
+### Avoid — Out of range
+
+```text
+!music volume percent:500
+```
+
+Volume is a percentage. Anything above the maximum is rejected instead of being quietly clamped.
+
+<Note>
+  Queues are not restored after a restart. If a track cannot be fetched, it is skipped and the reason is written to your log channel.
+</Note>

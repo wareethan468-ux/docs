@@ -1,0 +1,43 @@
+---
+title: "Panels & cards"
+description: "What a Zone message is made of, and why some of them stop responding."
+icon: "bolt"
+---
+
+Every Zone message is a card with a heading, a short explanation and the controls that belong to it. Controls are tied to the person who opened the card and expire after a while.
+
+## One clear action
+
+Every Zone message is a card: a heading, a short explanation, and the buttons or menus that belong to it. Nothing is hidden behind jargon, and every card explains what happens next.
+
+Buttons belong to the person who opened the card. Someone else pressing them gets a polite message instead of an action.
+
+## When a panel goes stale
+
+Controls expire after a while so an old panel cannot act on outdated settings. If a panel stops responding, run its setup again in that channel — Zone edits the message and everything works as before.
+
+## Examples
+
+### A panel that does one thing
+
+```text
+/verify-setup role:@Verified channel:#rules
+```
+
+One instruction, one button, and a role at the end of it.
+
+### A library panel
+
+```text
+/config-setup channel:#configs manager_role:@Staff
+```
+
+Members download files; managers can edit the panel without seeing every other panel.
+
+### Avoid — A channel Zone cannot post in
+
+```text
+!config-panel channel:#staff-only
+```
+
+If Zone lacks View Channel or Send Messages there, nothing appears. Give it access to the channel first, then repost.

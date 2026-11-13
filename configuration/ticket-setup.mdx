@@ -1,0 +1,47 @@
+---
+title: "Setting up tickets"
+description: "One panel, one button, private channels on demand."
+icon: "ticket"
+---
+
+Pick a staff role, a panel channel and optionally a category, then post. Re-running the setup changes only what you pass and edits the existing panel instead of posting a second one.
+
+## Posting the panel
+
+Choose a staff role, the channel the panel should live in, and optionally a category where new ticket channels should appear. Zone posts a card with a single Open a ticket button.
+
+Each click creates a private channel that only the member and your staff role can see.
+
+## Changing one thing
+
+Run the setup again with only the value you want to change filled in. Everything else keeps its saved setting, and the panel is edited rather than duplicated.
+
+## Keeping the inbox clean
+
+Members can be blocked from opening new tickets, which is the calm version of "we have answered you three times already". Blocked members see a short message instead of a new channel.
+
+## Examples
+
+### Notify the right people
+
+```text
+/ticket-setup staff_role:@Support channel:#tickets category:Tickets notify_role:@Support lead
+```
+
+A separate notify role can be pinged when a ticket opens without giving it access to every ticket.
+
+### Change one setting
+
+```text
+/ticket-setup max_open_tickets:2
+```
+
+Everything you leave out keeps its saved value, so only the ticket limit changes here.
+
+### Avoid — A channel where a category belongs
+
+```text
+/ticket-setup category:#tickets
+```
+
+The category field expects a category, not a text channel. Discord will not accept the channel in that slot.

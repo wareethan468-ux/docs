@@ -1,0 +1,38 @@
+---
+title: "Moderation overview"
+description: "The everyday tools for keeping a server calm."
+icon: "gavel"
+---
+
+Everything here is one action with a reason attached: a timeout for a cooling-off period, a kick to remove someone, a ban to keep them out, and a warning when you want the behaviour on record.
+
+## Start here
+
+- [**Bans, kicks & timeouts**](/security/moderation-actions) — Remove someone for good, for now, or give them a cooling-off period.
+- [**Warnings & escalation**](/security/warnings) — Keep a record, and let Zone step in automatically after repeat behaviour.
+
+## Examples
+
+### The first step
+
+```text
+!timeout @member duration:10m reason:"Cooling off"
+```
+
+They stay in the server and can read, but cannot post until it expires.
+
+### When it is clearly deliberate
+
+```text
+!ban @raider delete_messages:Last 24 hours reason:"Raid advertising"
+```
+
+Clears a day of their messages at the same time, so the channel is readable again.
+
+### Avoid — No duration
+
+```text
+!timeout @member reason:"Cooling off"
+```
+
+A timeout without a length would never end, so the duration is required. Use a value like 10m or 2h.

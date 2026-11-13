@@ -1,0 +1,55 @@
+---
+title: "First setup"
+description: "The five minutes after you invite Zone."
+icon: "wand-magic-sparkles"
+---
+
+Invite Zone with the permissions it asks for, drag its role above the roles it should manage, then switch on one feature. Nothing is active until you do, so there is no rush to finish everything on day one.
+
+## Add Zone to your server
+
+Use the Add to Discord button, choose the server, and keep the permissions Zone asks for. It never requests Administrator, and you can review every permission Discord lists before you approve.
+
+Once it joins, Zone appears in your member list like any other member.
+
+## Give it a home
+
+Pick the channels you want to use first: a welcome channel, a staff channel for logs, and a channel where members should open tickets. You can create them later and change them at any time.
+
+Drag Zone’s role above the roles it should be able to hand out or moderate. Discord blocks any action on a member with a higher role, so this one step prevents most “it does nothing” moments.
+
+## Turn on one thing
+
+Start with the part of your server that hurts most — usually security or tickets. Open that system from the command menu in Discord, pick the channel, and confirm.
+
+Each setup posts a panel in the channel you chose. Run the same setup again to change a setting; it updates the existing panel instead of posting a second one.
+
+## Examples
+
+### The single menu for every area
+
+```text
+/setup
+```
+
+Pick the area, pick the action, fill the fields. It runs the same checks as the individual commands.
+
+### A first panel worth posting
+
+```text
+/verify-setup role:@Verified channel:#rules
+```
+
+Posts a verification card that gives the role to anyone who presses the button.
+
+### Avoid — Options that do not exist
+
+```text
+/setup module:tickets action:open
+```
+
+The setup menu takes no options at all — it opens and asks you. Anything typed after it is refused.
+
+<Note>
+  You do not need to configure everything on day one. Zone stays quiet in the areas you have not turned on.
+</Note>

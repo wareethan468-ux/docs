@@ -1,0 +1,47 @@
+---
+title: "Handling tickets"
+description: "Claim the ones you take, close the ones you finish."
+icon: "users"
+---
+
+Claiming tells the rest of the team a ticket is handled. The opener can close their own, staff can close any, and a transcript saves the last thousand messages as plain text first.
+
+## Inside the channel
+
+Any staff member can claim a ticket so the rest of the team knows it is being handled, and release it again if they have to step away.
+
+The member who opened it can close their own ticket. Staff can close any ticket, and the channel is deleted once everyone has what they need.
+
+## Transcripts
+
+A transcript saves the latest thousand messages as plain text before the channel goes away. Download it before deleting anything — a deleted channel cannot be rebuilt.
+
+## From the dashboard
+
+The dashboard lists open tickets for each server, shows a preview of the conversation, and lets you claim or close without opening Discord. It is the quickest way to check whether anyone is waiting.
+
+## Examples
+
+### Block a repeat opener
+
+```text
+!ticket-blacklist add user:@member reason:"Abusive"
+```
+
+Existing tickets stay open; this only stops new ones.
+
+### See who is blocked
+
+```text
+!ticket-blacklist list
+```
+
+Paginated, with the reason and who added them.
+
+### Avoid — A role instead of a person
+
+```text
+!ticket-blacklist add role:@Members
+```
+
+The blacklist is per member. A role would be ambiguous the moment someone joins or leaves it.

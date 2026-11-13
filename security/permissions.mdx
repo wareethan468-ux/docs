@@ -1,0 +1,51 @@
+---
+title: "Permissions"
+description: "Hand out or take away permissions without editing every role by hand."
+icon: "key"
+---
+
+One screen adds or removes a list of permissions for exactly one role or one member. Pick a channel to create a channel override instead of changing the role server-wide.
+
+<Warning>
+  Administrator can only be granted through a role. A channel override can never give it, no matter which option you use.
+</Warning>
+
+## Adding and removing
+
+Choose a list of permissions and exactly one role or one member. Role changes apply across the server unless you name a channel; member changes only affect that channel.
+
+The same screen removes permissions, so a cleanup is one action instead of a role-by-role audit.
+
+## Finding dangerous grants
+
+Permission reports show which role gives someone a dangerous ability and which channels inherit it. Server-wide permissions such as Administrator can only come from a role.
+
+## Examples
+
+### One channel, two permissions
+
+```text
+/permissions add perms:SendMessages,AttachFiles role:@Members channel:#general
+```
+
+Because a channel is set, @Members gains the ability in #general only.
+
+### Find the exact name
+
+```text
+!permissions list
+```
+
+Every accepted permission name, which is the quickest way to avoid a typo.
+
+### Avoid — One letter short
+
+```text
+/permissions add perms:SendMessage role:@Members
+```
+
+Names must match the list exactly. “SendMessage” is not a permission — “SendMessages” is.
+
+<Note>
+  Zone cannot edit a role above its own, and nobody can grant a permission they do not have.
+</Note>

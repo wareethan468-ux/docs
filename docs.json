@@ -1,9 +1,9 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Zone",
+  "theme": "sequoia",
+  "name": "Zone-bot",
   "colors": {
-    "primary": "#5D9FDB",
+    "primary": "#112538",
     "light": "#8CBCE8",
     "dark": "#4B8CC7"
   },
@@ -19,303 +19,489 @@
     "library": "lucide"
   },
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "Welcome",
-        "icon": "house",
-        "pages": [
-          "index"
-        ]
-      },
-      {
-        "group": "Getting started",
-        "icon": "book-open",
-        "pages": [
-          "handbook/overview/introduction",
-          "handbook/overview/first-setup",
-          "handbook/overview/using-zone",
-          "handbook/overview/permissions",
-          "handbook/overview/troubleshooting",
-          "handbook/overview/faq"
-        ]
-      },
-      {
-        "group": "Community",
-        "icon": "users",
-        "pages": [
-          "handbook/community/community-eventsplus",
-          "handbook/community/community-faqsplus",
-          "handbook/community/community-clubsplus",
-          "handbook/community/community-resourcesplus",
-          "handbook/community/community-challengesplus",
-          "handbook/community/community-essentials",
+        "tab": "Handbook",
+        "groups": [
           {
-            "group": "Profiles & information",
-            "icon": "eye",
+            "group": "Getting started",
+            "icon": "book-open",
             "pages": [
-              "handbook/community/community-profiles",
-              "handbook/community/setup-serverinfo-panel"
+              "handbook/overview/introduction",
+              "handbook/overview/first-setup",
+              "handbook/overview/using-zone",
+              "handbook/overview/permissions",
+              "handbook/overview/troubleshooting",
+              "handbook/overview/faq"
             ]
           },
           {
-            "group": "Tickets",
-            "icon": "ticket",
-            "pages": [
-              "handbook/community/community-tickets",
-              "handbook/community/setup-ticket-setup",
-              "handbook/community/setup-ticket-blacklist"
-            ]
-          },
-          {
-            "group": "Staff applications",
+            "group": "Community",
             "icon": "users",
             "pages": [
-              "handbook/community/community-staff",
-              "handbook/community/setup-staffapp-setup"
+              "handbook/community/community-eventsplus",
+              "handbook/community/community-faqsplus",
+              "handbook/community/community-clubsplus",
+              "handbook/community/community-resourcesplus",
+              "handbook/community/community-challengesplus",
+              "handbook/community/community-essentials",
+              {
+                "group": "Profiles & information",
+                "icon": "eye",
+                "pages": [
+                  "handbook/community/community-profiles",
+                  "handbook/community/setup-serverinfo-panel"
+                ]
+              },
+              {
+                "group": "Tickets",
+                "icon": "ticket",
+                "pages": [
+                  "handbook/community/community-tickets",
+                  "handbook/community/setup-ticket-setup",
+                  "handbook/community/setup-ticket-blacklist"
+                ]
+              },
+              {
+                "group": "Staff applications",
+                "icon": "users",
+                "pages": [
+                  "handbook/community/community-staff",
+                  "handbook/community/setup-staffapp-setup"
+                ]
+              },
+              {
+                "group": "Welcome & greetings",
+                "icon": "hand",
+                "pages": [
+                  "handbook/community/community-greetings",
+                  "handbook/community/setup-welcome"
+                ]
+              },
+              {
+                "group": "Verification",
+                "icon": "badge-check",
+                "pages": [
+                  "handbook/community/community-verification",
+                  "handbook/community/setup-verify-setup"
+                ]
+              },
+              {
+                "group": "Engagement",
+                "icon": "star",
+                "pages": [
+                  "handbook/community/community-engagement",
+                  "handbook/community/setup-reactionroles",
+                  "handbook/community/setup-starboard",
+                  "handbook/community/setup-suggest",
+                  "handbook/community/setup-bumpreminder",
+                  "handbook/community/setup-automessage",
+                  "handbook/community/setup-tag"
+                ]
+              },
+              {
+                "group": "Messages & responses",
+                "icon": "megaphone",
+                "pages": [
+                  "handbook/community/community-messages",
+                  "handbook/community/setup-confessions"
+                ]
+              },
+              "handbook/community/community-zone-131",
+              "handbook/community/community-zone-147",
+              "handbook/community/community-other"
             ]
           },
           {
-            "group": "Welcome & greetings",
-            "icon": "hand",
+            "group": "Moderation",
+            "icon": "shield",
             "pages": [
-              "handbook/community/community-greetings",
-              "handbook/community/setup-welcome"
+              "handbook/moderation/moderation-filteredcleanup",
+              "handbook/moderation/moderation-roleinspections",
+              "handbook/moderation/moderation-channelinspections",
+              "handbook/moderation/moderation-caseinspections",
+              "handbook/moderation/moderation-audits",
+              "handbook/moderation/moderation-maintenance",
+              "handbook/moderation/moderation-rolegov",
+              {
+                "group": "Member moderation",
+                "icon": "gavel",
+                "pages": [
+                  "handbook/moderation/moderation-members",
+                  "handbook/moderation/setup-warn-setup"
+                ]
+              },
+              "handbook/moderation/moderation-permissions",
+              {
+                "group": "Channel controls",
+                "icon": "settings",
+                "pages": [
+                  "handbook/moderation/moderation-channels",
+                  "handbook/moderation/setup-sticky"
+                ]
+              },
+              {
+                "group": "Rules & protection",
+                "icon": "shield-check",
+                "pages": [
+                  "handbook/moderation/moderation-protection",
+                  "handbook/moderation/setup-rules",
+                  "handbook/moderation/setup-honeypot",
+                  "handbook/moderation/setup-antinuke",
+                  "handbook/moderation/setup-antispam",
+                  "handbook/moderation/setup-antiraid"
+                ]
+              },
+              {
+                "group": "Logs & appeals",
+                "icon": "file-text",
+                "pages": [
+                  "handbook/moderation/moderation-logs",
+                  "handbook/moderation/setup-logs"
+                ]
+              },
+              {
+                "group": "Command access",
+                "icon": "key-round",
+                "pages": [
+                  "handbook/moderation/moderation-access",
+                  "handbook/moderation/setup-prefix"
+                ]
+              },
+              "handbook/moderation/moderation-zone-200",
+              "handbook/moderation/moderation-zone-211",
+              "handbook/moderation/moderation-zone-219",
+              "handbook/moderation/moderation-other"
             ]
           },
           {
-            "group": "Verification",
-            "icon": "badge-check",
+            "group": "Fun & Games",
+            "icon": "gamepad-2",
             "pages": [
-              "handbook/community/community-verification",
-              "handbook/community/setup-verify-setup"
+              "handbook/fun/fun-economy",
+              "handbook/fun/fun-games",
+              "handbook/fun/fun-slang",
+              "handbook/fun/fun-sessions",
+              "handbook/fun/fun-texttoys",
+              "handbook/fun/fun-random",
+              "handbook/fun/fun-tools",
+              "handbook/fun/fun-animals",
+              "handbook/fun/fun-interactions",
+              "handbook/fun/fun-spicy",
+              "handbook/fun/fun-characters",
+              "handbook/fun/fun-reactions",
+              {
+                "group": "Giveaways",
+                "icon": "gift",
+                "pages": [
+                  "handbook/fun/fun-giveaways",
+                  "handbook/fun/setup-giveaway"
+                ]
+              },
+              "handbook/fun/fun-polls",
+              {
+                "group": "Leveling",
+                "icon": "trophy",
+                "pages": [
+                  "handbook/fun/fun-leveling",
+                  "handbook/fun/setup-leveling"
+                ]
+              },
+              {
+                "group": "Fun message tools",
+                "icon": "users",
+                "pages": [
+                  "handbook/fun/fun-messages",
+                  "handbook/fun/setup-brainrotlock",
+                  "handbook/fun/setup-uwulock"
+                ]
+              },
+              "handbook/fun/fun-streetcore",
+              "handbook/fun/fun-streetcrime",
+              "handbook/fun/fun-streetprog",
+              "handbook/fun/fun-streetshop",
+              "handbook/fun/fun-streetcrew",
+              "handbook/fun/fun-zone-351",
+              "handbook/fun/fun-zone-355",
+              "handbook/fun/fun-zone-360"
             ]
           },
           {
-            "group": "Engagement",
-            "icon": "star",
+            "group": "Server & Content",
+            "icon": "server",
             "pages": [
-              "handbook/community/community-engagement",
-              "handbook/community/setup-reactionroles",
-              "handbook/community/setup-starboard",
-              "handbook/community/setup-suggest",
-              "handbook/community/setup-bumpreminder",
-              "handbook/community/setup-automessage",
-              "handbook/community/setup-tag"
+              "handbook/server/server-contentaudits",
+              "handbook/server/server-texttemplates",
+              "handbook/server/server-savedlinks",
+              "handbook/server/server-editorial",
+              "handbook/server/server-assethealth",
+              "handbook/server/server-embeds",
+              {
+                "group": "Roblox lookups & scripts",
+                "icon": "terminal",
+                "pages": [
+                  "handbook/server/server-roblox",
+                  "handbook/server/setup-scriptsearch-setup",
+                  "handbook/server/setup-weao-setup",
+                  "handbook/server/setup-weaonotify"
+                ]
+              },
+              {
+                "group": "Configs",
+                "icon": "file-text",
+                "pages": [
+                  "handbook/server/server-configs",
+                  "handbook/server/setup-config-panel",
+                  "handbook/server/setup-config-setup"
+                ]
+              },
+              {
+                "group": "Script Dumper & Deobfuscation",
+                "icon": "terminal",
+                "pages": [
+                  "handbook/server/server-scripts",
+                  "handbook/server/setup-script-panel"
+                ]
+              },
+              "handbook/server/server-emojis",
+              "handbook/server/server-backups"
             ]
           },
           {
-            "group": "Messages & responses",
-            "icon": "megaphone",
+            "group": "Voice & Music",
+            "icon": "music",
             "pages": [
-              "handbook/community/community-messages",
-              "handbook/community/setup-confessions"
+              {
+                "group": "Voice Master",
+                "icon": "headphones",
+                "pages": [
+                  "handbook/voice/voice-rooms",
+                  "handbook/voice/setup-voicemaster"
+                ]
+              },
+              "handbook/voice/voice-music",
+              "handbook/voice/voice-youtube",
+              "handbook/voice/voice-downloads"
             ]
           },
-          "handbook/community/community-zone-131",
-          "handbook/community/community-zone-147",
-          "handbook/community/community-other"
+          {
+            "group": "Utilities",
+            "icon": "wrench",
+            "pages": [
+              "handbook/utilities/utilities-commandstats",
+              "handbook/utilities/utilities-servermetrics",
+              "handbook/utilities/utilities-channelmetrics",
+              "handbook/utilities/utilities-membermetrics",
+              "handbook/utilities/utilities-rolemetrics",
+              "handbook/utilities/utilities-jsoncsv",
+              "handbook/utilities/utilities-texttransforms",
+              "handbook/utilities/utilities-encode",
+              "handbook/utilities/utilities-numbers",
+              "handbook/utilities/utilities-toolbox",
+              "handbook/utilities/utilities-links",
+              "handbook/utilities/utilities-conversion",
+              "handbook/utilities/utilities-information",
+              "handbook/utilities/utilities-recovery",
+              "handbook/utilities/utilities-status",
+              "handbook/utilities/utilities-zone-102",
+              "handbook/utilities/utilities-zone-110"
+            ]
+          },
+          {
+            "group": "Other",
+            "icon": "layers",
+            "pages": [
+              "handbook/other/other-more"
+            ]
+          }
         ]
       },
       {
-        "group": "Moderation",
-        "icon": "shield",
-        "pages": [
-          "handbook/moderation/moderation-filteredcleanup",
-          "handbook/moderation/moderation-roleinspections",
-          "handbook/moderation/moderation-channelinspections",
-          "handbook/moderation/moderation-caseinspections",
-          "handbook/moderation/moderation-audits",
-          "handbook/moderation/moderation-maintenance",
-          "handbook/moderation/moderation-rolegov",
+        "tab": "Guides",
+        "groups": [
           {
-            "group": "Member moderation",
-            "icon": "gavel",
+            "group": "Overview",
             "pages": [
-              "handbook/moderation/moderation-members",
-              "handbook/moderation/setup-warn-setup"
-            ]
-          },
-          "handbook/moderation/moderation-permissions",
-          {
-            "group": "Channel controls",
-            "icon": "settings",
-            "pages": [
-              "handbook/moderation/moderation-channels",
-              "handbook/moderation/setup-sticky"
+              "index",
+              "getting-started/introduction",
+              "getting-started/first-setup",
+              "getting-started/using-zone",
+              "getting-started/customization"
             ]
           },
           {
-            "group": "Rules & protection",
-            "icon": "shield-check",
+            "group": "Security setup",
             "pages": [
-              "handbook/moderation/moderation-protection",
-              "handbook/moderation/setup-rules",
-              "handbook/moderation/setup-honeypot",
-              "handbook/moderation/setup-antinuke",
-              "handbook/moderation/setup-antispam",
-              "handbook/moderation/setup-antiraid"
+              "security/security",
+              "security/anti-nuke",
+              "security/anti-spam",
+              "security/honeypot",
+              "security/permissions",
+              "security/moderation",
+              "security/moderation-actions",
+              "security/warnings"
             ]
           },
           {
-            "group": "Logs & appeals",
-            "icon": "file-text",
+            "group": "Server configuration",
             "pages": [
-              "handbook/moderation/moderation-logs",
-              "handbook/moderation/setup-logs"
+              "configuration/tickets",
+              "configuration/ticket-setup",
+              "configuration/ticket-handling",
+              "configuration/welcome",
+              "configuration/voicemaster",
+              "configuration/confessions",
+              "configuration/logs",
+              "configuration/config-panels",
+              "configuration/panels",
+              "configuration/dashboard"
             ]
           },
           {
-            "group": "Command access",
-            "icon": "key-round",
+            "group": "Miscellaneous",
             "pages": [
-              "handbook/moderation/moderation-access",
-              "handbook/moderation/setup-prefix"
+              "miscellaneous/giveaways",
+              "miscellaneous/music",
+              "miscellaneous/spotify",
+              "miscellaneous/troubleshooting"
             ]
           },
-          "handbook/moderation/moderation-zone-200",
-          "handbook/moderation/moderation-zone-211",
-          "handbook/moderation/moderation-zone-219",
-          "handbook/moderation/moderation-other"
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/imported-prefix-commands",
+              "reference/update-log"
+            ]
+          }
         ]
       },
       {
-        "group": "Fun & Games",
-        "icon": "gamepad-2",
-        "pages": [
-          "handbook/fun/fun-economy",
-          "handbook/fun/fun-games",
-          "handbook/fun/fun-slang",
-          "handbook/fun/fun-sessions",
-          "handbook/fun/fun-texttoys",
-          "handbook/fun/fun-random",
-          "handbook/fun/fun-tools",
-          "handbook/fun/fun-animals",
-          "handbook/fun/fun-interactions",
-          "handbook/fun/fun-spicy",
-          "handbook/fun/fun-characters",
-          "handbook/fun/fun-reactions",
+        "tab": "Modules",
+        "groups": [
           {
-            "group": "Giveaways",
-            "icon": "gift",
+            "group": "Community modules",
             "pages": [
-              "handbook/fun/fun-giveaways",
-              "handbook/fun/setup-giveaway"
-            ]
-          },
-          "handbook/fun/fun-polls",
-          {
-            "group": "Leveling",
-            "icon": "trophy",
-            "pages": [
-              "handbook/fun/fun-leveling",
-              "handbook/fun/setup-leveling"
+              "modules/community/tickets",
+              "modules/community/applications",
+              "modules/community/verification",
+              "modules/community/greetings",
+              "modules/community/reactionroles",
+              "modules/community/starboard",
+              "modules/community/suggestions",
+              "modules/community/leveling",
+              "modules/community/confessions",
+              "modules/community/autoresponder",
+              "modules/community/automessage",
+              "modules/community/appeals",
+              "modules/community/giveaways",
+              "modules/community/polls",
+              "modules/community/community-extras"
             ]
           },
           {
-            "group": "Fun message tools",
-            "icon": "users",
+            "group": "Moderation modules",
             "pages": [
-              "handbook/fun/fun-messages",
-              "handbook/fun/setup-brainrotlock",
-              "handbook/fun/setup-uwulock"
-            ]
-          },
-          "handbook/fun/fun-streetcore",
-          "handbook/fun/fun-streetcrime",
-          "handbook/fun/fun-streetprog",
-          "handbook/fun/fun-streetshop",
-          "handbook/fun/fun-streetcrew",
-          "handbook/fun/fun-zone-351",
-          "handbook/fun/fun-zone-355",
-          "handbook/fun/fun-zone-360"
-        ]
-      },
-      {
-        "group": "Server & Content",
-        "icon": "server",
-        "pages": [
-          "handbook/server/server-contentaudits",
-          "handbook/server/server-texttemplates",
-          "handbook/server/server-savedlinks",
-          "handbook/server/server-editorial",
-          "handbook/server/server-assethealth",
-          "handbook/server/server-embeds",
-          {
-            "group": "Roblox lookups & scripts",
-            "icon": "terminal",
-            "pages": [
-              "handbook/server/server-roblox",
-              "handbook/server/setup-scriptsearch-setup",
-              "handbook/server/setup-weao-setup",
-              "handbook/server/setup-weaonotify"
+              "modules/moderation/moderation",
+              "modules/moderation/warnings",
+              "modules/moderation/filter",
+              "modules/moderation/antispam",
+              "modules/moderation/antiraid",
+              "modules/moderation/antinuke",
+              "modules/moderation/logs",
+              "modules/moderation/honeypot",
+              "modules/moderation/role-tools",
+              "modules/moderation/channel-tools",
+              "modules/moderation/access",
+              "modules/moderation/mod-reports"
             ]
           },
           {
-            "group": "Configs",
-            "icon": "file-text",
+            "group": "Fun modules",
             "pages": [
-              "handbook/server/server-configs",
-              "handbook/server/setup-config-panel",
-              "handbook/server/setup-config-setup"
+              "modules/fun/economy",
+              "modules/fun/casino",
+              "modules/fun/games",
+              "modules/fun/counting",
+              "modules/fun/slang",
+              "modules/fun/anime",
+              "modules/fun/text-toys"
             ]
           },
           {
-            "group": "Script Dumper & Deobfuscation",
-            "icon": "terminal",
+            "group": "Server modules",
             "pages": [
-              "handbook/server/server-scripts",
-              "handbook/server/setup-script-panel"
+              "modules/server/configs",
+              "modules/server/panels",
+              "modules/server/embeds",
+              "modules/server/emoji-tools",
+              "modules/server/roblox",
+              "modules/server/backups",
+              "modules/server/sticky"
             ]
           },
-          "handbook/server/server-emojis",
-          "handbook/server/server-backups"
-        ]
-      },
-      {
-        "group": "Voice & Music",
-        "icon": "music",
-        "pages": [
           {
-            "group": "Voice Master",
-            "icon": "headphones",
+            "group": "Voice modules",
             "pages": [
-              "handbook/voice/voice-rooms",
-              "handbook/voice/setup-voicemaster"
+              "modules/voice/voicemaster",
+              "modules/voice/music",
+              "modules/voice/spotify",
+              "modules/voice/youtube",
+              "modules/voice/downloads"
             ]
           },
-          "handbook/voice/voice-music",
-          "handbook/voice/voice-youtube",
-          "handbook/voice/voice-downloads"
-        ]
-      },
-      {
-        "group": "Utilities",
-        "icon": "wrench",
-        "pages": [
-          "handbook/utilities/utilities-commandstats",
-          "handbook/utilities/utilities-servermetrics",
-          "handbook/utilities/utilities-channelmetrics",
-          "handbook/utilities/utilities-membermetrics",
-          "handbook/utilities/utilities-rolemetrics",
-          "handbook/utilities/utilities-jsoncsv",
-          "handbook/utilities/utilities-texttransforms",
-          "handbook/utilities/utilities-encode",
-          "handbook/utilities/utilities-numbers",
-          "handbook/utilities/utilities-toolbox",
-          "handbook/utilities/utilities-links",
-          "handbook/utilities/utilities-conversion",
-          "handbook/utilities/utilities-information",
-          "handbook/utilities/utilities-recovery",
-          "handbook/utilities/utilities-status",
-          "handbook/utilities/utilities-zone-102",
-          "handbook/utilities/utilities-zone-110"
-        ]
-      },
-      {
-        "group": "Other",
-        "icon": "layers",
-        "pages": [
-          "handbook/other/other-more"
+          {
+            "group": "Utilities modules",
+            "pages": [
+              "modules/utilities/lookup",
+              "modules/utilities/toolbox",
+              "modules/utilities/recovery",
+              "modules/utilities/server-info",
+              "modules/utilities/command-stats",
+              "modules/utilities/bot-status",
+              "modules/utilities/bypass",
+              "modules/utilities/converter"
+            ]
+          },
+          {
+            "group": "Extended modules",
+            "pages": [
+              "modules/extended/events-and-rsvp",
+              "modules/extended/community-faqs",
+              "modules/extended/interest-clubs",
+              "modules/extended/community-resources",
+              "modules/extended/community-challenges",
+              "modules/extended/support-workflows",
+              "modules/extended/member-and-welcome-tools",
+              "modules/extended/targeted-message-cleanup",
+              "modules/extended/role-permission-inspections",
+              "modules/extended/public-channel-permissions",
+              "modules/extended/case-and-warning-reports",
+              "modules/extended/staff-audit-reports",
+              "modules/extended/channel-and-thread-maintenance",
+              "modules/extended/role-governance",
+              "modules/extended/security-incidents-and-archives",
+              "modules/extended/random-fun",
+              "modules/extended/animals",
+              "modules/extended/member-pokes",
+              "modules/extended/spicy-and-sfw",
+              "modules/extended/reactions",
+              "modules/extended/street-economy-and-earning",
+              "modules/extended/street-shop-and-social",
+              "modules/extended/interactive-games",
+              "modules/extended/experience-controls",
+              "modules/extended/content-and-media-audits",
+              "modules/extended/publication-templates",
+              "modules/extended/content-review-queue",
+              "modules/extended/script-dumper-and-deobfuscation",
+              "modules/extended/member-inspection",
+              "modules/extended/json-and-csv-utilities",
+              "modules/extended/text-processing",
+              "modules/extended/text-encoding",
+              "modules/extended/number-calculations",
+              "modules/extended/public-developer-lookups",
+              "modules/extended/activity-reports"
+            ]
+          }
         ]
       }
     ]
@@ -324,5 +510,8 @@
     "socials": {
       "github": "https://github.com/wareethan468-ux/zone-bot-src"
     }
+  },
+  "background": {
+    "image": "/images/46091ea35383e2cf1239bf77c186bd8e.jpg"
   }
 }

@@ -1,0 +1,53 @@
+---
+title: "Logs"
+description: "A quiet record of what happened, in channels only staff can read."
+icon: "file"
+---
+
+Each kind of event — moderation, roles, channels, members, voice, tickets, configs, giveaways, verification — can go to its own private channel. Message text is off until you ask for it.
+
+## What cannot be recovered
+
+Logs are not backfilled. Anything that happened before you turned them on is gone, and message text only appears from the moment you enable it.
+
+A deleted message that Discord no longer holds cannot be reconstructed later, even with logs on.
+
+## Choosing what to record
+
+Message edits and deletes, joins and leaves, role and channel changes, moderation actions, voice activity, tickets, configs and verification can each go to their own channel.
+
+Most servers send moderation and role changes to one staff channel and leave the noisier types off.
+
+## Checking it works
+
+Send a test line to confirm the channel and permissions are right. Message text is hidden by default — turn it on only in a channel staff already trust.
+
+## Examples
+
+### Two types, one channel
+
+```text
+/logs set enabled:true types:messages,roles channel:#mod-log
+```
+
+A short list keeps a staff channel useful instead of unreadable.
+
+### Prove it lands
+
+```text
+/logs test type:Messages
+```
+
+Sends one line to the configured channel so you can confirm permissions immediately.
+
+### Avoid — Not a log type
+
+```text
+/logs test type:Message
+```
+
+Only the listed types exist. A near-miss such as "Message" is refused, so no test line is sent.
+
+<Note>
+  Logs start when you set them up. Nothing that happened before is backfilled, and deleted messages that Discord no longer holds cannot be recovered.
+</Note>

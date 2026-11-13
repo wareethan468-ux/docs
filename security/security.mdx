@@ -1,0 +1,44 @@
+---
+title: "Security overview"
+description: "Four layers that work together, and each one can be switched on separately."
+icon: "shield-halved"
+---
+
+Anti-nuke stops one account damaging the server, anti-spam handles floods, the honeypot catches raiders who wander into a trap channel, and permissions keeps dangerous grants visible.
+
+## Start here
+
+- [**Anti-nuke**](/security/anti-nuke) — Watches for mass deletions, bans and role changes, then stops the account doing them.
+- [**Anti-spam**](/security/anti-spam) — Clears spam floods and adds word and link filters on top.
+- [**Honeypot**](/security/honeypot) — A trap channel that moderates anyone who posts in it.
+- [**Permissions**](/security/permissions) — Grant and remove permissions in bulk, and see who holds the dangerous ones.
+
+## Examples
+
+### A sensible starting threshold
+
+```text
+/antinuke set enabled:true limit:3 window:10 log_channel:#mod-log
+```
+
+Three destructive actions in ten seconds trips it. Adjust once you know how busy your staff is.
+
+### Flood protection
+
+```text
+/antispam set enabled:true limit:6 window:5 timeout:60 mode:Enforce
+```
+
+Six messages in five seconds earns a minute of quiet. Alert only logs without acting.
+
+### Avoid — Missing the switch
+
+```text
+/antinuke set limit:3 window:10
+```
+
+`enabled` is required, so Discord refuses the command. Zone never guesses whether you meant to turn something on.
+
+<Note>
+  Security features react to what is happening now. They are not a backup tool — keep your own copy of anything you would hate to lose.
+</Note>

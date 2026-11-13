@@ -1,0 +1,43 @@
+---
+title: "Voice rooms"
+description: "Members create and control their own temporary rooms."
+icon: "chart-line"
+---
+
+A hub channel creates a private room when someone joins it. Inside, the member renames it, caps it, locks it or hands it to someone else without waiting for staff.
+
+## How members use it
+
+Pick a hub channel and a category. When a member joins the hub, Zone creates a private room and moves them into it. They can rename it, limit how many people fit, lock it, or hand it to someone else.
+
+No staff involvement, no waiting for a moderator to notice.
+
+## What staff needs to know
+
+Zone needs to see the hub, move people and manage channels in that category. Empty rooms are removed automatically; rooms with people in them are left alone.
+
+## Examples
+
+### Build the hub
+
+```text
+/voicemaster set enabled:true hub:#Join to create category:"Voice Rooms" panel_channel:#voice
+```
+
+The hub is a voice channel, the category is where the temporary rooms appear.
+
+### The in-room menu
+
+```text
+!voice
+```
+
+One dropdown with rename, limit, lock, unlock, allow, block, transfer and claim.
+
+### Avoid — A category where a voice channel belongs
+
+```text
+/voicemaster set enabled:true hub:"Voice Rooms"
+```
+
+The hub has to be a voice channel members can join. A category cannot be joined, so the setup is refused.

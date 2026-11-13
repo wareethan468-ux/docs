@@ -1,0 +1,43 @@
+---
+title: "Spotify"
+description: "Optional: see and steer the track on your own account."
+icon: "plug"
+---
+
+Linking Spotify lets Zone show and control what is playing on your own account. It is optional: server music works with or without it.
+
+## Linking your account
+
+If you want Zone to show what you are listening to, link your Spotify account once and approve it in the page that opens. Your link is stored for you alone and refreshed automatically.
+
+You can unlink at any time without affecting music in the server.
+
+## When it is not available
+
+Spotify support has to be connected by whoever runs the bot. If it is not set up, everything else about music still works — only the personal "now playing" view is missing.
+
+## Examples
+
+### Link your account
+
+```text
+!spotify login
+```
+
+Approve the link in the page that opens. Your tokens stay attached to your account, not the server.
+
+### Repeat one track
+
+```text
+!spotify repeat state:track
+```
+
+Off, track and context are the only three states — Discord will not accept anything else.
+
+### Avoid — A state that does not exist
+
+```text
+!spotify repeat state:forever
+```
+
+The repeat option only offers off, track and context. "forever" is refused before it reaches Spotify.

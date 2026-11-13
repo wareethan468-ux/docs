@@ -1,0 +1,51 @@
+---
+title: "Honeypot"
+description: "A channel nobody should post in, used to catch raiders instantly."
+icon: "lock"
+---
+
+A honeypot is a tempting channel that only raiders and spammers post in. Any message there triggers the action you choose, and every trigger is counted and logged.
+
+<Warning>
+  The log channel has to be a different channel from the trap. If they are the same, every log line about the trap triggers the trap.
+</Warning>
+
+## Arming the trap
+
+Create or choose a channel that looks tempting — something like #giveaway-winners — and tell Zone that posting there is a trap. Pick what should happen to the person who does it.
+
+Zone posts a quiet warning card in the channel and counts every trigger, so you can see how often it fires.
+
+## Who is safe
+
+Staff, the server owner, bots and webhooks are exempt by default. The log channel has to be a different channel from the trap, or every log would trigger it.
+
+## Testing it first
+
+Run a dry run against a member you trust. Zone explains the role order, the action it would take, whether that member can even see the channel, and if anything is missing — without moderating anyone.
+
+## Examples
+
+### Arm the trap
+
+```text
+/honeypot set enabled:true channel:#do-not-type action:Softban (wipe messages, kick and allow rejoining) log_channel:#staff-logs
+```
+
+Softban clears what they posted, removes them, and lets a genuine member rejoin after a mistake.
+
+### Check before you trust it
+
+```text
+/honeypot test user:@member
+```
+
+Explains role order, visibility and the action it would take, without moderating anyone.
+
+### Avoid — Logging into the trap
+
+```text
+/honeypot set enabled:true channel:#staff-logs log_channel:#staff-logs
+```
+
+The log channel must be different from the trap, or every log line about the trap would trigger the trap.

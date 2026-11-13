@@ -1,0 +1,49 @@
+---
+title: "Anti-spam & filters"
+description: "Keeps the chat readable when someone floods it."
+icon: "shield"
+---
+
+Anti-spam watches how fast a member posts, how often they repeat themselves and how many people they mention. Past your limits, their recent messages are removed and they get a short timeout.
+
+## Flood protection
+
+Zone watches how quickly each member sends messages, repeats the same message, and mentions other people. When they pass your limits, their recent messages are removed and they get a short timeout.
+
+Limits are per server, so a busy community channel can be looser than a quiet one.
+
+## Word and link filters
+
+Add banned words or blocked links to stop them appearing before staff sees them. Filters work alongside flood protection and can be switched on independently.
+
+Roles, channels and whole categories can be exempted — useful for announcement channels and for staff.
+
+## Examples
+
+### Enforce, don’t just watch
+
+```text
+/antispam set enabled:true limit:6 window:5 timeout:60 mode:Enforce log_channel:#mod-log
+```
+
+Six messages in five seconds, one minute of quiet, and a line in the staff channel.
+
+### Leave staff alone
+
+```text
+/antispam exempt role:@Staff
+```
+
+Exempted roles and channels never count towards the limit — useful for announcements and bots.
+
+### Avoid — Wrong target type
+
+```text
+/antispam exempt user:@member
+```
+
+Exemptions are for roles and channels. A single member cannot be exempted, so Discord rejects the member picker here.
+
+<Note>
+  Filters match what members type in your server. They do not read direct messages.
+</Note>

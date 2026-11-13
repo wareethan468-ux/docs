@@ -1,0 +1,49 @@
+---
+title: "Warnings & escalation"
+description: "A written record, and an automatic response to repeats."
+icon: "circle-info"
+---
+
+Warnings are stored against the member with a reason and the staff name. When someone reaches a count you have set, Zone applies the matching action on its own.
+
+## Keeping a record
+
+A warning is stored against the member with the reason and who gave it. Staff can look up a member’s history at any time, including after they change their nickname.
+
+Warnings survive restarts, so the record is there months later.
+
+## The escalation ladder
+
+You can decide what happens at two warnings, five warnings, or any other count: a timeout, a kick or a ban. Zone applies the rule the moment a member reaches that number.
+
+The ladder is edited in the dashboard under Moderation, and you can remove a rule whenever it stops feeling right.
+
+## Starting over
+
+Clearing a member’s warnings is deliberate — it wipes their history for that server, so use it after an appeal, not as routine tidying.
+
+## Examples
+
+### Record it
+
+```text
+!warn @member reason:"Repeated pings"
+```
+
+The member sees the warning and the reason, and it stays on their history after a restart.
+
+### Read the history
+
+```text
+!warnings user:@member
+```
+
+Shows every warning with the reason, who gave it and when.
+
+### Avoid — Clearing everyone
+
+```text
+!clearwarnings
+```
+
+A member is required — this wipes one history at a time, which is deliberate. There is no accidental server-wide reset.

@@ -1,0 +1,153 @@
+---
+title: "Zone update log"
+description: "Copy-ready release notes for Zone members and admins."
+icon: "clock-rotate-left"
+---
+
+Copy the sections below into Discord.
+
+```md
+## Zone • Members
+• Help now lists all available modules with icons and descriptions.
+• Added music: play, queue, pause, skip, shuffle, volume and track/queue looping.
+• Use /joinvc to bring Zone into your voice channel.
+• Added Voice Master rooms: join the server's create channel to get a room.
+• Use /voice to rename your room, set a limit, lock it and manage members.
+• You can transfer your room or claim one after its owner leaves.
+• Prefix replies stay in the channel. Slash replies stay private where intended.
+```
+
+```md
+## Zone • Admins
+• Set up join-to-create rooms with /voicemaster setup.
+• Choose the hub and category; check settings or stop new rooms at any time.
+• Empty rooms clean themselves up, including after a bot restart.
+• Members keep their existing room when they return to the create channel.
+• Staff with Manage Channels can manage room settings.
+• Music queues are separate for each server; listeners must share Zone's channel to control playback.
+• Help includes Music and Voice Master modules.
+```
+
+```md
+## Zone • Bot owners
+• /bot-profile now opens one customization panel.
+• Change picture, banner, username, nickname, description, status and name style from its dropdown.
+• Use forms and choice menus instead of separate profile subcommands.
+• Reset actions ask for confirmation, and only the owner who opened the panel can use it.
+• Global profile settings and server-only settings are clearly marked.
+• Install the updated dependencies and restart Zone to load the new voice modules.
+```
+
+```md
+## Zone • Panel update
+• Voice Master now has a live control panel for your chosen channel.
+• Room counts, owners, limits and locks update automatically.
+• Use its dropdown to control your room privately.
+• Added /setup and /config: choose a module, edit its settings and run its setup action.
+• Status commands are now prefix-only and still available in setup menus.
+```
+
+```md
+## Zone • Setup update
+• /setup is now the single place to choose and configure a module.
+• Enable or disable modules using their set action and Enabled / Disabled choice.
+• Removed separate setup and disable actions from those modules.
+• Disabling keeps your saved settings for next time.
+• Logs remember each type's channel, and leave messages keep their saved channel.
+• /config has been removed; use /setup instead.
+```
+
+```md
+## Zone • Sticky notes
+• Added embed:true to post a sticky as a styled card.
+• Use embed:false for plain text.
+• Your chosen style stays saved when the sticky reposts or gets edited.
+```
+
+```md
+## Zone • Panels
+• Added animated Back and Forward corner-arrow emojis across navigation menus.
+• Server info has clearer groups, matching icons and the same live updates.
+```
+
+```md
+## Zone • Giveaways
+• Giveaways is now available in /setup.
+• Save a default channel, duration and number of winners.
+• Enable or disable new giveaways without cancelling active ones.
+• Giveaway cards now have a cleaner layout and live entry counts.
+• Already entered? Click Enter again, then Yes, leave to exit. Cancel keeps your entry.
+• Added checks for duplicate clicks, expired confirmations and simultaneous draws.
+```
+
+```md
+## Zone • Appeals
+• Prefix-only `,appeal` family for ban appeals: `enable`/`disable` (start or stop accepting appeals), `form`, `form add/delete <name>`.
+• `form remove <name>`, `idlookup <allow|block>`, `invite [<code>]` (no argument generates a never-expiring invite) and `logs <channel>`.
+• All rows need Manage Server; the wording matches the panel exactly.
+• Intake posting is still to come with the rest of the appeal panel.
+
+## Zone • Counting
+• Prefix-only `,counting`: choose a counting channel and starting value with `counting set`, watch the chain in `status`.
+• Members count one number per message; a wrong number, a double count or chat deletes the message, breaks the chain and it restarts at one, keeping the best run.
+• Staff with Manage Messages or Manage Server bypass the counting channel rules; `reset` and `remove` gate respectively.
+
+## Zone • Filter
+• Prefix-only `,filter`: add/remove/list/whitelist/reset filtered words per server, regex patterns and role exemptions.
+• Toggles for links (with domain whitelist), emoji threshold, message spam, caps percentage, spoilers and music files, each with `exempt` and `exempt list`.
+• `,filter snipe` hides content that matches the filters inside snipe replies.
+• `,filter wordmigrate` copies the word list into a Discord Automod keyword rule.
+
+## Zone • Counter
+• Prefix-only `,counter`: create public counter channels for members, boosts, channels or roles with a custom emoji.
+• `,counter set` binds a counter to an existing channel, `,counter remove` deletes it, `,counter list` shows every counter.
+• Counter channel names refresh every minute.
+
+## Zone • Fixes
+• `sticker extract`/`emoji extract` failure cards no longer collapse to "Something went wrong." — the reasons now read out directly.
+
+## Zone • Snipe & recovery
+• Snipe deleted messages, edits and removed reactions: `!snipe message`, `!snipe edit`, `!snipe reaction`. Bare `!snipe` behaves like `!snipe message`, and `!snipe @member` lists their recently deleted messages across every channel.
+• The `message` snipe accepts an optional `user` option that shows that member's recent deletions guild-wide.
+• `!reaction history <message>` lists every reaction removed from a message, with jump link and time.
+• `!clearsnipe` wipes all cached results for the server; snipe data lives in memory only.
+• Staff permission: Manage Messages.
+
+## Zone • Games
+• `/game` (slash and prefix): tic-tac-toe and Connect 4 challenges with click boards, leaderboards and per-member stats.
+• `!game blacktea start/end` runs a channel tea pot with a Pour button; the top pourer wins at the end.
+• `!game juul` steal/hit/pass/flavor/stats/toggle — a server-wide silly item game; staff can toggle it off.
+• Game stats persist per server.
+
+## Zone • Spotify
+• Prefix-only `!spotify`: login/logout, search, play/queue, pause/resume/next/previous, repeat/shuffle/seek/volume, like/unlike, vc (bring the current track into voice), top artists and tracks, device transfer/list.
+• The bot owner configures SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET; the dashboard serves the account-link callback. Without it, commands explain how to set up.
+
+## Zone • Drag
+• `!drag @member #voice-channel @more…` moves up to five voice members from anywhere. Move Members and role order apply.
+
+## Zone • Prefix-only + emoji pack
+• Auto responder, guild tag badge rewards and emoji/sticker zip exports are prefix-only.
+• Snipe, reaction history, clearsnipe, Spotify and drag are prefix-only.
+• dotenv startup tips are silenced everywhere.
+• Emoji pack grew medal, package and stamp (pinned Lucide/AnimateIcons sources) used by badge and export cards.
+```
+
+```md
+## Zone • Confessions
+• Prefix-only `!confessions <#channel>` posts a confess panel (Manage Server).
+• Members press Confess, fill out a private form and the confession posts anonymously through a webhook with a running number.
+• Keep unwanted phrases out with `!confessions blacklist add/remove/clear/list` (Manage Server).
+• Categories route confessions to their own channels: `!confessions category add Games #games`, plus `category list` and `category remove`.
+
+## Zone • Brainrot
+• Prefix-only `!brainrotlock add @member` brainrots a member: their messages are deleted and reposted as brainrot slang through an anonymous webhook (Manage Messages).
+• `!brainrotlock amount 1-5` sets how much brainrot the messages get, `!brainrotlock list` shows locked members and `!brainrotlock remove @member` releases them.
+• `!brainrotlock protect` keeps people safe: `protect add @user`, `protect remove @user`, `protect list` — protected members can never be brainrotted.
+• `!brainrotlock roulette` randomly brainrots other messages: `roulette on` / `roulette off` start and stop it, `roulette chance 0-100` sets the ceiling percentage and `roulette limit 1-120` caps messages per hour.
+• Prefix commands and staff with Manage Messages always stay untouched.
+
+## Zone • Auto responder fixes
+• Removing a trigger no longer fires the trigger itself: prefix command invocations (like `!autoresponder remove hello`) never trigger auto replies.
+• Multi-word triggers work without quotes: `!autoresponder add how to get config reply:ask in #support` keeps the whole phrase as the trigger, and `trigger:"how to get config"` plus named replies parse cleanly.
+```

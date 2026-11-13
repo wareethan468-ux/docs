@@ -1,0 +1,55 @@
+---
+title: "Troubleshooting"
+description: "The usual reasons something stays quiet."
+icon: "circle-info"
+---
+
+Most silence is one of three things: Zone is offline, it cannot see the channel, or its role sits below the role it is trying to change. Check those before anything else.
+
+## Zone does not respond
+
+The status page shows whether the bot is online right now. If it is offline, nothing in your server is broken — wait for it to come back and try again.
+
+If it is online but quiet, check that it can see the channel and has the permission the action needs. Private channels are the most common culprit.
+
+## A command is missing
+
+Discord keeps a shorter slash menu than the full command list; the rest live on the prefix. If an action is not in the slash menu, it is almost always there.
+
+Recently added actions can take a little while to appear. Restarting Discord once usually fixes the list.
+
+## Roles and permissions
+
+Role changes need Zone's role to sit above the role it is changing. Moderation needs the matching permission on both Zone and the person doing it.
+
+Security features tell you exactly which permission is missing when a setup fails, so read that message before changing anything else.
+
+## Examples
+
+### Is it awake?
+
+```text
+!help
+```
+
+A reply means the bot is online, so the problem is permissions or the channel, not the bot.
+
+### Is the channel wired?
+
+```text
+/logs test type:Messages
+```
+
+A delivered test line proves the log channel and its permissions are right.
+
+### Avoid — A type that does not exist
+
+```text
+/logs test type:Everything
+```
+
+The test only accepts the named types. Anything else fails before a line is sent, which looks exactly like a broken channel.
+
+<Note>
+  Still stuck? Repost the panel with its setup action. That rebuilds the message and clears anything stale.
+</Note>

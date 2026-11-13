@@ -1,0 +1,51 @@
+---
+title: "Bans, kicks & timeouts"
+description: "Three levels of “not right now”, plus message clean-up."
+icon: "gavel"
+---
+
+Timeout keeps the member but mutes them, kick removes them and lets them rejoin, ban keeps them out until you lift it. Every action records the reason you type.
+
+<Warning>
+  Zone cannot act on a member whose highest role sits at or above its own. Fix the role order before assuming a command is broken.
+</Warning>
+
+## Choosing the right action
+
+A timeout keeps the member in the server but stops them talking for the minutes you set. A kick removes them and they can rejoin with a new invite. A ban stops them returning until you lift it.
+
+Every action records the reason you type. It shows up in the confirmation the member receives and in the staff log, which matters when someone asks why weeks later.
+
+## Clearing messages
+
+Message clean-up removes a batch of recent messages, optionally only the ones from one member. It is the fastest way to deal with a spam burst after the person is timed out.
+
+## Limits you cannot bypass
+
+Nobody can act on a member with an equal or higher role, including Zone. If an action silently does nothing, check who sits above whom in the role list.
+
+## Examples
+
+### Ban and clean up
+
+```text
+!ban @raider delete_messages:Last 24 hours reason:"Raid advertising"
+```
+
+The reason is stored and shown in the moderation log, not just the reply.
+
+### Remove one person’s messages
+
+```text
+!purge amount:50 user:@spammer
+```
+
+Leave the member out to clear the last batch regardless of who sent it.
+
+### Avoid — No target
+
+```text
+!ban reason:"Raid advertising"
+```
+
+The member is required. Zone will not guess who you meant, so nothing is banned.

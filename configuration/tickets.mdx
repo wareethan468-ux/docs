@@ -1,0 +1,42 @@
+---
+title: "Tickets overview"
+description: "A private channel for every member who needs a human."
+icon: "ticket"
+---
+
+Members press one button and get a private channel that only they and your staff role can see. Staff claim what they are handling, close what they have finished, and keep a transcript before the channel goes away.
+
+<Warning>
+  Anyone with the staff role can read every ticket in the server. Pick a role you would trust with private conversations.
+</Warning>
+
+## Start here
+
+- [Setting up tickets](/configuration/ticket-setup) — Post the panel once, and choose who on your staff team should see it first.
+- [Handling tickets](/configuration/ticket-handling) — Claim, close and keep a transcript — from Discord or from the dashboard.
+
+## Examples
+
+### Post the board
+
+```text
+/ticket-setup staff_role:@Support channel:#tickets category:Tickets transcript_channel:#transcripts
+```
+
+One card, one button. Every ticket lands in the Tickets category and transcripts are copied to staff.
+
+### Stop repeat openings
+
+```text
+!ticket-blacklist add user:@member reason:"Repeated abuse"
+```
+
+The blocked member gets a short message instead of a fresh channel.
+
+### Avoid — Everyone is staff
+
+```text
+/ticket-setup channel:#tickets staff_role:@everyone
+```
+
+Anyone with the staff role can read every ticket. @everyone means the whole server can, which defeats the point of a private channel.

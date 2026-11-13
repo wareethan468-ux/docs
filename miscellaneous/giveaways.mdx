@@ -1,0 +1,45 @@
+---
+title: "Giveaways"
+description: "Timed draws with automatic winners."
+icon: "dice"
+---
+
+Set a prize, a length and a winner count. Zone posts a card with an entry button, checks requirements as people enter, and draws a winner when time runs out.
+
+## Starting one
+
+Set a prize, how long it runs and how many winners. Zone posts a card with an entry button and updates the entry count as people join.
+
+Any requirements — a role, a minimum account age — are checked when someone enters, not when the winner is drawn. That keeps the entry count honest.
+
+## Ending early, drawing again
+
+End a giveaway from its card when you do not want to wait, or draw again from the same entries if the first winner never replied.
+
+If the panel message is deleted, the giveaway ends cleanly instead of retrying forever.
+
+## Examples
+
+### Start one
+
+```text
+/giveaway start prize:"Nitro" duration:24h winners:1 channel:#giveaways
+```
+
+The card updates its entry count live, so members can see it working.
+
+### Draw again
+
+```text
+/giveaway reroll id:123456789012345678
+```
+
+Uses the same entry pool, so nobody has to re-enter.
+
+### Avoid — No prize
+
+```text
+/giveaway start duration:24h winners:1
+```
+
+The prize is the one required field — without it the card would not say what anyone is winning.

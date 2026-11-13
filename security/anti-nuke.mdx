@@ -1,0 +1,61 @@
+---
+title: "Anti-nuke"
+description: "Stops one account from taking the server apart."
+icon: "shield-halved"
+---
+
+Anti-nuke scores destructive actions by the same account inside a short window. Cross the threshold and Zone strips that account’s dangerous roles, times them out and tells the owner.
+
+<Warning>
+  Anti-nuke reacts after the threshold is crossed. It cannot undo the first destructive action, so treat it as a brake rather than a backup.
+</Warning>
+
+## Choosing a threshold
+
+A threshold is a limit plus a window: three actions in ten seconds is a very different alarm from ten actions in a minute. Small staff teams usually raise the limit so a busy clean-up does not trip it.
+
+If it fires during normal work, trust the account that was doing the work. Disabling anti-nuke entirely leaves the next attacker with a free run.
+
+## What it watches
+
+Anti-nuke counts destructive actions by the same account: deleting channels and roles, banning or kicking in bulk, creating webhooks, adding bots and granting dangerous permissions.
+
+Each action adds to that account’s score within a short window.
+
+## What happens when someone crosses the line
+
+Zone removes the dangerous roles it is allowed to edit and applies a ten-minute timeout. The person who owns the server gets a notice in the log channel you chose.
+
+Only the server owner can change these settings, which keeps trusted staff from switching protection off in a hurry.
+
+## Tuning it
+
+The default is three actions in ten seconds — low enough to catch an attack, high enough to allow normal housekeeping.
+
+Staff and bots you trust can be exempted individually, so a redecorating afternoon does not trip the alarm.
+
+## Examples
+
+### Start here
+
+```text
+/antinuke set enabled:true limit:3 window:10 log_channel:#mod-log
+```
+
+Three actions in ten seconds. Raise the limit for a large staff team, lower it for a quiet server.
+
+### Exempt something you trust
+
+```text
+/antinuke trust user:@DeployBot
+```
+
+Trusted bots and staff stop counting towards the threshold entirely.
+
+### Avoid — A limit of zero
+
+```text
+/antinuke set enabled:true limit:0
+```
+
+There is no such thing as “act on nothing”. The limit has to be at least one action, or the setting is rejected.

@@ -1,0 +1,49 @@
+---
+title: "Config libraries"
+description: "Share files with your members without losing them to expired links."
+icon: "file"
+---
+
+A panel holds scripts, and each script holds config files members can download. Files live on Zone's side, so an old download button keeps working after Discord's own links expire.
+
+<Warning>
+  Deleting a file removes it from every panel. Download anything you want to keep before cleaning up a library.
+</Warning>
+
+## Building a library
+
+Create a panel, then add the scripts or categories you want inside it. Upload a file, give it a name, and it appears on the panel with its own download button.
+
+Files are stored by Zone rather than attached to a message, so old download buttons keep working.
+
+## Review before release
+
+Turn on review if members can submit files. Submissions wait for a moderator, and only approved files become downloadable.
+
+The dashboard can upload, download and delete the same files, which is easier than doing it in Discord one at a time.
+
+## Examples
+
+### Create the container
+
+```text
+!addscript panel_id:rivals name:Scripts
+```
+
+The panel ID is what ties every later upload to the right card.
+
+### Add a file
+
+```text
+/addconfig panel_id:rivals name:MyConfig script:MyScript file:<upload>
+```
+
+The file is required; the name is what members see on the button.
+
+### Avoid — Nothing to upload
+
+```text
+/addconfig panel_id:rivals name:MyConfig
+```
+
+Without a file there is no config to store, so the call is refused rather than creating an empty entry.
