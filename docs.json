@@ -15,16 +15,21 @@
     "light": "/logo/zone.svg",
     "dark": "/logo/zone.svg"
   },
+  "icons": {
+    "library": "lucide"
+  },
   "navigation": {
     "groups": [
       {
         "group": "Welcome",
+        "icon": "house",
         "pages": [
           "index"
         ]
       },
       {
         "group": "Getting started",
+        "icon": "book-open",
         "pages": [
           "handbook/overview/introduction",
           "handbook/overview/first-setup",
@@ -36,6 +41,7 @@
       },
       {
         "group": "Community",
+        "icon": "users",
         "pages": [
           "handbook/community/community-eventsplus",
           "handbook/community/community-faqsplus",
@@ -45,6 +51,7 @@
           "handbook/community/community-essentials",
           {
             "group": "Profiles & information",
+            "icon": "eye",
             "pages": [
               "handbook/community/community-profiles",
               "handbook/community/setup-serverinfo-panel"
@@ -52,6 +59,7 @@
           },
           {
             "group": "Tickets",
+            "icon": "ticket",
             "pages": [
               "handbook/community/community-tickets",
               "handbook/community/setup-ticket-setup",
@@ -60,6 +68,7 @@
           },
           {
             "group": "Staff applications",
+            "icon": "users",
             "pages": [
               "handbook/community/community-staff",
               "handbook/community/setup-staffapp-setup"
@@ -67,6 +76,7 @@
           },
           {
             "group": "Welcome & greetings",
+            "icon": "hand",
             "pages": [
               "handbook/community/community-greetings",
               "handbook/community/setup-welcome"
@@ -74,6 +84,7 @@
           },
           {
             "group": "Verification",
+            "icon": "badge-check",
             "pages": [
               "handbook/community/community-verification",
               "handbook/community/setup-verify-setup"
@@ -81,6 +92,7 @@
           },
           {
             "group": "Engagement",
+            "icon": "star",
             "pages": [
               "handbook/community/community-engagement",
               "handbook/community/setup-reactionroles",
@@ -93,6 +105,7 @@
           },
           {
             "group": "Messages & responses",
+            "icon": "megaphone",
             "pages": [
               "handbook/community/community-messages",
               "handbook/community/setup-confessions"
@@ -105,6 +118,7 @@
       },
       {
         "group": "Moderation",
+        "icon": "shield",
         "pages": [
           "handbook/moderation/moderation-filteredcleanup",
           "handbook/moderation/moderation-roleinspections",
@@ -115,6 +129,7 @@
           "handbook/moderation/moderation-rolegov",
           {
             "group": "Member moderation",
+            "icon": "gavel",
             "pages": [
               "handbook/moderation/moderation-members",
               "handbook/moderation/setup-warn-setup"
@@ -123,6 +138,7 @@
           "handbook/moderation/moderation-permissions",
           {
             "group": "Channel controls",
+            "icon": "settings",
             "pages": [
               "handbook/moderation/moderation-channels",
               "handbook/moderation/setup-sticky"
@@ -130,6 +146,7 @@
           },
           {
             "group": "Rules & protection",
+            "icon": "shield-check",
             "pages": [
               "handbook/moderation/moderation-protection",
               "handbook/moderation/setup-rules",
@@ -141,6 +158,7 @@
           },
           {
             "group": "Logs & appeals",
+            "icon": "file-text",
             "pages": [
               "handbook/moderation/moderation-logs",
               "handbook/moderation/setup-logs"
@@ -148,6 +166,7 @@
           },
           {
             "group": "Command access",
+            "icon": "key-round",
             "pages": [
               "handbook/moderation/moderation-access",
               "handbook/moderation/setup-prefix"
@@ -161,6 +180,7 @@
       },
       {
         "group": "Fun & Games",
+        "icon": "gamepad-2",
         "pages": [
           "handbook/fun/fun-economy",
           "handbook/fun/fun-games",
@@ -176,6 +196,7 @@
           "handbook/fun/fun-reactions",
           {
             "group": "Giveaways",
+            "icon": "gift",
             "pages": [
               "handbook/fun/fun-giveaways",
               "handbook/fun/setup-giveaway"
@@ -184,6 +205,7 @@
           "handbook/fun/fun-polls",
           {
             "group": "Leveling",
+            "icon": "trophy",
             "pages": [
               "handbook/fun/fun-leveling",
               "handbook/fun/setup-leveling"
@@ -191,6 +213,7 @@
           },
           {
             "group": "Fun message tools",
+            "icon": "users",
             "pages": [
               "handbook/fun/fun-messages",
               "handbook/fun/setup-brainrotlock",
@@ -209,6 +232,7 @@
       },
       {
         "group": "Server & Content",
+        "icon": "server",
         "pages": [
           "handbook/server/server-contentaudits",
           "handbook/server/server-texttemplates",
@@ -218,6 +242,7 @@
           "handbook/server/server-embeds",
           {
             "group": "Roblox lookups & scripts",
+            "icon": "terminal",
             "pages": [
               "handbook/server/server-roblox",
               "handbook/server/setup-scriptsearch-setup",
@@ -227,6 +252,7 @@
           },
           {
             "group": "Configs",
+            "icon": "file-text",
             "pages": [
               "handbook/server/server-configs",
               "handbook/server/setup-config-panel",
@@ -235,6 +261,7 @@
           },
           {
             "group": "Script Dumper & Deobfuscation",
+            "icon": "terminal",
             "pages": [
               "handbook/server/server-scripts",
               "handbook/server/setup-script-panel"
@@ -246,9 +273,11 @@
       },
       {
         "group": "Voice & Music",
+        "icon": "music",
         "pages": [
           {
             "group": "Voice Master",
+            "icon": "headphones",
             "pages": [
               "handbook/voice/voice-rooms",
               "handbook/voice/setup-voicemaster"
@@ -261,6 +290,7 @@
       },
       {
         "group": "Utilities",
+        "icon": "wrench",
         "pages": [
           "handbook/utilities/utilities-commandstats",
           "handbook/utilities/utilities-servermetrics",
@@ -283,6 +313,7 @@
       },
       {
         "group": "Other",
+        "icon": "layers",
         "pages": [
           "handbook/other/other-more"
         ]
