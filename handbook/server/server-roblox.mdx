@@ -48,6 +48,816 @@ Open /setup, choose **Server & Content**, then **Roblox lookups & scripts**. Cho
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!roblox user">
+
+View a Roblox account profile
+
+**Syntax**
+
+```text
+!roblox user <username>
+```
+
+**Example template**
+
+```text
+!roblox user username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox user
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox avatar">
+
+View a user avatar and worn items
+
+**Syntax**
+
+```text
+!roblox avatar <username>
+```
+
+**Example template**
+
+```text
+!roblox avatar username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox avatar
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox friends">
+
+List a user’s Roblox friends
+
+**Syntax**
+
+```text
+!roblox friends <username>
+```
+
+**Example template**
+
+```text
+!roblox friends username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox friends
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox followers">
+
+List a user’s followers
+
+**Syntax**
+
+```text
+!roblox followers <username>
+```
+
+**Example template**
+
+```text
+!roblox followers username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox followers
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox following">
+
+List accounts a user follows
+
+**Syntax**
+
+```text
+!roblox following <username>
+```
+
+**Example template**
+
+```text
+!roblox following username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox following
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox groups">
+
+List a user’s group memberships
+
+**Syntax**
+
+```text
+!roblox groups <username>
+```
+
+**Example template**
+
+```text
+!roblox groups username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox groups
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox games">
+
+List a user’s created public games
+
+**Syntax**
+
+```text
+!roblox games <username>
+```
+
+**Example template**
+
+```text
+!roblox games username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox games
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox favorites">
+
+List a user’s favorite games
+
+**Syntax**
+
+```text
+!roblox favorites <username>
+```
+
+**Example template**
+
+```text
+!roblox favorites username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox favorites
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox badges">
+
+List a user’s Roblox badges
+
+**Syntax**
+
+```text
+!roblox badges <username>
+```
+
+**Example template**
+
+```text
+!roblox badges username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox badges
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="!roblox search">
+
+Search Roblox usernames
+
+**Syntax**
+
+```text
+!roblox search <query>
+```
+
+**Example template**
+
+```text
+!roblox search query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox search
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!roblox group">
+
+View a Roblox group
+
+**Syntax**
+
+```text
+!roblox group <group_id>
+```
+
+**Example template**
+
+```text
+!roblox group group_id:<group_id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox group
+```
+
+Missing `group_id`.
+
+</Accordion>
+
+<Accordion title="!roblox groupgames">
+
+List public games from a Roblox group
+
+**Syntax**
+
+```text
+!roblox groupgames <group_id>
+```
+
+**Example template**
+
+```text
+!roblox groupgames group_id:<group_id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox groupgames
+```
+
+Missing `group_id`.
+
+</Accordion>
+
+<Accordion title="!roblox game">
+
+View an experience by universe ID
+
+**Syntax**
+
+```text
+!roblox game <universe_id>
+```
+
+**Example template**
+
+```text
+!roblox game universe_id:<universe_id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roblox game
+```
+
+Missing `universe_id`.
+
+</Accordion>
+
+<Accordion title="/search">
+
+Search public Roblox scripts across sources
+
+**Syntax**
+
+```text
+/search <query> [sort] [source] [verified] [keyless] [mobile]
+```
+
+**Example template**
+
+```text
+/search query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/search
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="/scriptsearch-setup">
+
+Post or edit Roblox script search panel
+
+**Syntax**
+
+```text
+/scriptsearch-setup [channel] [title] [description] [sources] [sort] [verified] [keyless] [mobile]
+```
+
+**Example template**
+
+```text
+/scriptsearch-setup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+scriptsearch-setup
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/scriptsearch-info">
+
+View the script-search panel and active source settings
+
+**Syntax**
+
+```text
+/scriptsearch-info
+```
+
+**Example template**
+
+```text
+/scriptsearch-info
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+scriptsearch-info
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/scriptsearch-disable">
+
+Disable the public Roblox script-search panel
+
+**Syntax**
+
+```text
+/scriptsearch-disable
+```
+
+**Example template**
+
+```text
+/scriptsearch-disable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+scriptsearch-disable
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/weao status">
+
+Show Windows and macOS versions
+
+**Syntax**
+
+```text
+/weao status
+```
+
+**Example template**
+
+```text
+/weao status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+weao status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/weao refresh">
+
+Refresh server status panel (staff)
+
+**Syntax**
+
+```text
+/weao refresh
+```
+
+**Example template**
+
+```text
+/weao refresh
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+weao refresh
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/weao disable">
+
+Disable auto-updates (staff)
+
+**Syntax**
+
+```text
+/weao disable
+```
+
+**Example template**
+
+```text
+/weao disable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+weao disable
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/weao-setup">
+
+Post an auto-updating Roblox version status panel
+
+**Syntax**
+
+```text
+/weao-setup [channel] [title] [description] [announce] [announce_channel]
+```
+
+**Example template**
+
+```text
+/weao-setup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+weao-setup
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/executer">
+
+Check Roblox executor update status reported by WEAO
+
+**Syntax**
+
+```text
+/executer [name] [platform]
+```
+
+**Example template**
+
+```text
+/executer
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+executer
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/weaonotify setup">
+
+Enable notifications in a channel
+
+**Syntax**
+
+```text
+/weaonotify setup <channel> [watch]
+```
+
+**Example template**
+
+```text
+/weaonotify setup channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/weaonotify setup
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="/weaonotify status">
+
+Show current notification channel and watched executors
+
+**Syntax**
+
+```text
+/weaonotify status
+```
+
+**Example template**
+
+```text
+/weaonotify status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+weaonotify status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/weaonotify watch">
+
+Add an executor to watch
+
+**Syntax**
+
+```text
+/weaonotify watch <name>
+```
+
+**Example template**
+
+```text
+/weaonotify watch name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/weaonotify watch
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/weaonotify unwatch">
+
+Remove an executor from notifications
+
+**Syntax**
+
+```text
+/weaonotify unwatch <name>
+```
+
+**Example template**
+
+```text
+/weaonotify unwatch name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/weaonotify unwatch
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/weaonotify disable">
+
+Turn notifications off without deleting preferences
+
+**Syntax**
+
+```text
+/weaonotify disable
+```
+
+**Example template**
+
+```text
+/weaonotify disable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+weaonotify disable
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/weaoinfo">
+
+View Roblox version and executor notification configuration
+
+**Syntax**
+
+```text
+/weaoinfo
+```
+
+**Example template**
+
+```text
+/weaoinfo
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+weaoinfo
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Script search setup](/handbook/server/setup-scriptsearch-setup)

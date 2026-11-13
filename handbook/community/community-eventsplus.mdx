@@ -47,3 +47,365 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!comeventcreate">
+
+Create a dated server community event
+
+**Syntax**
+
+```text
+!comeventcreate <title> <when> [description]
+```
+
+**Example template**
+
+```text
+!comeventcreate title:<title> when:<when>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventcreate
+```
+
+Missing `title`, `when`.
+
+</Accordion>
+
+<Accordion title="!comeventedit">
+
+Edit an upcoming event title, date, or details
+
+**Syntax**
+
+```text
+!comeventedit <id> [title] [when] [description]
+```
+
+**Example template**
+
+```text
+!comeventedit id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventedit
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comeventcancel">
+
+Cancel an event and close signups
+
+**Syntax**
+
+```text
+!comeventcancel <id>
+```
+
+**Example template**
+
+```text
+!comeventcancel id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventcancel
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comeventlist">
+
+List upcoming community events
+
+**Syntax**
+
+```text
+!comeventlist
+```
+
+**Example template**
+
+```text
+!comeventlist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comeventlist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comeventview">
+
+Show one event, signup counts and details
+
+**Syntax**
+
+```text
+!comeventview <id>
+```
+
+**Example template**
+
+```text
+!comeventview id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventview
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comeventrsvp">
+
+RSVP going or maybe for an open event
+
+**Syntax**
+
+```text
+!comeventrsvp <id> <response>
+```
+
+**Example template**
+
+```text
+!comeventrsvp id:<id> response:<response>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventrsvp
+```
+
+Missing `id`, `response`.
+
+</Accordion>
+
+<Accordion title="!comeventunrsvp">
+
+Remove your RSVP from a community event
+
+**Syntax**
+
+```text
+!comeventunrsvp <id>
+```
+
+**Example template**
+
+```text
+!comeventunrsvp id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventunrsvp
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comeventattendees">
+
+List opted-in attendees of a server event
+
+**Syntax**
+
+```text
+!comeventattendees <id>
+```
+
+**Example template**
+
+```text
+!comeventattendees id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventattendees
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comeventclose">
+
+Close RSVP for an upcoming event
+
+**Syntax**
+
+```text
+!comeventclose <id>
+```
+
+**Example template**
+
+```text
+!comeventclose id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventclose
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comeventreopen">
+
+Reopen registration for an upcoming event
+
+**Syntax**
+
+```text
+!comeventreopen <id>
+```
+
+**Example template**
+
+```text
+!comeventreopen id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comeventreopen
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comeventstats">
+
+Show community event and RSVP summary counts
+
+**Syntax**
+
+```text
+!comeventstats
+```
+
+**Example template**
+
+```text
+!comeventstats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comeventstats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comeventexport">
+
+Export saved event metadata and RSVP records
+
+**Syntax**
+
+```text
+!comeventexport
+```
+
+**Example template**
+
+```text
+!comeventexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comeventexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

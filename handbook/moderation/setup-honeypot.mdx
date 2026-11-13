@@ -45,6 +45,116 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/honeypot set">
+
+Change honeypot settings
+
+**Syntax**
+
+```text
+/honeypot set <enabled> [channel] [action] [log_channel] [thumbnail] [exempt_staff]
+```
+
+**Example template**
+
+```text
+/honeypot set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/honeypot set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="/honeypot test">
+
+Explain whether a member would trigger the trap; does not moderate anyone
+
+**Syntax**
+
+```text
+/honeypot test [user]
+```
+
+**Example template**
+
+```text
+/honeypot test
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+honeypot test
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/honeypot status">
+
+Show the current trap settings
+
+**Syntax**
+
+```text
+/honeypot status
+```
+
+**Example template**
+
+```text
+/honeypot status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+honeypot status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### enabled

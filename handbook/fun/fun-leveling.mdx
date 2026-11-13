@@ -48,6 +48,312 @@ Open /setup, choose **Fun & Games**, then **Leveling**. Choose an action, fill r
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/leveling setup">
+
+Configure XP, cooldown and level-up channel
+
+**Syntax**
+
+```text
+/leveling setup [enabled] [channel] [xp_min] [xp_max] [cooldown]
+```
+
+**Example template**
+
+```text
+/leveling setup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+leveling setup
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/leveling role">
+
+Manage level reward roles
+
+**Syntax**
+
+```text
+/leveling role <action> [level] [role]
+```
+
+**Example template**
+
+```text
+/leveling role action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/leveling role
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="/leveling rank">
+
+Show a member level
+
+**Syntax**
+
+```text
+/leveling rank [user]
+```
+
+**Example template**
+
+```text
+/leveling rank
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+leveling rank
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/leveling leaderboard">
+
+Show the server XP leaderboard
+
+**Syntax**
+
+```text
+/leveling leaderboard [page]
+```
+
+**Example template**
+
+```text
+/leveling leaderboard
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+leveling leaderboard
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!leveladmin give">
+
+Add XP or whole levels to a member
+
+**Syntax**
+
+```text
+!leveladmin give <user> [xp] [levels]
+```
+
+**Example template**
+
+```text
+!leveladmin give user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!leveladmin give
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!leveladmin set">
+
+Set a member to an exact level
+
+**Syntax**
+
+```text
+!leveladmin set <user> <level>
+```
+
+**Example template**
+
+```text
+!leveladmin set user:<user> level:<level>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!leveladmin set
+```
+
+Missing `user`, `level`.
+
+</Accordion>
+
+<Accordion title="!leveladmin reset">
+
+Reset a member back to zero XP
+
+**Syntax**
+
+```text
+!leveladmin reset <user>
+```
+
+**Example template**
+
+```text
+!leveladmin reset user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!leveladmin reset
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!leveladmin quickstart">
+
+Create level roles 1-25, save them as rewards and turn leveling on
+
+**Syntax**
+
+```text
+!leveladmin quickstart [max_level] [channel]
+```
+
+**Example template**
+
+```text
+!leveladmin quickstart
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+leveladmin quickstart
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!rank">
+
+Show a member level card
+
+**Syntax**
+
+```text
+!rank [user]
+```
+
+**Example template**
+
+```text
+!rank
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rank
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!rankpreview">
+
+Preview the level card without awarding XP
+
+**Syntax**
+
+```text
+!rankpreview [level] [user]
+```
+
+**Example template**
+
+```text
+!rankpreview
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rankpreview
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Leveling and reward roles](/handbook/fun/setup-leveling)

@@ -47,6 +47,536 @@ Open /setup, choose **Community**, then **Messages & responses**. Choose an acti
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!confessions add">
+
+Set the confessions channel and post the panel
+
+**Syntax**
+
+```text
+!confessions add <channel>
+```
+
+**Example template**
+
+```text
+!confessions add channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions add
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!confessions blacklist add">
+
+Blacklist a word
+
+**Syntax**
+
+```text
+!confessions blacklist add <word>
+```
+
+**Example template**
+
+```text
+!confessions blacklist add word:<word>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions blacklist add
+```
+
+Missing `word`.
+
+</Accordion>
+
+<Accordion title="!confessions blacklist remove">
+
+Remove a blacklisted word
+
+**Syntax**
+
+```text
+!confessions blacklist remove <word>
+```
+
+**Example template**
+
+```text
+!confessions blacklist remove word:<word>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions blacklist remove
+```
+
+Missing `word`.
+
+</Accordion>
+
+<Accordion title="!confessions blacklist clear">
+
+Clear the blacklist
+
+**Syntax**
+
+```text
+!confessions blacklist clear
+```
+
+**Example template**
+
+```text
+!confessions blacklist clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+confessions blacklist clear
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!confessions blacklist list">
+
+List blacklisted words
+
+**Syntax**
+
+```text
+!confessions blacklist list
+```
+
+**Example template**
+
+```text
+!confessions blacklist list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+confessions blacklist list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!confessions category add">
+
+Add or update a category
+
+**Syntax**
+
+```text
+!confessions category add <name> <channel>
+```
+
+**Example template**
+
+```text
+!confessions category add name:<name> channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions category add
+```
+
+Missing `name`, `channel`.
+
+</Accordion>
+
+<Accordion title="!confessions category list">
+
+List categories
+
+**Syntax**
+
+```text
+!confessions category list
+```
+
+**Example template**
+
+```text
+!confessions category list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+confessions category list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!confessions category remove">
+
+Remove a category
+
+**Syntax**
+
+```text
+!confessions category remove <name>
+```
+
+**Example template**
+
+```text
+!confessions category remove name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions category remove
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!autoresponder add">
+
+Create a reply for a trigger word
+
+**Syntax**
+
+```text
+!autoresponder add <trigger> <reply>
+```
+
+**Example template**
+
+```text
+!autoresponder add trigger:<trigger> reply:<reply>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!autoresponder add
+```
+
+Missing `trigger`, `reply`.
+
+</Accordion>
+
+<Accordion title="!autoresponder update">
+
+Update a reply for a trigger word
+
+**Syntax**
+
+```text
+!autoresponder update <trigger> <reply>
+```
+
+**Example template**
+
+```text
+!autoresponder update trigger:<trigger> reply:<reply>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!autoresponder update
+```
+
+Missing `trigger`, `reply`.
+
+</Accordion>
+
+<Accordion title="!autoresponder remove">
+
+Remove a reply for a trigger word
+
+**Syntax**
+
+```text
+!autoresponder remove <trigger>
+```
+
+**Example template**
+
+```text
+!autoresponder remove trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!autoresponder remove
+```
+
+Missing `trigger`.
+
+</Accordion>
+
+<Accordion title="!autoresponder reset">
+
+Remove every auto response
+
+**Syntax**
+
+```text
+!autoresponder reset
+```
+
+**Example template**
+
+```text
+!autoresponder reset
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+autoresponder reset
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!autoresponder list">
+
+View auto-reply triggers in this server
+
+**Syntax**
+
+```text
+!autoresponder list <scope>
+```
+
+**Example template**
+
+```text
+!autoresponder list scope:<scope>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!autoresponder list
+```
+
+Missing `scope`.
+
+</Accordion>
+
+<Accordion title="!autoresponder role">
+
+Give or remove roles when a trigger matches
+
+**Syntax**
+
+```text
+!autoresponder role <action> <trigger> <role>
+```
+
+**Example template**
+
+```text
+!autoresponder role action:<action> trigger:<trigger> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!autoresponder role
+```
+
+Missing `action`, `trigger`, `role`.
+
+</Accordion>
+
+<Accordion title="!autoresponder role-list">
+
+View roles changed when a trigger matches
+
+**Syntax**
+
+```text
+!autoresponder role-list <trigger>
+```
+
+**Example template**
+
+```text
+!autoresponder role-list trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!autoresponder role-list
+```
+
+Missing `trigger`.
+
+</Accordion>
+
+<Accordion title="!autoresponder exclusive">
+
+Limit a trigger to roles, channels or tickets
+
+**Syntax**
+
+```text
+!autoresponder exclusive <action> <trigger> [targets]
+```
+
+**Example template**
+
+```text
+!autoresponder exclusive action:<action> trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!autoresponder exclusive
+```
+
+Missing `action`, `trigger`.
+
+</Accordion>
+
+<Accordion title="!say">
+
+Make the bot repeat your text (no pings)
+
+**Syntax**
+
+```text
+!say <text> [channel]
+```
+
+**Example template**
+
+```text
+!say text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!say
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!announce">
+
+Post a styled announcement card
+
+**Syntax**
+
+```text
+!announce <title> <message> [channel] [ping_everyone]
+```
+
+**Example template**
+
+```text
+!announce title:<title> message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!announce
+```
+
+Missing `title`, `message`.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Confession setup](/handbook/community/setup-confessions)

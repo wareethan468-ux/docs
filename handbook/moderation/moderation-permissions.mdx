@@ -49,3 +49,645 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!roles">
+
+List every server role from highest to lowest
+
+**Syntax**
+
+```text
+!roles [page]
+```
+
+**Example template**
+
+```text
+!roles
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+roles
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!permissions add">
+
+Add permissions
+
+**Syntax**
+
+```text
+!permissions add <perms> [role] [user] [channel]
+```
+
+**Example template**
+
+```text
+!permissions add perms:<perms>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!permissions add
+```
+
+Missing `perms`.
+
+</Accordion>
+
+<Accordion title="!permissions remove">
+
+Remove permissions
+
+**Syntax**
+
+```text
+!permissions remove <perms> [role] [user] [channel]
+```
+
+**Example template**
+
+```text
+!permissions remove perms:<perms>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!permissions remove
+```
+
+Missing `perms`.
+
+</Accordion>
+
+<Accordion title="!permissions list">
+
+List the permission names you can pick
+
+**Syntax**
+
+```text
+!permissions list
+```
+
+**Example template**
+
+```text
+!permissions list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+permissions list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!addperms">
+
+Add permissions to a role or user
+
+**Syntax**
+
+```text
+!addperms <perms> [role] [user] [channel]
+```
+
+**Example template**
+
+```text
+!addperms perms:<perms>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!addperms
+```
+
+Missing `perms`.
+
+</Accordion>
+
+<Accordion title="!removeperms">
+
+Remove permissions to a role or user
+
+**Syntax**
+
+```text
+!removeperms <perms> [role] [user] [channel]
+```
+
+**Example template**
+
+```text
+!removeperms perms:<perms>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!removeperms
+```
+
+Missing `perms`.
+
+</Accordion>
+
+<Accordion title="!addrole">
+
+Add a role to a member
+
+**Syntax**
+
+```text
+!addrole <user> <role>
+```
+
+**Example template**
+
+```text
+!addrole user:<user> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!addrole
+```
+
+Missing `user`, `role`.
+
+</Accordion>
+
+<Accordion title="!removerole">
+
+Remove a role from a member
+
+**Syntax**
+
+```text
+!removerole <user> <role>
+```
+
+**Example template**
+
+```text
+!removerole user:<user> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!removerole
+```
+
+Missing `user`, `role`.
+
+</Accordion>
+
+<Accordion title="!removeroleall">
+
+Remove a role from all members with it
+
+**Syntax**
+
+```text
+!removeroleall <confirm> <role>
+```
+
+**Example template**
+
+```text
+!removeroleall confirm:<confirm> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!removeroleall
+```
+
+Missing `confirm`, `role`.
+
+</Accordion>
+
+<Accordion title="!roleall">
+
+Give a role to all server members
+
+**Syntax**
+
+```text
+!roleall <confirm> <role>
+```
+
+**Example template**
+
+```text
+!roleall confirm:<confirm> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roleall
+```
+
+Missing `confirm`, `role`.
+
+</Accordion>
+
+<Accordion title="!addroleall">
+
+Give a role to all server members
+
+**Syntax**
+
+```text
+!addroleall <confirm> <role>
+```
+
+**Example template**
+
+```text
+!addroleall confirm:<confirm> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!addroleall
+```
+
+Missing `confirm`, `role`.
+
+</Accordion>
+
+<Accordion title="!createrole">
+
+Create a new role
+
+**Syntax**
+
+```text
+!createrole <name> [color] [hoist] [mentionable]
+```
+
+**Example template**
+
+```text
+!createrole name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!createrole
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!deleterole">
+
+Delete a role
+
+**Syntax**
+
+```text
+!deleterole <role>
+```
+
+**Example template**
+
+```text
+!deleterole role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!deleterole
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!renamerole">
+
+Rename a server role
+
+**Syntax**
+
+```text
+!renamerole <name> <role>
+```
+
+**Example template**
+
+```text
+!renamerole name:<name> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!renamerole
+```
+
+Missing `name`, `role`.
+
+</Accordion>
+
+<Accordion title="!rolecolor">
+
+Change a role's hex color
+
+**Syntax**
+
+```text
+!rolecolor <role> <color>
+```
+
+**Example template**
+
+```text
+!rolecolor role:<role> color:<color>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolecolor
+```
+
+Missing `role`, `color`.
+
+</Accordion>
+
+<Accordion title="!mentionable">
+
+Allow or block role mentions
+
+**Syntax**
+
+```text
+!mentionable <enabled> <role>
+```
+
+**Example template**
+
+```text
+!mentionable enabled:<enabled> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!mentionable
+```
+
+Missing `enabled`, `role`.
+
+</Accordion>
+
+<Accordion title="!duplicaterole">
+
+Clone a role and its settings
+
+**Syntax**
+
+```text
+!duplicaterole [name] <role>
+```
+
+**Example template**
+
+```text
+!duplicaterole role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!duplicaterole
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!setautorole">
+
+Set the role given to new members
+
+**Syntax**
+
+```text
+!setautorole <role>
+```
+
+**Example template**
+
+```text
+!setautorole role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!setautorole
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!allow">
+
+Allow a role to use a moderation command
+
+**Syntax**
+
+```text
+!allow <command> <role>
+```
+
+**Example template**
+
+```text
+!allow command:<command> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!allow
+```
+
+Missing `command`, `role`.
+
+</Accordion>
+
+<Accordion title="!deny">
+
+Remove a command-role grant
+
+**Syntax**
+
+```text
+!deny <command> <role>
+```
+
+**Example template**
+
+```text
+!deny command:<command> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!deny
+```
+
+Missing `command`, `role`.
+
+</Accordion>
+
+<Accordion title="!roleaudit">
+
+Show recent role updates from Discord audit logs
+
+**Syntax**
+
+```text
+!roleaudit [limit]
+```
+
+**Example template**
+
+```text
+!roleaudit
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+roleaudit
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!massrolepreview">
+
+Preview how many members a role batch would affect
+
+**Syntax**
+
+```text
+!massrolepreview <action> <role>
+```
+
+**Example template**
+
+```text
+!massrolepreview action:<action> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!massrolepreview
+```
+
+Missing `action`, `role`.
+
+</Accordion>
+
+</AccordionGroup>

@@ -47,3 +47,533 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!contentrequestcreate">
+
+Create a new content review draft
+
+**Syntax**
+
+```text
+!contentrequestcreate <id> <title> <body>
+```
+
+**Example template**
+
+```text
+!contentrequestcreate id:<id> title:<title> body:<body>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestcreate
+```
+
+Missing `id`, `title`, `body`.
+
+</Accordion>
+
+<Accordion title="!contentrequestlist">
+
+List content review drafts
+
+**Syntax**
+
+```text
+!contentrequestlist <id> [status]
+```
+
+**Example template**
+
+```text
+!contentrequestlist id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestlist
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestview">
+
+Show a draft and its review state
+
+**Syntax**
+
+```text
+!contentrequestview <id>
+```
+
+**Example template**
+
+```text
+!contentrequestview id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestview
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestclaim">
+
+Claim a draft for review
+
+**Syntax**
+
+```text
+!contentrequestclaim <id>
+```
+
+**Example template**
+
+```text
+!contentrequestclaim id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestclaim
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestunclaim">
+
+Release your draft review claim
+
+**Syntax**
+
+```text
+!contentrequestunclaim <id>
+```
+
+**Example template**
+
+```text
+!contentrequestunclaim id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestunclaim
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestapprove">
+
+Approve an unpublished draft
+
+**Syntax**
+
+```text
+!contentrequestapprove <id>
+```
+
+**Example template**
+
+```text
+!contentrequestapprove id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestapprove
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestreject">
+
+Reject a draft with a reason
+
+**Syntax**
+
+```text
+!contentrequestreject <id> <reason>
+```
+
+**Example template**
+
+```text
+!contentrequestreject id:<id> reason:<reason>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestreject
+```
+
+Missing `id`, `reason`.
+
+</Accordion>
+
+<Accordion title="!contentrequestreopen">
+
+Reopen a draft for editing
+
+**Syntax**
+
+```text
+!contentrequestreopen <id>
+```
+
+**Example template**
+
+```text
+!contentrequestreopen id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestreopen
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestnote">
+
+Add a review note
+
+**Syntax**
+
+```text
+!contentrequestnote <id> <note>
+```
+
+**Example template**
+
+```text
+!contentrequestnote id:<id> note:<note>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestnote
+```
+
+Missing `id`, `note`.
+
+</Accordion>
+
+<Accordion title="!contentrequestnotes">
+
+List saved review notes
+
+**Syntax**
+
+```text
+!contentrequestnotes <id>
+```
+
+**Example template**
+
+```text
+!contentrequestnotes id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestnotes
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestedit">
+
+Edit draft title or body
+
+**Syntax**
+
+```text
+!contentrequestedit <id> [title] [body]
+```
+
+**Example template**
+
+```text
+!contentrequestedit id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestedit
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestpriority">
+
+Set low, normal or high priority
+
+**Syntax**
+
+```text
+!contentrequestpriority <id> <priority>
+```
+
+**Example template**
+
+```text
+!contentrequestpriority id:<id> priority:<priority>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestpriority
+```
+
+Missing `id`, `priority`.
+
+</Accordion>
+
+<Accordion title="!contentrequestassign">
+
+Assign a staff reviewer
+
+**Syntax**
+
+```text
+!contentrequestassign <id> <user>
+```
+
+**Example template**
+
+```text
+!contentrequestassign id:<id> user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestassign
+```
+
+Missing `id`, `user`.
+
+</Accordion>
+
+<Accordion title="!contentrequestdelete">
+
+Delete a draft with confirmation
+
+**Syntax**
+
+```text
+!contentrequestdelete <id> <confirm>
+```
+
+**Example template**
+
+```text
+!contentrequestdelete id:<id> confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestdelete
+```
+
+Missing `id`, `confirm`.
+
+</Accordion>
+
+<Accordion title="!contentrequeststats">
+
+Show review workflow totals
+
+**Syntax**
+
+```text
+!contentrequeststats <id>
+```
+
+**Example template**
+
+```text
+!contentrequeststats id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequeststats
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestexport">
+
+Export review drafts as JSON
+
+**Syntax**
+
+```text
+!contentrequestexport <id>
+```
+
+**Example template**
+
+```text
+!contentrequestexport id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestexport
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequesthistory">
+
+Show the review action history
+
+**Syntax**
+
+```text
+!contentrequesthistory <id>
+```
+
+**Example template**
+
+```text
+!contentrequesthistory id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequesthistory
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!contentrequestpublish">
+
+Publish one approved draft
+
+**Syntax**
+
+```text
+!contentrequestpublish <id> [channel]
+```
+
+**Example template**
+
+```text
+!contentrequestpublish id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!contentrequestpublish
+```
+
+Missing `id`.
+
+</Accordion>
+
+</AccordionGroup>

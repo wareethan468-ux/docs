@@ -40,6 +40,116 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!sticky setup">
+
+Set or replace the sticky message for a channel
+
+**Syntax**
+
+```text
+!sticky setup <message> [channel] [embed]
+```
+
+**Example template**
+
+```text
+!sticky setup message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!sticky setup
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!sticky remove">
+
+Remove the sticky message from a channel
+
+**Syntax**
+
+```text
+!sticky remove [channel]
+```
+
+**Example template**
+
+```text
+!sticky remove
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+sticky remove
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!sticky list">
+
+List channels with sticky messages
+
+**Syntax**
+
+```text
+!sticky list
+```
+
+**Example template**
+
+```text
+!sticky list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+sticky list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### message

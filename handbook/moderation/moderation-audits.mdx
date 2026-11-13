@@ -49,3 +49,617 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!rolemetrics">
+
+Summarize roles, permissions and assignment coverage
+
+**Syntax**
+
+```text
+!rolemetrics
+```
+
+**Example template**
+
+```text
+!rolemetrics
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rolemetrics
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!roleempty">
+
+Find roles with no cached members
+
+**Syntax**
+
+```text
+!roleempty
+```
+
+**Example template**
+
+```text
+!roleempty
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+roleempty
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!roleelevated">
+
+Audit roles with high-risk permissions
+
+**Syntax**
+
+```text
+!roleelevated
+```
+
+**Example template**
+
+```text
+!roleelevated
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+roleelevated
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!rolemembers">
+
+List cached members assigned to a role
+
+**Syntax**
+
+```text
+!rolemembers <role>
+```
+
+**Example template**
+
+```text
+!rolemembers role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolemembers
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!rolebots">
+
+List roles assigned to cached bot accounts
+
+**Syntax**
+
+```text
+!rolebots
+```
+
+**Example template**
+
+```text
+!rolebots
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rolebots
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!rolegrantmap">
+
+Show member counts by server role
+
+**Syntax**
+
+```text
+!rolegrantmap
+```
+
+**Example template**
+
+```text
+!rolegrantmap
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rolegrantmap
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!channelmetrics">
+
+Summarize channel types and settings
+
+**Syntax**
+
+```text
+!channelmetrics
+```
+
+**Example template**
+
+```text
+!channelmetrics
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+channelmetrics
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!channeldrifts">
+
+Find channels not synced with their category
+
+**Syntax**
+
+```text
+!channeldrifts
+```
+
+**Example template**
+
+```text
+!channeldrifts
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+channeldrifts
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!channelaccess">
+
+Inspect overwrites configured on a channel
+
+**Syntax**
+
+```text
+!channelaccess <channel>
+```
+
+**Example template**
+
+```text
+!channelaccess channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelaccess
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!categorymetrics">
+
+List categories and number of contained channels
+
+**Syntax**
+
+```text
+!categorymetrics
+```
+
+**Example template**
+
+```text
+!categorymetrics
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+categorymetrics
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!webhookaudit">
+
+Audit webhook counts without exposing tokens
+
+**Syntax**
+
+```text
+!webhookaudit
+```
+
+**Example template**
+
+```text
+!webhookaudit
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+webhookaudit
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!inviteaudit">
+
+Audit invite counts and usage without exposing codes
+
+**Syntax**
+
+```text
+!inviteaudit
+```
+
+**Example template**
+
+```text
+!inviteaudit
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+inviteaudit
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!roleprunepreview">
+
+Preview unused roles without deleting them
+
+**Syntax**
+
+```text
+!roleprunepreview
+```
+
+**Example template**
+
+```text
+!roleprunepreview
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+roleprunepreview
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!memberroles">
+
+Show a member’s assigned roles and rank
+
+**Syntax**
+
+```text
+!memberroles <user>
+```
+
+**Example template**
+
+```text
+!memberroles user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!memberroles
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!memberjoined">
+
+Inspect when a member joined the server
+
+**Syntax**
+
+```text
+!memberjoined <user>
+```
+
+**Example template**
+
+```text
+!memberjoined user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!memberjoined
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!memberbotcheck">
+
+Inspect permissions and roles held by a bot account
+
+**Syntax**
+
+```text
+!memberbotcheck <user>
+```
+
+**Example template**
+
+```text
+!memberbotcheck user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!memberbotcheck
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!memberexport">
+
+Send a CSV of cached server members to your DMs
+
+**Syntax**
+
+```text
+!memberexport
+```
+
+**Example template**
+
+```text
+!memberexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+memberexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!recentjoins">
+
+List cached members who joined in the last seven days
+
+**Syntax**
+
+```text
+!recentjoins
+```
+
+**Example template**
+
+```text
+!recentjoins
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+recentjoins
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!screeningqueue">
+
+List members waiting for membership screening
+
+**Syntax**
+
+```text
+!screeningqueue
+```
+
+**Example template**
+
+```text
+!screeningqueue
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+screeningqueue
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!memberswithperm">
+
+Find cached members with a sensitive permission
+
+**Syntax**
+
+```text
+!memberswithperm <permission>
+```
+
+**Example template**
+
+```text
+!memberswithperm permission:<permission>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!memberswithperm
+```
+
+Missing `permission`.
+
+</Accordion>
+
+<Accordion title="!botswithoutrole">
+
+Find cached bots assigned no additional role
+
+**Syntax**
+
+```text
+!botswithoutrole
+```
+
+**Example template**
+
+```text
+!botswithoutrole
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+botswithoutrole
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

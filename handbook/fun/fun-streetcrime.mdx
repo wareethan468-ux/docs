@@ -47,3 +47,645 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!rob">
+
+Attempt to rob another member
+
+**Syntax**
+
+```text
+!rob <user>
+```
+
+**Example template**
+
+```text
+!rob user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rob
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!mug">
+
+Quick mugging attempt on a member
+
+**Syntax**
+
+```text
+!mug <user>
+```
+
+**Example template**
+
+```text
+!mug user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!mug
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!intimidate">
+
+Intimidate a member for small cash
+
+**Syntax**
+
+```text
+!intimidate <user>
+```
+
+**Example template**
+
+```text
+!intimidate user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!intimidate
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!hustle">
+
+Street hustle for cash (scales with net worth)
+
+**Syntax**
+
+```text
+!hustle
+```
+
+**Example template**
+
+```text
+!hustle
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+hustle
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!heist">
+
+Run a heist for bigger cash and risk
+
+**Syntax**
+
+```text
+!heist
+```
+
+**Example template**
+
+```text
+!heist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+heist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!call">
+
+Take a call job for cash
+
+**Syntax**
+
+```text
+!call
+```
+
+**Example template**
+
+```text
+!call
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+call
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!contract">
+
+Complete a contract for cash
+
+**Syntax**
+
+```text
+!contract
+```
+
+**Example template**
+
+```text
+!contract
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+contract
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!shipment">
+
+Move a shipment for cash
+
+**Syntax**
+
+```text
+!shipment
+```
+
+**Example template**
+
+```text
+!shipment
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+shipment
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!launder">
+
+Launder cash through your properties
+
+**Syntax**
+
+```text
+!launder [amount]
+```
+
+**Example template**
+
+```text
+!launder
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+launder
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!wash">
+
+Alias for launder
+
+**Syntax**
+
+```text
+!wash [amount]
+```
+
+**Example template**
+
+```text
+!wash
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+wash
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!shoot">
+
+Shoot at a member (requires equipped gun + ammo)
+
+**Syntax**
+
+```text
+!shoot <user>
+```
+
+**Example template**
+
+```text
+!shoot user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!shoot
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!stab">
+
+Stab a member (melee fight)
+
+**Syntax**
+
+```text
+!stab <user>
+```
+
+**Example template**
+
+```text
+!stab user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!stab
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!throw">
+
+Throw an equipped explosive at a member
+
+**Syntax**
+
+```text
+!throw <user>
+```
+
+**Example template**
+
+```text
+!throw user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!throw
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!loot">
+
+Loot a recently beaten target within 30 seconds
+
+**Syntax**
+
+```text
+!loot <user>
+```
+
+**Example template**
+
+```text
+!loot user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!loot
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!reload">
+
+Reload your equipped gun
+
+**Syntax**
+
+```text
+!reload [command]
+```
+
+**Example template**
+
+```text
+!reload
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+reload
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!unjam">
+
+Clear a jam on your equipped gun
+
+**Syntax**
+
+```text
+!unjam
+```
+
+**Example template**
+
+```text
+!unjam
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+unjam
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bounty">
+
+Place a bounty on a member
+
+**Syntax**
+
+```text
+!bounty <user> <amount>
+```
+
+**Example template**
+
+```text
+!bounty user:<user> amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bounty
+```
+
+Missing `user`, `amount`.
+
+</Accordion>
+
+<Accordion title="!bountyboard">
+
+View active bounties
+
+**Syntax**
+
+```text
+!bountyboard
+```
+
+**Example template**
+
+```text
+!bountyboard
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bountyboard
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!wanted">
+
+View your wanted stars
+
+**Syntax**
+
+```text
+!wanted [user]
+```
+
+**Example template**
+
+```text
+!wanted
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+wanted
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!jail">
+
+Check jail status
+
+**Syntax**
+
+```text
+!jail [user]
+```
+
+**Example template**
+
+```text
+!jail
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+jail
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bail">
+
+Pay bail to leave jail early
+
+**Syntax**
+
+```text
+!bail
+```
+
+**Example template**
+
+```text
+!bail
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bail
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bribe">
+
+Bribe to reduce heat or leave jail
+
+**Syntax**
+
+```text
+!bribe
+```
+
+**Example template**
+
+```text
+!bribe
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bribe
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

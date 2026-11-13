@@ -49,3 +49,757 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/lookup profile github">
+
+Find a GitHub profile
+
+**Syntax**
+
+```text
+/lookup profile github <username>
+```
+
+**Example template**
+
+```text
+/lookup profile github username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/lookup profile github
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="/lookup profile minecraft">
+
+Find a Minecraft Java account
+
+**Syntax**
+
+```text
+/lookup profile minecraft <username>
+```
+
+**Example template**
+
+```text
+/lookup profile minecraft username:<username>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/lookup profile minecraft
+```
+
+Missing `username`.
+
+</Accordion>
+
+<Accordion title="/lookup profile steam">
+
+Find a public Steam profile by SteamID64
+
+**Syntax**
+
+```text
+/lookup profile steam <id>
+```
+
+**Example template**
+
+```text
+/lookup profile steam id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/lookup profile steam
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="/lookup search urbandictionary">
+
+Get a community-written term definition
+
+**Syntax**
+
+```text
+/lookup search urbandictionary <term>
+```
+
+**Example template**
+
+```text
+/lookup search urbandictionary term:<term>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/lookup search urbandictionary
+```
+
+Missing `term`.
+
+</Accordion>
+
+<Accordion title="!define">
+
+Look up a standard English dictionary definition
+
+**Syntax**
+
+```text
+!define <word>
+```
+
+**Example template**
+
+```text
+!define word:<word>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!define
+```
+
+Missing `word`.
+
+</Accordion>
+
+<Accordion title="!weather">
+
+View current weather by city (no user location needed)
+
+**Syntax**
+
+```text
+!weather <city>
+```
+
+**Example template**
+
+```text
+!weather city:<city>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!weather
+```
+
+Missing `city`.
+
+</Accordion>
+
+<Accordion title="!members">
+
+Your crew NPCs and the member count
+
+**Syntax**
+
+```text
+!members
+```
+
+**Example template**
+
+```text
+!members
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+members
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!serveravatar">
+
+Show the server icon at full size
+
+**Syntax**
+
+```text
+!serveravatar
+```
+
+**Example template**
+
+```text
+!serveravatar
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+serveravatar
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="/names view">
+
+View recorded name changes
+
+**Syntax**
+
+```text
+/names view [user]
+```
+
+**Example template**
+
+```text
+/names view
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+names view
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/names clear">
+
+Clear your history or the server history
+
+**Syntax**
+
+```text
+/names clear [scope]
+```
+
+**Example template**
+
+```text
+/names clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+names clear
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/media compress">
+
+Compress an uploaded image to JPEG
+
+**Syntax**
+
+```text
+/media compress <file> [quality]
+```
+
+**Example template**
+
+```text
+/media compress file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media compress
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media rotate">
+
+Rotate an image by 90, 180 or 270 degrees
+
+**Syntax**
+
+```text
+/media rotate <degrees> <file>
+```
+
+**Example template**
+
+```text
+/media rotate degrees:<degrees> file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media rotate
+```
+
+Missing `degrees`, `file`.
+
+</Accordion>
+
+<Accordion title="/media color">
+
+Find the approximate dominant color of an image
+
+**Syntax**
+
+```text
+/media color <file>
+```
+
+**Example template**
+
+```text
+/media color file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media color
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media transcribe">
+
+Transcribe an attached audio or video file
+
+**Syntax**
+
+```text
+/media transcribe <file>
+```
+
+**Example template**
+
+```text
+/media transcribe file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media transcribe
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/shazam">
+
+Recognize a song from audio or video
+
+**Syntax**
+
+```text
+/shazam [attachment] [url]
+```
+
+**Example template**
+
+```text
+/shazam
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+shazam
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/utility text">
+
+Transform text or estimate its tone
+
+**Syntax**
+
+```text
+/utility text <text> [mode]
+```
+
+**Example template**
+
+```text
+/utility text text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility text
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="/utility base64">
+
+Encode or decode Base64
+
+**Syntax**
+
+```text
+/utility base64 <text> <mode>
+```
+
+**Example template**
+
+```text
+/utility base64 text:<text> mode:<mode>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility base64
+```
+
+Missing `text`, `mode`.
+
+</Accordion>
+
+<Accordion title="/utility charinfo">
+
+Unicode information for a character
+
+**Syntax**
+
+```text
+/utility charinfo <character>
+```
+
+**Example template**
+
+```text
+/utility charinfo character:<character>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility charinfo
+```
+
+Missing `character`.
+
+</Accordion>
+
+<Accordion title="/utility randomhex">
+
+Generate a random hex color
+
+**Syntax**
+
+```text
+/utility randomhex
+```
+
+**Example template**
+
+```text
+/utility randomhex
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+utility randomhex
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/utility color">
+
+Preview a hex color
+
+**Syntax**
+
+```text
+/utility color <hex>
+```
+
+**Example template**
+
+```text
+/utility color hex:<hex>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility color
+```
+
+Missing `hex`.
+
+</Accordion>
+
+<Accordion title="/utility timediff">
+
+Time difference between Discord snowflakes
+
+**Syntax**
+
+```text
+/utility timediff <first> <second>
+```
+
+**Example template**
+
+```text
+/utility timediff first:<first> second:<second>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility timediff
+```
+
+Missing `first`, `second`.
+
+</Accordion>
+
+<Accordion title="/utility run">
+
+Evaluate arithmetic safely; arbitrary code disabled
+
+**Syntax**
+
+```text
+/utility run <expression>
+```
+
+**Example template**
+
+```text
+/utility run expression:<expression>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility run
+```
+
+Missing `expression`.
+
+</Accordion>
+
+<Accordion title="/utility choose">
+
+Select a random choice
+
+**Syntax**
+
+```text
+/utility choose <choices>
+```
+
+**Example template**
+
+```text
+/utility choose choices:<choices>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility choose
+```
+
+Missing `choices`.
+
+</Accordion>
+
+<Accordion title="/utility topcommands">
+
+Most used Zone commands in this server
+
+**Syntax**
+
+```text
+/utility topcommands
+```
+
+**Example template**
+
+```text
+/utility topcommands
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+utility topcommands
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/utility makemp3">
+
+Convert an attached audio or video file to MP3
+
+**Syntax**
+
+```text
+/utility makemp3 <file>
+```
+
+**Example template**
+
+```text
+/utility makemp3 file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility makemp3
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/utility todo">
+
+Manage your own server to-do list
+
+**Syntax**
+
+```text
+/utility todo <action> [item]
+```
+
+**Example template**
+
+```text
+/utility todo action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/utility todo
+```
+
+Missing `action`.
+
+</Accordion>
+
+</AccordionGroup>

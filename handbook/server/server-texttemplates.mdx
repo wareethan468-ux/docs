@@ -47,3 +47,533 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!templatecreate">
+
+Save a new reusable message template
+
+**Syntax**
+
+```text
+!templatecreate <name> <text>
+```
+
+**Example template**
+
+```text
+!templatecreate name:<name> text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templatecreate
+```
+
+Missing `name`, `text`.
+
+</Accordion>
+
+<Accordion title="!templateedit">
+
+Update saved template text with version history
+
+**Syntax**
+
+```text
+!templateedit <name> <text>
+```
+
+**Example template**
+
+```text
+!templateedit name:<name> text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templateedit
+```
+
+Missing `name`, `text`.
+
+</Accordion>
+
+<Accordion title="!templatedelete">
+
+Delete one named message template
+
+**Syntax**
+
+```text
+!templatedelete <name>
+```
+
+**Example template**
+
+```text
+!templatedelete name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templatedelete
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!templatelist">
+
+List saved publication templates
+
+**Syntax**
+
+```text
+!templatelist
+```
+
+**Example template**
+
+```text
+!templatelist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+templatelist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!templateview">
+
+Read the raw text and metadata of a template
+
+**Syntax**
+
+```text
+!templateview <name>
+```
+
+**Example template**
+
+```text
+!templateview name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templateview
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!templatepost">
+
+Publish a saved template to a selected channel
+
+**Syntax**
+
+```text
+!templatepost <name> [channel]
+```
+
+**Example template**
+
+```text
+!templatepost name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templatepost
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!templateclone">
+
+Duplicate a saved template under a new name
+
+**Syntax**
+
+```text
+!templateclone <name> <target>
+```
+
+**Example template**
+
+```text
+!templateclone name:<name> target:<target>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templateclone
+```
+
+Missing `name`, `target`.
+
+</Accordion>
+
+<Accordion title="!templaterename">
+
+Rename a saved template without losing history
+
+**Syntax**
+
+```text
+!templaterename <name> <target>
+```
+
+**Example template**
+
+```text
+!templaterename name:<name> target:<target>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templaterename
+```
+
+Missing `name`, `target`.
+
+</Accordion>
+
+<Accordion title="!templatesearch">
+
+Find saved templates by name or text
+
+**Syntax**
+
+```text
+!templatesearch <query>
+```
+
+**Example template**
+
+```text
+!templatesearch query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templatesearch
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!templateexport">
+
+Export all saved templates as JSON
+
+**Syntax**
+
+```text
+!templateexport
+```
+
+**Example template**
+
+```text
+!templateexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+templateexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!templateimport">
+
+Import one template from JSON text
+
+**Syntax**
+
+```text
+!templateimport <json>
+```
+
+**Example template**
+
+```text
+!templateimport json:<json>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templateimport
+```
+
+Missing `json`.
+
+</Accordion>
+
+<Accordion title="!templatearchive">
+
+Hide a template from publishing without deleting it
+
+**Syntax**
+
+```text
+!templatearchive <name>
+```
+
+**Example template**
+
+```text
+!templatearchive name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templatearchive
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!templateunarchive">
+
+Restore an archived template for publishing
+
+**Syntax**
+
+```text
+!templateunarchive <name>
+```
+
+**Example template**
+
+```text
+!templateunarchive name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templateunarchive
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!templatehistory">
+
+List available template revision snapshots
+
+**Syntax**
+
+```text
+!templatehistory <name>
+```
+
+**Example template**
+
+```text
+!templatehistory name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templatehistory
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!templaterevert">
+
+Restore a previous saved template revision
+
+**Syntax**
+
+```text
+!templaterevert <name> <revision>
+```
+
+**Example template**
+
+```text
+!templaterevert name:<name> revision:<revision>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templaterevert
+```
+
+Missing `name`, `revision`.
+
+</Accordion>
+
+<Accordion title="!templatestats">
+
+Show template counts, archives and usage totals
+
+**Syntax**
+
+```text
+!templatestats
+```
+
+**Example template**
+
+```text
+!templatestats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+templatestats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!templatepreview">
+
+Preview placeholder substitution without posting
+
+**Syntax**
+
+```text
+!templatepreview <name>
+```
+
+**Example template**
+
+```text
+!templatepreview name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templatepreview
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!templatereset">
+
+Clear all saved templates with explicit confirmation
+
+**Syntax**
+
+```text
+!templatereset <confirm>
+```
+
+**Example template**
+
+```text
+!templatereset confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!templatereset
+```
+
+Missing `confirm`.
+
+</Accordion>
+
+</AccordionGroup>

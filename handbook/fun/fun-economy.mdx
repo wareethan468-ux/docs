@@ -47,3 +47,309 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/balance">
+
+Show a member's coin balance
+
+**Syntax**
+
+```text
+/balance [user]
+```
+
+**Example template**
+
+```text
+/balance
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+balance
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/daily">
+
+Claim your daily bonus of 250 coins, once every 24 hours
+
+**Syntax**
+
+```text
+/daily
+```
+
+**Example template**
+
+```text
+/daily
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+daily
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/gamble">
+
+Bet coins on a coin flip — double or lose it all
+
+**Syntax**
+
+```text
+/gamble <amount>
+```
+
+**Example template**
+
+```text
+/gamble amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/gamble
+```
+
+Missing `amount`.
+
+</Accordion>
+
+<Accordion title="/blackjack">
+
+Play blackjack against the dealer with your coins
+
+**Syntax**
+
+```text
+/blackjack <amount>
+```
+
+**Example template**
+
+```text
+/blackjack amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/blackjack
+```
+
+Missing `amount`.
+
+</Accordion>
+
+<Accordion title="/slots">
+
+Spin three slots with your coins
+
+**Syntax**
+
+```text
+/slots <amount>
+```
+
+**Example template**
+
+```text
+/slots amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/slots
+```
+
+Missing `amount`.
+
+</Accordion>
+
+<Accordion title="/roulette">
+
+Bet coins on red, black or green
+
+**Syntax**
+
+```text
+/roulette <amount> <color>
+```
+
+**Example template**
+
+```text
+/roulette amount:<amount> color:<color>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/roulette
+```
+
+Missing `amount`, `color`.
+
+</Accordion>
+
+<Accordion title="/addmoney">
+
+Give coins to a member
+
+**Syntax**
+
+```text
+/addmoney <user> <amount>
+```
+
+**Example template**
+
+```text
+/addmoney user:<user> amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/addmoney
+```
+
+Missing `user`, `amount`.
+
+</Accordion>
+
+<Accordion title="/removemoney">
+
+Take coins from a member
+
+**Syntax**
+
+```text
+/removemoney <user> <amount>
+```
+
+**Example template**
+
+```text
+/removemoney user:<user> amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/removemoney
+```
+
+Missing `user`, `amount`.
+
+</Accordion>
+
+<Accordion title="!resetuser">
+
+Reset a member's cash, bank and street data (admin)
+
+**Syntax**
+
+```text
+!resetuser <user> [confirm]
+```
+
+**Example template**
+
+```text
+!resetuser user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!resetuser
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!setprice">
+
+Set or clear a shop price (admin)
+
+**Syntax**
+
+```text
+!setprice <item> [price]
+```
+
+**Example template**
+
+```text
+!setprice item:<item>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!setprice
+```
+
+Missing `item`.
+
+</Accordion>
+
+</AccordionGroup>

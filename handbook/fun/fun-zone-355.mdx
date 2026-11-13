@@ -43,3 +43,141 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!voicelevels">
+
+Configure XP for active voice chat sessions
+
+**Syntax**
+
+```text
+!voicelevels <enabled> [xp_per_5m]
+```
+
+**Example template**
+
+```text
+!voicelevels enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!voicelevels
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!levelignore">
+
+Exclude a channel or role from earning experience
+
+**Syntax**
+
+```text
+!levelignore <action> [role] [channel]
+```
+
+**Example template**
+
+```text
+!levelignore action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levelignore
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!levelstack">
+
+Configure whether role rewards stack across levels
+
+**Syntax**
+
+```text
+!levelstack <enabled>
+```
+
+**Example template**
+
+```text
+!levelstack enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levelstack
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!xpboost">
+
+Configure temporary server XP multipliers
+
+**Syntax**
+
+```text
+!xpboost <multiplier> [minutes]
+```
+
+**Example template**
+
+```text
+!xpboost multiplier:<multiplier>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!xpboost
+```
+
+Missing `multiplier`.
+
+</Accordion>
+
+</AccordionGroup>

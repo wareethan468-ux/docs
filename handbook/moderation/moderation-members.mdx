@@ -50,6 +50,1124 @@ Open /setup, choose **Moderation**, then **Member moderation**. Choose an action
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!kick">
+
+Kick someone from the server
+
+**Syntax**
+
+```text
+!kick <user> [reason]
+```
+
+**Example template**
+
+```text
+!kick user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!kick
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!ban">
+
+Ban a member or user, including users outside the server
+
+**Syntax**
+
+```text
+!ban <user> [delete_messages] [reason]
+```
+
+**Example template**
+
+```text
+!ban user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ban
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!softban">
+
+Remove a member and delete recent messages without keeping the ban
+
+**Syntax**
+
+```text
+!softban <user> [reason] [wipe_hours]
+```
+
+**Example template**
+
+```text
+!softban user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!softban
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="/modcase show">
+
+Show a case by ID
+
+**Syntax**
+
+```text
+/modcase show <id>
+```
+
+**Example template**
+
+```text
+/modcase show id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/modcase show
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="/modcase reason">
+
+Correct the reason for a case
+
+**Syntax**
+
+```text
+/modcase reason <id> <text>
+```
+
+**Example template**
+
+```text
+/modcase reason id:<id> text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/modcase reason
+```
+
+Missing `id`, `text`.
+
+</Accordion>
+
+<Accordion title="/modnote add">
+
+Record a private staff note
+
+**Syntax**
+
+```text
+/modnote add <user> <text>
+```
+
+**Example template**
+
+```text
+/modnote add user:<user> text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/modnote add
+```
+
+Missing `user`, `text`.
+
+</Accordion>
+
+<Accordion title="/modnote list">
+
+Show private staff notes
+
+**Syntax**
+
+```text
+/modnote list <user>
+```
+
+**Example template**
+
+```text
+/modnote list user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/modnote list
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="/modnote remove">
+
+Delete a staff note by ID
+
+**Syntax**
+
+```text
+/modnote remove <user> <id>
+```
+
+**Example template**
+
+```text
+/modnote remove user:<user> id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/modnote remove
+```
+
+Missing `user`, `id`.
+
+</Accordion>
+
+<Accordion title="!tempban">
+
+Temporarily ban a member
+
+**Syntax**
+
+```text
+!tempban <user> <duration> [reason]
+```
+
+**Example template**
+
+```text
+!tempban user:<user> duration:<duration>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!tempban
+```
+
+Missing `user`, `duration`.
+
+</Accordion>
+
+<Accordion title="!hackban">
+
+Ban a user by ID, including users outside the server
+
+**Syntax**
+
+```text
+!hackban <id> [reason]
+```
+
+**Example template**
+
+```text
+!hackban id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!hackban
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!massban">
+
+Ban listed members
+
+**Syntax**
+
+```text
+!massban <targets> [reason]
+```
+
+**Example template**
+
+```text
+!massban targets:<targets>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!massban
+```
+
+Missing `targets`.
+
+</Accordion>
+
+<Accordion title="!masskick">
+
+Kick listed members
+
+**Syntax**
+
+```text
+!masskick <targets> [reason]
+```
+
+**Example template**
+
+```text
+!masskick targets:<targets>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!masskick
+```
+
+Missing `targets`.
+
+</Accordion>
+
+<Accordion title="!massmute">
+
+Timeout listed members
+
+**Syntax**
+
+```text
+!massmute <targets> <duration> [reason]
+```
+
+**Example template**
+
+```text
+!massmute targets:<targets> duration:<duration>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!massmute
+```
+
+Missing `targets`, `duration`.
+
+</Accordion>
+
+<Accordion title="!quarantine">
+
+Move a member into a quarantine role and save their current roles
+
+**Syntax**
+
+```text
+!quarantine <user> <role>
+```
+
+**Example template**
+
+```text
+!quarantine user:<user> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!quarantine
+```
+
+Missing `user`, `role`.
+
+</Accordion>
+
+<Accordion title="!unquarantine">
+
+Restore a member roles saved by quarantine
+
+**Syntax**
+
+```text
+!unquarantine <user>
+```
+
+**Example template**
+
+```text
+!unquarantine user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!unquarantine
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!unban">
+
+Unban a user by their ID
+
+**Syntax**
+
+```text
+!unban <user_id> [reason]
+```
+
+**Example template**
+
+```text
+!unban user_id:<user_id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!unban
+```
+
+Missing `user_id`.
+
+</Accordion>
+
+<Accordion title="!banlist">
+
+List everyone currently banned
+
+**Syntax**
+
+```text
+!banlist
+```
+
+**Example template**
+
+```text
+!banlist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+banlist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!timeout">
+
+Put someone in timeout
+
+**Syntax**
+
+```text
+!timeout <user> <duration> [reason]
+```
+
+**Example template**
+
+```text
+!timeout user:<user> duration:<duration>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!timeout
+```
+
+Missing `user`, `duration`.
+
+</Accordion>
+
+<Accordion title="!untimeout">
+
+Remove someone's timeout
+
+**Syntax**
+
+```text
+!untimeout <user>
+```
+
+**Example template**
+
+```text
+!untimeout user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!untimeout
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!purge">
+
+Delete recent messages
+
+**Syntax**
+
+```text
+!purge <amount> [user]
+```
+
+**Example template**
+
+```text
+!purge amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purge
+```
+
+Missing `amount`.
+
+</Accordion>
+
+<Accordion title="/purgeembeds">
+
+Remove recent messages containing embeds
+
+**Syntax**
+
+```text
+/purgeembeds <count> [channel]
+```
+
+**Example template**
+
+```text
+/purgeembeds count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/purgeembeds
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="/imute">
+
+Remove a member image and embed permissions
+
+**Syntax**
+
+```text
+/imute <user> [channel]
+```
+
+**Example template**
+
+```text
+/imute user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/imute
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="/iunmute">
+
+Restore a member image and embed permissions
+
+**Syntax**
+
+```text
+/iunmute <user> [channel]
+```
+
+**Example template**
+
+```text
+/iunmute user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/iunmute
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!warn">
+
+Warn a member
+
+**Syntax**
+
+```text
+!warn <user> [reason]
+```
+
+**Example template**
+
+```text
+!warn user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!warn
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="/warn-setup">
+
+Set automatic punishment thresholds for warnings
+
+**Syntax**
+
+```text
+/warn-setup [count] [action] [minutes]
+```
+
+**Example template**
+
+```text
+/warn-setup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+warn-setup
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!warnings">
+
+Show someone's warnings
+
+**Syntax**
+
+```text
+!warnings <user>
+```
+
+**Example template**
+
+```text
+!warnings user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!warnings
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!delwarn">
+
+Delete one warning by its warning ID
+
+**Syntax**
+
+```text
+!delwarn <user> <id>
+```
+
+**Example template**
+
+```text
+!delwarn user:<user> id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!delwarn
+```
+
+Missing `user`, `id`.
+
+</Accordion>
+
+<Accordion title="!clearwarnings">
+
+Wipe someone's warnings
+
+**Syntax**
+
+```text
+!clearwarnings <user>
+```
+
+**Example template**
+
+```text
+!clearwarnings user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clearwarnings
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!nickname">
+
+Set or clear someone's nickname
+
+**Syntax**
+
+```text
+!nickname <user> [nick]
+```
+
+**Example template**
+
+```text
+!nickname user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!nickname
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!massnick">
+
+Add a prefix or suffix to listed nicknames
+
+**Syntax**
+
+```text
+!massnick <targets> [prefix] [suffix]
+```
+
+**Example template**
+
+```text
+!massnick targets:<targets>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!massnick
+```
+
+Missing `targets`.
+
+</Accordion>
+
+<Accordion title="!resetnicks">
+
+Reset all member nicknames
+
+**Syntax**
+
+```text
+!resetnicks <confirm>
+```
+
+**Example template**
+
+```text
+!resetnicks confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!resetnicks
+```
+
+Missing `confirm`.
+
+</Accordion>
+
+<Accordion title="!dm">
+
+Send a direct message to a member
+
+**Syntax**
+
+```text
+!dm <user> <text>
+```
+
+**Example template**
+
+```text
+!dm user:<user> text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!dm
+```
+
+Missing `user`, `text`.
+
+</Accordion>
+
+<Accordion title="!drag">
+
+Drag member(s) to the specified voice channel
+
+**Syntax**
+
+```text
+!drag <user1> <channel> [user2] [user3] [user4] [user5]
+```
+
+**Example template**
+
+```text
+!drag user1:<user1> channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!drag
+```
+
+Missing `user1`, `channel`.
+
+</Accordion>
+
+<Accordion title="!memberhistory">
+
+DM a member’s recent moderation history to staff
+
+**Syntax**
+
+```text
+!memberhistory <user> [page]
+```
+
+**Example template**
+
+```text
+!memberhistory user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!memberhistory
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!warnleaderboard">
+
+View members with the most recorded warnings
+
+**Syntax**
+
+```text
+!warnleaderboard
+```
+
+**Example template**
+
+```text
+!warnleaderboard
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+warnleaderboard
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!staffactivity">
+
+Summarize saved moderation actions by moderator
+
+**Syntax**
+
+```text
+!staffactivity [days]
+```
+
+**Example template**
+
+```text
+!staffactivity
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+staffactivity
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!caseexport">
+
+DM a CSV export of saved moderation cases
+
+**Syntax**
+
+```text
+!caseexport
+```
+
+**Example template**
+
+```text
+!caseexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+caseexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!warnexport">
+
+DM a CSV export of current server warnings
+
+**Syntax**
+
+```text
+!warnexport
+```
+
+**Example template**
+
+```text
+!warnexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+warnexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!punishmentpreview">
+
+Preview the next warning punishment without executing it
+
+**Syntax**
+
+```text
+!punishmentpreview <user>
+```
+
+**Example template**
+
+```text
+!punishmentpreview user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!punishmentpreview
+```
+
+Missing `user`.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Warning ladder setup](/handbook/moderation/setup-warn-setup)

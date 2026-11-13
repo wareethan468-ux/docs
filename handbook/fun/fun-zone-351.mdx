@@ -47,3 +47,253 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!beg">
+
+Request a small coin reward with a cooldown
+
+**Syntax**
+
+```text
+!beg
+```
+
+**Example template**
+
+```text
+!beg
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+beg
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!deposit">
+
+Deposit coins from the bank
+
+**Syntax**
+
+```text
+!deposit <amount>
+```
+
+**Example template**
+
+```text
+!deposit amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!deposit
+```
+
+Missing `amount`.
+
+</Accordion>
+
+<Accordion title="!withdraw">
+
+Withdraw coins from the bank
+
+**Syntax**
+
+```text
+!withdraw <amount>
+```
+
+**Example template**
+
+```text
+!withdraw amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!withdraw
+```
+
+Missing `amount`.
+
+</Accordion>
+
+<Accordion title="!inventory">
+
+List items owned by a member
+
+**Syntax**
+
+```text
+!inventory [user]
+```
+
+**Example template**
+
+```text
+!inventory
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+inventory
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!useitem">
+
+Use a consumable item from your inventory
+
+**Syntax**
+
+```text
+!useitem <item>
+```
+
+**Example template**
+
+```text
+!useitem item:<item>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!useitem
+```
+
+Missing `item`.
+
+</Accordion>
+
+<Accordion title="!ecoleaderboard">
+
+Rank server members by wallet and bank net worth
+
+**Syntax**
+
+```text
+!ecoleaderboard
+```
+
+**Example template**
+
+```text
+!ecoleaderboard
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ecoleaderboard
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!profession">
+
+Choose a job that affects work earnings
+
+**Syntax**
+
+```text
+!profession <job>
+```
+
+**Example template**
+
+```text
+!profession job:<job>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!profession
+```
+
+Missing `job`.
+
+</Accordion>
+
+<Accordion title="!marketplace">
+
+List, buy or cancel a player item listing
+
+**Syntax**
+
+```text
+!marketplace <action> [item] [amount] [price]
+```
+
+**Example template**
+
+```text
+!marketplace action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!marketplace
+```
+
+Missing `action`.
+
+</Accordion>
+
+</AccordionGroup>

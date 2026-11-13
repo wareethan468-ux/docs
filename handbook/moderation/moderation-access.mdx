@@ -45,6 +45,172 @@ Open /setup, choose **Moderation**, then **Command access**. Choose an action, f
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/prefix">
+
+View or change this server’s command prefix
+
+**Syntax**
+
+```text
+/prefix [value]
+```
+
+**Example template**
+
+```text
+/prefix
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+prefix
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!commandchannels set">
+
+Allow commands in selected channels
+
+**Syntax**
+
+```text
+!commandchannels set <commands> <channels> [user] [role]
+```
+
+**Example template**
+
+```text
+!commandchannels set commands:<commands> channels:<channels>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!commandchannels set
+```
+
+Missing `commands`, `channels`.
+
+</Accordion>
+
+<Accordion title="!commandchannels clear">
+
+Remove a channel rule
+
+**Syntax**
+
+```text
+!commandchannels clear <id>
+```
+
+**Example template**
+
+```text
+!commandchannels clear id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!commandchannels clear
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!commandchannels list">
+
+Show channel rules
+
+**Syntax**
+
+```text
+!commandchannels list [page]
+```
+
+**Example template**
+
+```text
+!commandchannels list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+commandchannels list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!disable">
+
+Manage disabled commands
+
+**Syntax**
+
+```text
+!disable [command]
+```
+
+**Example template**
+
+```text
+!disable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+disable
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Server prefix setup](/handbook/moderation/setup-prefix)

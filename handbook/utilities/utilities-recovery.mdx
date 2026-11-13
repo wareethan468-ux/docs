@@ -49,3 +49,309 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!snipe message">
+
+Snipe the latest message that was deleted
+
+**Syntax**
+
+```text
+!snipe message [index] [user] [channel]
+```
+
+**Example template**
+
+```text
+!snipe message
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+snipe message
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!snipe edit">
+
+Snipe a recent edited message
+
+**Syntax**
+
+```text
+!snipe edit [index] [channel]
+```
+
+**Example template**
+
+```text
+!snipe edit
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+snipe edit
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!snipe reaction">
+
+Snipe a recent removed reaction
+
+**Syntax**
+
+```text
+!snipe reaction [index] [channel]
+```
+
+**Example template**
+
+```text
+!snipe reaction
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+snipe reaction
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!reaction history">
+
+View reactions that were removed from a message
+
+**Syntax**
+
+```text
+!reaction history <message>
+```
+
+**Example template**
+
+```text
+!reaction history message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reaction history
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!clearsnipe">
+
+Clear all results for reactions, edits and messages
+
+**Syntax**
+
+```text
+!clearsnipe
+```
+
+**Example template**
+
+```text
+!clearsnipe
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+clearsnipe
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!messageinfo">
+
+View metadata for a message without copying its content
+
+**Syntax**
+
+```text
+!messageinfo <id> [channel]
+```
+
+**Example template**
+
+```text
+!messageinfo id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!messageinfo
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!inviteinfo">
+
+Look up details about a supplied Discord invite
+
+**Syntax**
+
+```text
+!inviteinfo <code>
+```
+
+**Example template**
+
+```text
+!inviteinfo code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!inviteinfo
+```
+
+Missing `code`.
+
+</Accordion>
+
+<Accordion title="!rolecompare">
+
+Compare the permissions of two server roles
+
+**Syntax**
+
+```text
+!rolecompare <first> <second>
+```
+
+**Example template**
+
+```text
+!rolecompare first:<first> second:<second>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolecompare
+```
+
+Missing `first`, `second`.
+
+</Accordion>
+
+<Accordion title="!whohasrole">
+
+List members who currently have a role
+
+**Syntax**
+
+```text
+!whohasrole <role>
+```
+
+**Example template**
+
+```text
+!whohasrole role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!whohasrole
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!serverhealth">
+
+Inspect bot permissions and server protection health
+
+**Syntax**
+
+```text
+!serverhealth
+```
+
+**Example template**
+
+```text
+!serverhealth
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+serverhealth
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

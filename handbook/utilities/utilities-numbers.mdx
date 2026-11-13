@@ -49,3 +49,253 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!numstats">
+
+Show min, max, sum, count, mean and median
+
+**Syntax**
+
+```text
+!numstats <numbers>
+```
+
+**Example template**
+
+```text
+!numstats numbers:<numbers>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!numstats
+```
+
+Missing `numbers`.
+
+</Accordion>
+
+<Accordion title="!percentof">
+
+Calculate what percent one number is of another
+
+**Syntax**
+
+```text
+!percentof <values>
+```
+
+**Example template**
+
+```text
+!percentof values:<values>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!percentof
+```
+
+Missing `values`.
+
+</Accordion>
+
+<Accordion title="!percentchange">
+
+Calculate percentage change from old to new
+
+**Syntax**
+
+```text
+!percentchange <values>
+```
+
+**Example template**
+
+```text
+!percentchange values:<values>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!percentchange
+```
+
+Missing `values`.
+
+</Accordion>
+
+<Accordion title="!fractionreduce">
+
+Reduce an integer numerator/denominator
+
+**Syntax**
+
+```text
+!fractionreduce <values>
+```
+
+**Example template**
+
+```text
+!fractionreduce values:<values>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!fractionreduce
+```
+
+Missing `values`.
+
+</Accordion>
+
+<Accordion title="!primetest">
+
+Check whether a positive integer is prime
+
+**Syntax**
+
+```text
+!primetest <numbers>
+```
+
+**Example template**
+
+```text
+!primetest numbers:<numbers>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!primetest
+```
+
+Missing `numbers`.
+
+</Accordion>
+
+<Accordion title="!factorlist">
+
+List positive factors of an integer
+
+**Syntax**
+
+```text
+!factorlist <numbers>
+```
+
+**Example template**
+
+```text
+!factorlist numbers:<numbers>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!factorlist
+```
+
+Missing `numbers`.
+
+</Accordion>
+
+<Accordion title="!numberbase">
+
+Convert an integer to binary, octal and hexadecimal
+
+**Syntax**
+
+```text
+!numberbase <numbers>
+```
+
+**Example template**
+
+```text
+!numberbase numbers:<numbers>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!numberbase
+```
+
+Missing `numbers`.
+
+</Accordion>
+
+<Accordion title="!romanconvert">
+
+Convert a number from 1 to 3999 into Roman numerals
+
+**Syntax**
+
+```text
+!romanconvert <numbers>
+```
+
+**Example template**
+
+```text
+!romanconvert numbers:<numbers>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!romanconvert
+```
+
+Missing `numbers`.
+
+</Accordion>
+
+</AccordionGroup>

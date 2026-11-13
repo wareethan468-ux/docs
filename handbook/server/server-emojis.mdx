@@ -47,3 +47,757 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!addemoji">
+
+Create a server emoji from an image URL
+
+**Syntax**
+
+```text
+!addemoji <name> <url>
+```
+
+**Example template**
+
+```text
+!addemoji name:<name> url:<url>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!addemoji
+```
+
+Missing `name`, `url`.
+
+</Accordion>
+
+<Accordion title="!emojichar">
+
+Turn a standard emoji into a server emoji
+
+**Syntax**
+
+```text
+!emojichar <emoji> [name]
+```
+
+**Example template**
+
+```text
+!emojichar emoji:<emoji>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!emojichar
+```
+
+Missing `emoji`.
+
+</Accordion>
+
+<Accordion title="!emojisearch">
+
+Browse emojis from emoji.gg and add them here
+
+**Syntax**
+
+```text
+!emojisearch [query] [category]
+```
+
+**Example template**
+
+```text
+!emojisearch
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emojisearch
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!emojipack">
+
+Install Zone emojis
+
+**Syntax**
+
+```text
+!emojipack
+```
+
+**Example template**
+
+```text
+!emojipack
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emojipack
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!listemojis">
+
+List server emojis
+
+**Syntax**
+
+```text
+!listemojis
+```
+
+**Example template**
+
+```text
+!listemojis
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+listemojis
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!removeemoji">
+
+Delete a server emoji by name
+
+**Syntax**
+
+```text
+!removeemoji <name>
+```
+
+**Example template**
+
+```text
+!removeemoji name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!removeemoji
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!emoji add">
+
+Add an emoji from an uploaded image
+
+**Syntax**
+
+```text
+!emoji add <name> <file>
+```
+
+**Example template**
+
+```text
+!emoji add name:<name> file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!emoji add
+```
+
+Missing `name`, `file`.
+
+</Accordion>
+
+<Accordion title="!emoji remove">
+
+Remove an emoji
+
+**Syntax**
+
+```text
+!emoji remove <name>
+```
+
+**Example template**
+
+```text
+!emoji remove name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!emoji remove
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!emoji rename">
+
+Rename an emoji
+
+**Syntax**
+
+```text
+!emoji rename <target> <name>
+```
+
+**Example template**
+
+```text
+!emoji rename target:<target> name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!emoji rename
+```
+
+Missing `target`, `name`.
+
+</Accordion>
+
+<Accordion title="!emoji addmany">
+
+Add up to five attached images as emojis
+
+**Syntax**
+
+```text
+!emoji addmany [prefix]
+```
+
+**Example template**
+
+```text
+!emoji addmany
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emoji addmany
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!emoji removemany">
+
+Remove selected emojis, with confirmation
+
+**Syntax**
+
+```text
+!emoji removemany <names> [confirm]
+```
+
+**Example template**
+
+```text
+!emoji removemany names:<names>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!emoji removemany
+```
+
+Missing `names`.
+
+</Accordion>
+
+<Accordion title="!emoji stats">
+
+Show tracked emoji use
+
+**Syntax**
+
+```text
+!emoji stats
+```
+
+**Example template**
+
+```text
+!emoji stats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emoji stats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!emoji removeduplicates">
+
+Find identical emoji images and optionally remove copies
+
+**Syntax**
+
+```text
+!emoji removeduplicates [confirm]
+```
+
+**Example template**
+
+```text
+!emoji removeduplicates
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emoji removeduplicates
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!emoji information">
+
+Show custom emojis used in a message
+
+**Syntax**
+
+```text
+!emoji information <message>
+```
+
+**Example template**
+
+```text
+!emoji information message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!emoji information
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!emoji extract">
+
+Export this server emojis as a ZIP
+
+**Syntax**
+
+```text
+!emoji extract
+```
+
+**Example template**
+
+```text
+!emoji extract
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emoji extract
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!sticker add">
+
+Add a sticker from an uploaded PNG/APNG
+
+**Syntax**
+
+```text
+!sticker add <name> <tags> <file>
+```
+
+**Example template**
+
+```text
+!sticker add name:<name> tags:<tags> file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!sticker add
+```
+
+Missing `name`, `tags`, `file`.
+
+</Accordion>
+
+<Accordion title="!sticker remove">
+
+Remove a sticker
+
+**Syntax**
+
+```text
+!sticker remove <name>
+```
+
+**Example template**
+
+```text
+!sticker remove name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!sticker remove
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!sticker rename">
+
+Rename a sticker
+
+**Syntax**
+
+```text
+!sticker rename <target> <name>
+```
+
+**Example template**
+
+```text
+!sticker rename target:<target> name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!sticker rename
+```
+
+Missing `target`, `name`.
+
+</Accordion>
+
+<Accordion title="!sticker tag">
+
+Append server vanity to sticker names (preview first)
+
+**Syntax**
+
+```text
+!sticker tag [confirm]
+```
+
+**Example template**
+
+```text
+!sticker tag
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+sticker tag
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!sticker emoji">
+
+Set one sticker emoji tag
+
+**Syntax**
+
+```text
+!sticker emoji <target> <emoji>
+```
+
+**Example template**
+
+```text
+!sticker emoji target:<target> emoji:<emoji>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!sticker emoji
+```
+
+Missing `target`, `emoji`.
+
+</Accordion>
+
+<Accordion title="!sticker cleanup">
+
+Preview or remove invite links from sticker names
+
+**Syntax**
+
+```text
+!sticker cleanup [confirm]
+```
+
+**Example template**
+
+```text
+!sticker cleanup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+sticker cleanup
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!sticker list">
+
+List server stickers
+
+**Syntax**
+
+```text
+!sticker list
+```
+
+**Example template**
+
+```text
+!sticker list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+sticker list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!sticker extract">
+
+Export this server stickers as a ZIP
+
+**Syntax**
+
+```text
+!sticker extract
+```
+
+**Example template**
+
+```text
+!sticker extract
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+sticker extract
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!delsticker">
+
+Delete a server sticker by ID
+
+**Syntax**
+
+```text
+!delsticker <id>
+```
+
+**Example template**
+
+```text
+!delsticker id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!delsticker
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!emojiinventory">
+
+Summarize installed server emoji slots
+
+**Syntax**
+
+```text
+!emojiinventory
+```
+
+**Example template**
+
+```text
+!emojiinventory
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emojiinventory
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!stickerinventory">
+
+Summarize installed server stickers
+
+**Syntax**
+
+```text
+!stickerinventory
+```
+
+**Example template**
+
+```text
+!stickerinventory
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+stickerinventory
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

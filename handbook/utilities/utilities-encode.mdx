@@ -49,3 +49,253 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!urlencode">
+
+Encode text for a URL query parameter
+
+**Syntax**
+
+```text
+!urlencode <text>
+```
+
+**Example template**
+
+```text
+!urlencode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!urlencode
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!urldecode">
+
+Decode percent-encoded URL text
+
+**Syntax**
+
+```text
+!urldecode <text>
+```
+
+**Example template**
+
+```text
+!urldecode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!urldecode
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!htmlencode">
+
+Escape text HTML entities
+
+**Syntax**
+
+```text
+!htmlencode <text>
+```
+
+**Example template**
+
+```text
+!htmlencode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!htmlencode
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!htmldecode">
+
+Decode common HTML entities
+
+**Syntax**
+
+```text
+!htmldecode <text>
+```
+
+**Example template**
+
+```text
+!htmldecode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!htmldecode
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!hexencode">
+
+Encode UTF-8 text as hexadecimal
+
+**Syntax**
+
+```text
+!hexencode <text>
+```
+
+**Example template**
+
+```text
+!hexencode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!hexencode
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!hexdecode">
+
+Decode hexadecimal bytes as UTF-8
+
+**Syntax**
+
+```text
+!hexdecode <text>
+```
+
+**Example template**
+
+```text
+!hexdecode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!hexdecode
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!binaryencode">
+
+Encode UTF-8 bytes as binary
+
+**Syntax**
+
+```text
+!binaryencode <text>
+```
+
+**Example template**
+
+```text
+!binaryencode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!binaryencode
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!binarydecode">
+
+Decode 8-bit binary bytes into UTF-8
+
+**Syntax**
+
+```text
+!binarydecode <text>
+```
+
+**Example template**
+
+```text
+!binarydecode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!binarydecode
+```
+
+Missing `text`.
+
+</Accordion>
+
+</AccordionGroup>

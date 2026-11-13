@@ -47,3 +47,869 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!shop">
+
+Corner store aisles: weapons, armor, rings, smoke, seeds and more
+
+**Syntax**
+
+```text
+!shop [section]
+```
+
+**Example template**
+
+```text
+!shop
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+shop
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!buy">
+
+Buy an item, gun or property from the shop
+
+**Syntax**
+
+```text
+!buy <item> [qty]
+```
+
+**Example template**
+
+```text
+!buy item:<item>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!buy
+```
+
+Missing `item`.
+
+</Accordion>
+
+<Accordion title="!inv">
+
+Show your inventory
+
+**Syntax**
+
+```text
+!inv [user]
+```
+
+**Example template**
+
+```text
+!inv
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+inv
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!use">
+
+Use, drink, smoke, take or equip an item
+
+**Syntax**
+
+```text
+!use <item> [user]
+```
+
+**Example template**
+
+```text
+!use item:<item>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!use
+```
+
+Missing `item`.
+
+</Accordion>
+
+<Accordion title="!drop">
+
+Drop items from your inventory
+
+**Syntax**
+
+```text
+!drop <item> [qty]
+```
+
+**Example template**
+
+```text
+!drop item:<item>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!drop
+```
+
+Missing `item`.
+
+</Accordion>
+
+<Accordion title="!gift">
+
+Give an item to another member
+
+**Syntax**
+
+```text
+!gift <user> <item> [qty]
+```
+
+**Example template**
+
+```text
+!gift user:<user> item:<item>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!gift
+```
+
+Missing `user`, `item`.
+
+</Accordion>
+
+<Accordion title="!equip">
+
+Equip a gun, melee weapon, armor or throwable
+
+**Syntax**
+
+```text
+!equip <slot> <item>
+```
+
+**Example template**
+
+```text
+!equip slot:<slot> item:<item>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!equip
+```
+
+Missing `slot`, `item`.
+
+</Accordion>
+
+<Accordion title="!mod">
+
+Attach a mod to a gun you own
+
+**Syntax**
+
+```text
+!mod <gun> <mod>
+```
+
+**Example template**
+
+```text
+!mod gun:<gun> mod:<mod>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!mod
+```
+
+Missing `gun`, `mod`.
+
+</Accordion>
+
+<Accordion title="!crates">
+
+List street crates and your keys
+
+**Syntax**
+
+```text
+!crates
+```
+
+**Example template**
+
+```text
+!crates
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+crates
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!open">
+
+Open a crate with a crate key
+
+**Syntax**
+
+```text
+!open [crate]
+```
+
+**Example template**
+
+```text
+!open
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+open
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!blackmarket">
+
+Under-the-counter gear
+
+**Syntax**
+
+```text
+!blackmarket [action]
+```
+
+**Example template**
+
+```text
+!blackmarket
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+blackmarket
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!heal">
+
+Patch yourself up
+
+**Syntax**
+
+```text
+!heal
+```
+
+**Example template**
+
+```text
+!heal
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+heal
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!hospital">
+
+Full hospital treatment
+
+**Syntax**
+
+```text
+!hospital
+```
+
+**Example template**
+
+```text
+!hospital
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+hospital
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!smoke">
+
+Smoke a blunt, joint or vape from your inventory
+
+**Syntax**
+
+```text
+!smoke [item] [user]
+```
+
+**Example template**
+
+```text
+!smoke
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+smoke
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!vape">
+
+Vape from your inventory
+
+**Syntax**
+
+```text
+!vape [item] [user]
+```
+
+**Example template**
+
+```text
+!vape
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+vape
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!pass">
+
+Pass a smoke item to another member
+
+**Syntax**
+
+```text
+!pass <user> [item]
+```
+
+**Example template**
+
+```text
+!pass user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pass
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!drink">
+
+Drink for liquid courage
+
+**Syntax**
+
+```text
+!drink [item]
+```
+
+**Example template**
+
+```text
+!drink
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+drink
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!cheers">
+
+Drink with another member
+
+**Syntax**
+
+```text
+!cheers <user> [item]
+```
+
+**Example template**
+
+```text
+!cheers user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!cheers
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!rehab">
+
+Reset your pill tolerance
+
+**Syntax**
+
+```text
+!rehab
+```
+
+**Example template**
+
+```text
+!rehab
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rehab
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!cf">
+
+Coinflip against the house
+
+**Syntax**
+
+```text
+!cf [amount] [pick]
+```
+
+**Example template**
+
+```text
+!cf
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+cf
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!cfchallenge">
+
+Challenge a member to a coinflip
+
+**Syntax**
+
+```text
+!cfchallenge <user> <amount>
+```
+
+**Example template**
+
+```text
+!cfchallenge user:<user> amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!cfchallenge
+```
+
+Missing `user`, `amount`.
+
+</Accordion>
+
+<Accordion title="!crash">
+
+Crash multiplier gamble
+
+**Syntax**
+
+```text
+!crash [amount]
+```
+
+**Example template**
+
+```text
+!crash
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+crash
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!scratch">
+
+Scratch card
+
+**Syntax**
+
+```text
+!scratch [amount]
+```
+
+**Example template**
+
+```text
+!scratch
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+scratch
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!jackpot">
+
+Feed or win the street jackpot
+
+**Syntax**
+
+```text
+!jackpot [amount]
+```
+
+**Example template**
+
+```text
+!jackpot
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+jackpot
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!trade">
+
+Day trading: buy and sell stocks
+
+**Syntax**
+
+```text
+!trade [action]
+```
+
+**Example template**
+
+```text
+!trade
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+trade
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!invest">
+
+Memecoins: buy and sell crypto
+
+**Syntax**
+
+```text
+!invest [action]
+```
+
+**Example template**
+
+```text
+!invest
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+invest
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!pet">
+
+Buy, upgrade or use a luck pet
+
+**Syntax**
+
+```text
+!pet [action]
+```
+
+**Example template**
+
+```text
+!pet
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+pet
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!marry">
+
+Marry another member (requires a shop ring)
+
+**Syntax**
+
+```text
+!marry <user>
+```
+
+**Example template**
+
+```text
+!marry user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!marry
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!divorce">
+
+End your marriage
+
+**Syntax**
+
+```text
+!divorce
+```
+
+**Example template**
+
+```text
+!divorce
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+divorce
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!pray">
+
+Pray for a blessing
+
+**Syntax**
+
+```text
+!pray
+```
+
+**Example template**
+
+```text
+!pray
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+pray
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

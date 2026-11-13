@@ -46,3 +46,1289 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!joinvc">
+
+Join your voice channel or a selected channel
+
+**Syntax**
+
+```text
+!joinvc [channel]
+```
+
+**Example template**
+
+```text
+!joinvc
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+joinvc
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music join">
+
+Join your voice channel or a selected channel
+
+**Syntax**
+
+```text
+!music join [channel]
+```
+
+**Example template**
+
+```text
+!music join
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music join
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music spotify">
+
+Search Spotify and choose a track to match for voice playback
+
+**Syntax**
+
+```text
+!music spotify <query>
+```
+
+**Example template**
+
+```text
+!music spotify query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!music spotify
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!music diagnose">
+
+Check music downloads and decoding on this host (Manage Server)
+
+**Syntax**
+
+```text
+!music diagnose [query]
+```
+
+**Example template**
+
+```text
+!music diagnose
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music diagnose
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music play">
+
+Queue a YouTube video, Spotify track link or search phrase
+
+**Syntax**
+
+```text
+!music play <query>
+```
+
+**Example template**
+
+```text
+!music play query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!music play
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!music queue">
+
+Show the queue
+
+**Syntax**
+
+```text
+!music queue [page]
+```
+
+**Example template**
+
+```text
+!music queue
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music queue
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music loop">
+
+Repeat the current track, whole queue or neither
+
+**Syntax**
+
+```text
+!music loop <mode>
+```
+
+**Example template**
+
+```text
+!music loop mode:<mode>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!music loop
+```
+
+Missing `mode`.
+
+</Accordion>
+
+<Accordion title="!music volume">
+
+Set playback volume, or use the Volume button on the music panel
+
+**Syntax**
+
+```text
+!music volume <percent>
+```
+
+**Example template**
+
+```text
+!music volume percent:<percent>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!music volume
+```
+
+Missing `percent`.
+
+</Accordion>
+
+<Accordion title="!music remove">
+
+Remove one queued track
+
+**Syntax**
+
+```text
+!music remove <position>
+```
+
+**Example template**
+
+```text
+!music remove position:<position>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!music remove
+```
+
+Missing `position`.
+
+</Accordion>
+
+<Accordion title="!music now">
+
+Show playback and controls
+
+**Syntax**
+
+```text
+!music now
+```
+
+**Example template**
+
+```text
+!music now
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music now
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music pause">
+
+Pause playback
+
+**Syntax**
+
+```text
+!music pause
+```
+
+**Example template**
+
+```text
+!music pause
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music pause
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music resume">
+
+Resume playback
+
+**Syntax**
+
+```text
+!music resume
+```
+
+**Example template**
+
+```text
+!music resume
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music resume
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music skip">
+
+Skip the current track
+
+**Syntax**
+
+```text
+!music skip
+```
+
+**Example template**
+
+```text
+!music skip
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music skip
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music stop">
+
+Stop and clear the queue
+
+**Syntax**
+
+```text
+!music stop
+```
+
+**Example template**
+
+```text
+!music stop
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music stop
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music shuffle">
+
+Shuffle queued tracks
+
+**Syntax**
+
+```text
+!music shuffle
+```
+
+**Example template**
+
+```text
+!music shuffle
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music shuffle
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music smartshuffle">
+
+Shuffle queued tracks while spacing out artists inferred from video titles
+
+**Syntax**
+
+```text
+!music smartshuffle
+```
+
+**Example template**
+
+```text
+!music smartshuffle
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music smartshuffle
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music clear">
+
+Clear queued tracks
+
+**Syntax**
+
+```text
+!music clear
+```
+
+**Example template**
+
+```text
+!music clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music clear
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!music leave">
+
+Disconnect and clear the queue
+
+**Syntax**
+
+```text
+!music leave
+```
+
+**Example template**
+
+```text
+!music leave
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+music leave
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify login">
+
+Grant Zone access to your Spotify account
+
+**Syntax**
+
+```text
+!spotify login
+```
+
+**Example template**
+
+```text
+!spotify login
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify login
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify logout">
+
+Disconnect your Spotify account from Zone
+
+**Syntax**
+
+```text
+!spotify logout
+```
+
+**Example template**
+
+```text
+!spotify logout
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify logout
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify search">
+
+Find a track on Spotify
+
+**Syntax**
+
+```text
+!spotify search <query>
+```
+
+**Example template**
+
+```text
+!spotify search query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify search
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!spotify device transfer">
+
+Change the Spotify device playing your music
+
+**Syntax**
+
+```text
+!spotify device transfer <device>
+```
+
+**Example template**
+
+```text
+!spotify device transfer device:<device>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify device transfer
+```
+
+Missing `device`.
+
+</Accordion>
+
+<Accordion title="!spotify device list">
+
+See every active Spotify device
+
+**Syntax**
+
+```text
+!spotify device list
+```
+
+**Example template**
+
+```text
+!spotify device list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify device list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify next">
+
+Skip to the next song
+
+**Syntax**
+
+```text
+!spotify next
+```
+
+**Example template**
+
+```text
+!spotify next
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify next
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify previous">
+
+Skip back to the previous song
+
+**Syntax**
+
+```text
+!spotify previous
+```
+
+**Example template**
+
+```text
+!spotify previous
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify previous
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify pause">
+
+Pause Spotify on your active device
+
+**Syntax**
+
+```text
+!spotify pause
+```
+
+**Example template**
+
+```text
+!spotify pause
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify pause
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify resume">
+
+Resume the paused Spotify song
+
+**Syntax**
+
+```text
+!spotify resume
+```
+
+**Example template**
+
+```text
+!spotify resume
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify resume
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify repeat">
+
+Repeat the current track, the queue or neither
+
+**Syntax**
+
+```text
+!spotify repeat <state>
+```
+
+**Example template**
+
+```text
+!spotify repeat state:<state>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify repeat
+```
+
+Missing `state`.
+
+</Accordion>
+
+<Accordion title="!spotify shuffle">
+
+Toggle Spotify shuffle
+
+**Syntax**
+
+```text
+!spotify shuffle <state>
+```
+
+**Example template**
+
+```text
+!spotify shuffle state:<state>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify shuffle
+```
+
+Missing `state`.
+
+</Accordion>
+
+<Accordion title="!spotify seek">
+
+Move to a position in the current song
+
+**Syntax**
+
+```text
+!spotify seek <position>
+```
+
+**Example template**
+
+```text
+!spotify seek position:<position>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify seek
+```
+
+Missing `position`.
+
+</Accordion>
+
+<Accordion title="!spotify volume">
+
+Set Spotify playback volume
+
+**Syntax**
+
+```text
+!spotify volume <percent>
+```
+
+**Example template**
+
+```text
+!spotify volume percent:<percent>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify volume
+```
+
+Missing `percent`.
+
+</Accordion>
+
+<Accordion title="!spotify queue">
+
+Queue a Spotify track
+
+**Syntax**
+
+```text
+!spotify queue <song>
+```
+
+**Example template**
+
+```text
+!spotify queue song:<song>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify queue
+```
+
+Missing `song`.
+
+</Accordion>
+
+<Accordion title="!spotify play">
+
+Play a Spotify track right now
+
+**Syntax**
+
+```text
+!spotify play <song>
+```
+
+**Example template**
+
+```text
+!spotify play song:<song>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify play
+```
+
+Missing `song`.
+
+</Accordion>
+
+<Accordion title="!spotify like">
+
+Like the currently playing song
+
+**Syntax**
+
+```text
+!spotify like
+```
+
+**Example template**
+
+```text
+!spotify like
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify like
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify unlike">
+
+Unlike the currently playing song
+
+**Syntax**
+
+```text
+!spotify unlike
+```
+
+**Example template**
+
+```text
+!spotify unlike
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify unlike
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify vc">
+
+Play your current Spotify track in a voice channel
+
+**Syntax**
+
+```text
+!spotify vc
+```
+
+**Example template**
+
+```text
+!spotify vc
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotify vc
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotify topartists">
+
+View your most played artists
+
+**Syntax**
+
+```text
+!spotify topartists [limit] <range>
+```
+
+**Example template**
+
+```text
+!spotify topartists range:<range>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify topartists
+```
+
+Missing `range`.
+
+</Accordion>
+
+<Accordion title="!spotify toptracks">
+
+View your most played tracks
+
+**Syntax**
+
+```text
+!spotify toptracks [limit] <range>
+```
+
+**Example template**
+
+```text
+!spotify toptracks range:<range>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotify toptracks
+```
+
+Missing `range`.
+
+</Accordion>
+
+<Accordion title="!spotifyinfo track">
+
+Track information
+
+**Syntax**
+
+```text
+!spotifyinfo track <value>
+```
+
+**Example template**
+
+```text
+!spotifyinfo track value:<value>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotifyinfo track
+```
+
+Missing `value`.
+
+</Accordion>
+
+<Accordion title="!spotifyinfo artist">
+
+Artist information
+
+**Syntax**
+
+```text
+!spotifyinfo artist <value>
+```
+
+**Example template**
+
+```text
+!spotifyinfo artist value:<value>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotifyinfo artist
+```
+
+Missing `value`.
+
+</Accordion>
+
+<Accordion title="!spotifyinfo album">
+
+Album information
+
+**Syntax**
+
+```text
+!spotifyinfo album <value>
+```
+
+**Example template**
+
+```text
+!spotifyinfo album value:<value>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotifyinfo album
+```
+
+Missing `value`.
+
+</Accordion>
+
+<Accordion title="!spotifyinfo playlist">
+
+Public playlist information
+
+**Syntax**
+
+```text
+!spotifyinfo playlist <value>
+```
+
+**Example template**
+
+```text
+!spotifyinfo playlist value:<value>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotifyinfo playlist
+```
+
+Missing `value`.
+
+</Accordion>
+
+<Accordion title="!spotifyinfo user">
+
+Public user profile by ID
+
+**Syntax**
+
+```text
+!spotifyinfo user <value>
+```
+
+**Example template**
+
+```text
+!spotifyinfo user value:<value>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spotifyinfo user
+```
+
+Missing `value`.
+
+</Accordion>
+
+<Accordion title="!spotifyinfo find">
+
+Search tracks, artists and albums
+
+**Syntax**
+
+```text
+!spotifyinfo find [value]
+```
+
+**Example template**
+
+```text
+!spotifyinfo find
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotifyinfo find
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!spotifyinfo browse">
+
+Browse Spotify tracks, artists and albums
+
+**Syntax**
+
+```text
+!spotifyinfo browse [value]
+```
+
+**Example template**
+
+```text
+!spotifyinfo browse
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+spotifyinfo browse
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

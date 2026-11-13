@@ -44,3 +44,169 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!backuplayout">
+
+Save a backup of the server roles and channels
+
+**Syntax**
+
+```text
+!backuplayout [name]
+```
+
+**Example template**
+
+```text
+!backuplayout
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+backuplayout
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!restorelayout">
+
+Restore roles and channels from a saved layout backup
+
+**Syntax**
+
+```text
+!restorelayout <backup>
+```
+
+**Example template**
+
+```text
+!restorelayout backup:<backup>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!restorelayout
+```
+
+Missing `backup`.
+
+</Accordion>
+
+<Accordion title="!deleteallroles">
+
+Delete all non-managed server roles after confirmation
+
+**Syntax**
+
+```text
+!deleteallroles
+```
+
+**Example template**
+
+```text
+!deleteallroles
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+deleteallroles
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!deleteallserverstuff">
+
+Delete all server channels and categories after confirmation
+
+**Syntax**
+
+```text
+!deleteallserverstuff
+```
+
+**Example template**
+
+```text
+!deleteallserverstuff
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+deleteallserverstuff
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!setwhitelistrole">
+
+Set the role allowed to use approved owner commands
+
+**Syntax**
+
+```text
+!setwhitelistrole [role]
+```
+
+**Example template**
+
+```text
+!setwhitelistrole
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+setwhitelistrole
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

@@ -40,6 +40,256 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!reactionroles setup">
+
+Post or replace the Choose Your Pings panel
+
+**Syntax**
+
+```text
+!reactionroles setup [channel] [description]
+```
+
+**Example template**
+
+```text
+!reactionroles setup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+reactionroles setup
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!reactionroles add">
+
+Add a role to the ping picker
+
+**Syntax**
+
+```text
+!reactionroles add <role> [label]
+```
+
+**Example template**
+
+```text
+!reactionroles add role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reactionroles add
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!reactionroles remove">
+
+Remove a role from the ping picker
+
+**Syntax**
+
+```text
+!reactionroles remove <role>
+```
+
+**Example template**
+
+```text
+!reactionroles remove role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reactionroles remove
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!reactionroles list">
+
+List configured ping roles
+
+**Syntax**
+
+```text
+!reactionroles list
+```
+
+**Example template**
+
+```text
+!reactionroles list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+reactionroles list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!reactionroles pick">
+
+Add a ping role to yourself via prefix
+
+**Syntax**
+
+```text
+!reactionroles pick <role>
+```
+
+**Example template**
+
+```text
+!reactionroles pick role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reactionroles pick
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!reactionroles unpick">
+
+Remove a ping role from yourself via prefix
+
+**Syntax**
+
+```text
+!reactionroles unpick <role>
+```
+
+**Example template**
+
+```text
+!reactionroles unpick role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reactionroles unpick
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!reactionroles mine">
+
+List your selected ping roles
+
+**Syntax**
+
+```text
+!reactionroles mine
+```
+
+**Example template**
+
+```text
+!reactionroles mine
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+reactionroles mine
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!reactionroles disable">
+
+Disable the panel but keep saved role options
+
+**Syntax**
+
+```text
+!reactionroles disable
+```
+
+**Example template**
+
+```text
+!reactionroles disable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+reactionroles disable
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### channel

@@ -49,3 +49,365 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!purgeattachments">
+
+Delete recent messages with attachments
+
+**Syntax**
+
+```text
+!purgeattachments <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgeattachments count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgeattachments
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgelinks">
+
+Delete recent messages containing HTTP links
+
+**Syntax**
+
+```text
+!purgelinks <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgelinks count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgelinks
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgebots">
+
+Delete recent bot-authored messages
+
+**Syntax**
+
+```text
+!purgebots <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgebots count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgebots
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgehuman">
+
+Delete recent non-bot messages
+
+**Syntax**
+
+```text
+!purgehuman <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgehuman count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgehuman
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgementions">
+
+Delete messages mentioning users, roles or everyone
+
+**Syntax**
+
+```text
+!purgementions <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgementions count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgementions
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgeinvites">
+
+Delete recent Discord invitation links
+
+**Syntax**
+
+```text
+!purgeinvites <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgeinvites count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgeinvites
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgecaps">
+
+Delete long messages dominated by uppercase text
+
+**Syntax**
+
+```text
+!purgecaps <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgecaps count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgecaps
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgeemoji">
+
+Delete messages containing custom Discord emojis
+
+**Syntax**
+
+```text
+!purgeemoji <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgeemoji count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgeemoji
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgestickers">
+
+Delete recent sticker messages
+
+**Syntax**
+
+```text
+!purgestickers <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgestickers count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgestickers
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgecommands">
+
+Delete messages starting with the server bot prefix
+
+**Syntax**
+
+```text
+!purgecommands <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgecommands count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgecommands
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgewebhooks">
+
+Delete messages posted by webhooks
+
+**Syntax**
+
+```text
+!purgewebhooks <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgewebhooks count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgewebhooks
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!purgemedia">
+
+Delete messages with image/video attachments
+
+**Syntax**
+
+```text
+!purgemedia <count> [channel] [confirm]
+```
+
+**Example template**
+
+```text
+!purgemedia count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgemedia
+```
+
+Missing `count`.
+
+</Accordion>
+
+</AccordionGroup>

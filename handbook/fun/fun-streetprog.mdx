@@ -47,3 +47,393 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!dep">
+
+Deposit cash into your bank
+
+**Syntax**
+
+```text
+!dep <amount>
+```
+
+**Example template**
+
+```text
+!dep amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!dep
+```
+
+Missing `amount`.
+
+</Accordion>
+
+<Accordion title="!with">
+
+Withdraw cash from your bank
+
+**Syntax**
+
+```text
+!with <amount>
+```
+
+**Example template**
+
+```text
+!with amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!with
+```
+
+Missing `amount`.
+
+</Accordion>
+
+<Accordion title="!pay">
+
+Transfer cash to another member (8% to president)
+
+**Syntax**
+
+```text
+!pay <user> <amount>
+```
+
+**Example template**
+
+```text
+!pay user:<user> amount:<amount>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pay
+```
+
+Missing `user`, `amount`.
+
+</Accordion>
+
+<Accordion title="!president">
+
+President panel and actions
+
+**Syntax**
+
+```text
+!president [action]
+```
+
+**Example template**
+
+```text
+!president
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+president
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!pres">
+
+President shortcut
+
+**Syntax**
+
+```text
+!pres [action]
+```
+
+**Example template**
+
+```text
+!pres
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+pres
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!stats">
+
+Show your uncapped street stats
+
+**Syntax**
+
+```text
+!stats [user]
+```
+
+**Example template**
+
+```text
+!stats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+stats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!train">
+
+Train a stat for XP (uncapped)
+
+**Syntax**
+
+```text
+!train <stat>
+```
+
+**Example template**
+
+```text
+!train stat:<stat>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!train
+```
+
+Missing `stat`.
+
+</Accordion>
+
+<Accordion title="!upgrade">
+
+Buy a stat point (uncapped)
+
+**Syntax**
+
+```text
+!upgrade <stat>
+```
+
+**Example template**
+
+```text
+!upgrade stat:<stat>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!upgrade
+```
+
+Missing `stat`.
+
+</Accordion>
+
+<Accordion title="!buyprop">
+
+Buy a street property
+
+**Syntax**
+
+```text
+!buyprop <prop>
+```
+
+**Example template**
+
+```text
+!buyprop prop:<prop>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!buyprop
+```
+
+Missing `prop`.
+
+</Accordion>
+
+<Accordion title="!upgradeprop">
+
+Upgrade a property you own
+
+**Syntax**
+
+```text
+!upgradeprop <prop>
+```
+
+**Example template**
+
+```text
+!upgradeprop prop:<prop>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!upgradeprop
+```
+
+Missing `prop`.
+
+</Accordion>
+
+<Accordion title="!biz">
+
+Your properties and passive business
+
+**Syntax**
+
+```text
+!biz
+```
+
+**Example template**
+
+```text
+!biz
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+biz
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!rebirth">
+
+Prestige for a permanent cash bonus
+
+**Syntax**
+
+```text
+!rebirth [action]
+```
+
+**Example template**
+
+```text
+!rebirth
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rebirth
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!achievements">
+
+Street achievements and titles
+
+**Syntax**
+
+```text
+!achievements
+```
+
+**Example template**
+
+```text
+!achievements
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+achievements
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

@@ -49,3 +49,337 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!automodtest">
+
+Simulate the current word and link filters without deleting messages
+
+**Syntax**
+
+```text
+!automodtest <text>
+```
+
+**Example template**
+
+```text
+!automodtest text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!automodtest
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!purgebetween">
+
+Delete recent messages within a bounded message-ID range
+
+**Syntax**
+
+```text
+!purgebetween <channel> <after> <before> <confirm>
+```
+
+**Example template**
+
+```text
+!purgebetween channel:<channel> after:<after> before:<before> confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgebetween
+```
+
+Missing `channel`, `after`, `before`, `confirm`.
+
+</Accordion>
+
+<Accordion title="!casefind">
+
+Search saved moderation cases by member and action
+
+**Syntax**
+
+```text
+!casefind [user] [action]
+```
+
+**Example template**
+
+```text
+!casefind
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+casefind
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!casenote">
+
+Append a private staff note to an existing moderation case
+
+**Syntax**
+
+```text
+!casenote <id> <note>
+```
+
+**Example template**
+
+```text
+!casenote id:<id> note:<note>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!casenote
+```
+
+Missing `id`, `note`.
+
+</Accordion>
+
+<Accordion title="!casevoid">
+
+Mark a mistaken moderation case void without deleting its audit trail
+
+**Syntax**
+
+```text
+!casevoid <id> <reason> <confirm>
+```
+
+**Example template**
+
+```text
+!casevoid id:<id> reason:<reason> confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!casevoid
+```
+
+Missing `id`, `reason`, `confirm`.
+
+</Accordion>
+
+<Accordion title="!caseflag">
+
+Flag a moderation case for later staff review
+
+**Syntax**
+
+```text
+!caseflag <id> <reason>
+```
+
+**Example template**
+
+```text
+!caseflag id:<id> reason:<reason>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!caseflag
+```
+
+Missing `id`, `reason`.
+
+</Accordion>
+
+<Accordion title="!casereview">
+
+Resolve a previously flagged moderation case
+
+**Syntax**
+
+```text
+!casereview <id> <outcome> [reason]
+```
+
+**Example template**
+
+```text
+!casereview id:<id> outcome:<outcome>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!casereview
+```
+
+Missing `id`, `outcome`.
+
+</Accordion>
+
+<Accordion title="!casereviewqueue">
+
+List flagged moderation cases awaiting review
+
+**Syntax**
+
+```text
+!casereviewqueue
+```
+
+**Example template**
+
+```text
+!casereviewqueue
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+casereviewqueue
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!repeatviolators">
+
+List members with repeated recorded moderation actions
+
+**Syntax**
+
+```text
+!repeatviolators
+```
+
+**Example template**
+
+```text
+!repeatviolators
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+repeatviolators
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!staffcaseaudit">
+
+Summarize saved moderation actions by a staff account
+
+**Syntax**
+
+```text
+!staffcaseaudit <user>
+```
+
+**Example template**
+
+```text
+!staffcaseaudit user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!staffcaseaudit
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!modtrend">
+
+Summarize moderation activity over the past 30 days
+
+**Syntax**
+
+```text
+!modtrend
+```
+
+**Example template**
+
+```text
+!modtrend
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modtrend
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

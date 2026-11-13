@@ -40,6 +40,116 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!ticket-blacklist add">
+
+Block a member from opening new tickets
+
+**Syntax**
+
+```text
+!ticket-blacklist add <user> [reason]
+```
+
+**Example template**
+
+```text
+!ticket-blacklist add user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticket-blacklist add
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!ticket-blacklist remove">
+
+Allow a member to open tickets again
+
+**Syntax**
+
+```text
+!ticket-blacklist remove <user>
+```
+
+**Example template**
+
+```text
+!ticket-blacklist remove user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticket-blacklist remove
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!ticket-blacklist list">
+
+Show the ticket blacklist
+
+**Syntax**
+
+```text
+!ticket-blacklist list [page]
+```
+
+**Example template**
+
+```text
+!ticket-blacklist list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticket-blacklist list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### user

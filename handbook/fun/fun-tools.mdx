@@ -47,3 +47,281 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!choose">
+
+Pick one option from a list
+
+**Syntax**
+
+```text
+!choose <options>
+```
+
+**Example template**
+
+```text
+!choose options:<options>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!choose
+```
+
+Missing `options`.
+
+</Accordion>
+
+<Accordion title="!ship">
+
+Ship two members
+
+**Syntax**
+
+```text
+!ship [first] [second]
+```
+
+**Example template**
+
+```text
+!ship
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ship
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!rate">
+
+Rate anything out of 10
+
+**Syntax**
+
+```text
+!rate <thing>
+```
+
+**Example template**
+
+```text
+!rate thing:<thing>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rate
+```
+
+Missing `thing`.
+
+</Accordion>
+
+<Accordion title="!hack">
+
+Pretend to hack a member
+
+**Syntax**
+
+```text
+!hack [user]
+```
+
+**Example template**
+
+```text
+!hack
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+hack
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!gif">
+
+Search for a GIF
+
+**Syntax**
+
+```text
+!gif <query>
+```
+
+**Example template**
+
+```text
+!gif query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!gif
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!favs">
+
+Show the gifs and images you saved
+
+**Syntax**
+
+```text
+!favs [user]
+```
+
+**Example template**
+
+```text
+!favs
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+favs
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!giflist">
+
+Show your gif and image lists
+
+**Syntax**
+
+```text
+!giflist [name] [user]
+```
+
+**Example template**
+
+```text
+!giflist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+giflist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!image">
+
+Search for an image
+
+**Syntax**
+
+```text
+!image <query>
+```
+
+**Example template**
+
+```text
+!image query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!image
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!ai">
+
+Chat with the AI
+
+**Syntax**
+
+```text
+!ai <message>
+```
+
+**Example template**
+
+```text
+!ai message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ai
+```
+
+Missing `message`.
+
+</Accordion>
+
+</AccordionGroup>

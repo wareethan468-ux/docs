@@ -49,3 +49,253 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!jsonpretty">
+
+Pretty-print a JSON document
+
+**Syntax**
+
+```text
+!jsonpretty <text>
+```
+
+**Example template**
+
+```text
+!jsonpretty text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!jsonpretty
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!jsoncompact">
+
+Minify JSON without changing its values
+
+**Syntax**
+
+```text
+!jsoncompact <text>
+```
+
+**Example template**
+
+```text
+!jsoncompact text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!jsoncompact
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!jsoncheck">
+
+Validate JSON syntax and show the top-level type
+
+**Syntax**
+
+```text
+!jsoncheck <text>
+```
+
+**Example template**
+
+```text
+!jsoncheck text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!jsoncheck
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!jsonkeys">
+
+List immediate keys of a JSON object
+
+**Syntax**
+
+```text
+!jsonkeys <text>
+```
+
+**Example template**
+
+```text
+!jsonkeys text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!jsonkeys
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!jsonquery">
+
+Get a JSON value by dot-separated path
+
+**Syntax**
+
+```text
+!jsonquery <text> <path>
+```
+
+**Example template**
+
+```text
+!jsonquery text:<text> path:<path>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!jsonquery
+```
+
+Missing `text`, `path`.
+
+</Accordion>
+
+<Accordion title="!csvsummary">
+
+Show CSV row, column and header summary
+
+**Syntax**
+
+```text
+!csvsummary <text>
+```
+
+**Example template**
+
+```text
+!csvsummary text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!csvsummary
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!csvtojson">
+
+Convert CSV rows into JSON objects
+
+**Syntax**
+
+```text
+!csvtojson <text>
+```
+
+**Example template**
+
+```text
+!csvtojson text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!csvtojson
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!jsontocsv">
+
+Convert JSON objects into quoted CSV
+
+**Syntax**
+
+```text
+!jsontocsv <text>
+```
+
+**Example template**
+
+```text
+!jsontocsv text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!jsontocsv
+```
+
+Missing `text`.
+
+</Accordion>
+
+</AccordionGroup>

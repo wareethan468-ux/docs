@@ -54,6 +54,564 @@ Open /setup, choose **Community**, then **Tickets**. Choose an action, fill requ
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/ticket-setup">
+
+Set up the ticket panel
+
+**Syntax**
+
+```text
+/ticket-setup [staff_role] [staff_roles] [channel] [category] [notify_role] [transcript_channel] [max_open_tickets]
+```
+
+**Example template**
+
+```text
+/ticket-setup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+ticket-setup
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!ticket-blacklist add">
+
+Block a member from opening new tickets
+
+**Syntax**
+
+```text
+!ticket-blacklist add <user> [reason]
+```
+
+**Example template**
+
+```text
+!ticket-blacklist add user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticket-blacklist add
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!ticket-blacklist remove">
+
+Allow a member to open tickets again
+
+**Syntax**
+
+```text
+!ticket-blacklist remove <user>
+```
+
+**Example template**
+
+```text
+!ticket-blacklist remove user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticket-blacklist remove
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!ticket-blacklist list">
+
+Show the ticket blacklist
+
+**Syntax**
+
+```text
+!ticket-blacklist list [page]
+```
+
+**Example template**
+
+```text
+!ticket-blacklist list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticket-blacklist list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!tickets">
+
+Show recent tickets
+
+**Syntax**
+
+```text
+!tickets
+```
+
+**Example template**
+
+```text
+!tickets
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+tickets
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!ticket">
+
+Ticket panel, stats, reputation, IDs or detailed lookup
+
+**Syntax**
+
+```text
+!ticket [action] [id] [page]
+```
+
+**Example template**
+
+```text
+!ticket
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticket
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!ticketlookup">
+
+Look up a ticket by its ticket ID
+
+**Syntax**
+
+```text
+!ticketlookup <id> [page]
+```
+
+**Example template**
+
+```text
+!ticketlookup id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticketlookup
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!ticketids">
+
+List ticket IDs you are allowed to view
+
+**Syntax**
+
+```text
+!ticketids [page]
+```
+
+**Example template**
+
+```text
+!ticketids
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticketids
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!new">
+
+Open a support ticket
+
+**Syntax**
+
+```text
+!new
+```
+
+**Example template**
+
+```text
+!new
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+new
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!close">
+
+Close this ticket
+
+**Syntax**
+
+```text
+!close
+```
+
+**Example template**
+
+```text
+!close
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+close
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!reopen">
+
+Reopen this ticket
+
+**Syntax**
+
+```text
+!reopen
+```
+
+**Example template**
+
+```text
+!reopen
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+reopen
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!claimadmin">
+
+Claim this ticket
+
+**Syntax**
+
+```text
+!claimadmin
+```
+
+**Example template**
+
+```text
+!claimadmin
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+claimadmin
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!add">
+
+Add a ticket member
+
+**Syntax**
+
+```text
+!add <user>
+```
+
+**Example template**
+
+```text
+!add user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!add
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!remove">
+
+Remove a ticket member
+
+**Syntax**
+
+```text
+!remove <user>
+```
+
+**Example template**
+
+```text
+!remove user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!remove
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!rename">
+
+Rename this ticket
+
+**Syntax**
+
+```text
+!rename <name>
+```
+
+**Example template**
+
+```text
+!rename name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rename
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!transcript">
+
+Export this ticket
+
+**Syntax**
+
+```text
+!transcript
+```
+
+**Example template**
+
+```text
+!transcript
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+transcript
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!ticketstats">
+
+See open, closed and resolved ticket counts
+
+**Syntax**
+
+```text
+!ticketstats
+```
+
+**Example template**
+
+```text
+!ticketstats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticketstats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!ticketleaderboard">
+
+Rank staff by claims, ratings, closures and resolution speed
+
+**Syntax**
+
+```text
+!ticketleaderboard [mode] [page]
+```
+
+**Example template**
+
+```text
+!ticketleaderboard
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticketleaderboard
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!ticketlimit">
+
+View or change maximum simultaneous open tickets per member
+
+**Syntax**
+
+```text
+!ticketlimit [max]
+```
+
+**Example template**
+
+```text
+!ticketlimit
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticketlimit
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Ticket panel setup](/handbook/community/setup-ticket-setup)

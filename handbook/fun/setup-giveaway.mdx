@@ -41,6 +41,200 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/giveaway set">
+
+Change giveaway settings
+
+**Syntax**
+
+```text
+/giveaway set <enabled> [channel] [duration] [winners]
+```
+
+**Example template**
+
+```text
+/giveaway set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/giveaway set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="/giveaway status">
+
+Show giveaway settings
+
+**Syntax**
+
+```text
+/giveaway status
+```
+
+**Example template**
+
+```text
+/giveaway status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+giveaway status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/giveaway start">
+
+Create a giveaway
+
+**Syntax**
+
+```text
+/giveaway start <prize> [duration] [winners] [channel] [blacklisted_roles]
+```
+
+**Example template**
+
+```text
+/giveaway start prize:<prize>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/giveaway start
+```
+
+Missing `prize`.
+
+</Accordion>
+
+<Accordion title="/giveaway list">
+
+List this server's giveaways
+
+**Syntax**
+
+```text
+/giveaway list
+```
+
+**Example template**
+
+```text
+/giveaway list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+giveaway list
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/giveaway end">
+
+End a giveaway now
+
+**Syntax**
+
+```text
+/giveaway end [id]
+```
+
+**Example template**
+
+```text
+/giveaway end
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+giveaway end
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/giveaway reroll">
+
+Pick new winners
+
+**Syntax**
+
+```text
+/giveaway reroll <id>
+```
+
+**Example template**
+
+```text
+/giveaway reroll id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/giveaway reroll
+```
+
+Missing `id`.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### enabled

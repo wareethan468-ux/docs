@@ -47,3 +47,617 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!birthday">
+
+Set your birthday or review upcoming birthdays
+
+**Syntax**
+
+```text
+!birthday <action> [date]
+```
+
+**Example template**
+
+```text
+!birthday action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!birthday
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!boosterrole">
+
+Manage your personal server-booster role
+
+**Syntax**
+
+```text
+!boosterrole <action> [value]
+```
+
+**Example template**
+
+```text
+!boosterrole action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!boosterrole
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!firstmessage">
+
+Find the earliest accessible message in a channel
+
+**Syntax**
+
+```text
+!firstmessage [channel]
+```
+
+**Example template**
+
+```text
+!firstmessage
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+firstmessage
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!newmembers">
+
+Review recent members who joined the server
+
+**Syntax**
+
+```text
+!newmembers
+```
+
+**Example template**
+
+```text
+!newmembers
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+newmembers
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!joinfunnel">
+
+Show opt-in observed join and verification metrics
+
+**Syntax**
+
+```text
+!joinfunnel
+```
+
+**Example template**
+
+```text
+!joinfunnel
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+joinfunnel
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!afkmentions">
+
+View mentions received while AFK
+
+**Syntax**
+
+```text
+!afkmentions [action]
+```
+
+**Example template**
+
+```text
+!afkmentions
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+afkmentions
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!welcomecard">
+
+Preview and configure a simple PNG welcome card
+
+**Syntax**
+
+```text
+!welcomecard <action> [title]
+```
+
+**Example template**
+
+```text
+!welcomecard action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!welcomecard
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!autorole-delay">
+
+Schedule a delayed role assignment for new members
+
+**Syntax**
+
+```text
+!autorole-delay <role> [minutes]
+```
+
+**Example template**
+
+```text
+!autorole-delay role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!autorole-delay
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!joinquestions">
+
+Configure onboarding questions shown privately on join
+
+**Syntax**
+
+```text
+!joinquestions <action> [question]
+```
+
+**Example template**
+
+```text
+!joinquestions action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!joinquestions
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!membermilestone">
+
+Configure a channel and membership milestone target
+
+**Syntax**
+
+```text
+!membermilestone <channel> <count>
+```
+
+**Example template**
+
+```text
+!membermilestone channel:<channel> count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!membermilestone
+```
+
+Missing `channel`, `count`.
+
+</Accordion>
+
+<Accordion title="!avatarhistory">
+
+Opt into a record of your public avatar changes
+
+**Syntax**
+
+```text
+!avatarhistory <action>
+```
+
+**Example template**
+
+```text
+!avatarhistory action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!avatarhistory
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!embed create">
+
+Save an embed
+
+**Syntax**
+
+```text
+!embed create <name> <code>
+```
+
+**Example template**
+
+```text
+!embed create name:<name> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed create
+```
+
+Missing `name`, `code`.
+
+</Accordion>
+
+<Accordion title="!embed edit">
+
+Update a saved embed
+
+**Syntax**
+
+```text
+!embed edit <name> <code>
+```
+
+**Example template**
+
+```text
+!embed edit name:<name> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed edit
+```
+
+Missing `name`, `code`.
+
+</Accordion>
+
+<Accordion title="!embed list">
+
+List saved embeds
+
+**Syntax**
+
+```text
+!embed list
+```
+
+**Example template**
+
+```text
+!embed list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+embed list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!embed preview">
+
+Preview a saved embed
+
+**Syntax**
+
+```text
+!embed preview <name>
+```
+
+**Example template**
+
+```text
+!embed preview name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed preview
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!embed copy">
+
+Copy saved embed code
+
+**Syntax**
+
+```text
+!embed copy <name>
+```
+
+**Example template**
+
+```text
+!embed copy name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed copy
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!embed delete">
+
+Delete saved embed
+
+**Syntax**
+
+```text
+!embed delete <name>
+```
+
+**Example template**
+
+```text
+!embed delete name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed delete
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!topic">
+
+Set or clear a channel topic
+
+**Syntax**
+
+```text
+!topic [channel] <text>
+```
+
+**Example template**
+
+```text
+!topic text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!topic
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!spoilerchannel">
+
+Configure or join an opt-in spoiler channel
+
+**Syntax**
+
+```text
+!spoilerchannel <action> [channel] [role]
+```
+
+**Example template**
+
+```text
+!spoilerchannel action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spoilerchannel
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!picperms">
+
+Adjust attachment and embed privileges in a channel
+
+**Syntax**
+
+```text
+!picperms <user> <channel> <action>
+```
+
+**Example template**
+
+```text
+!picperms user:<user> channel:<channel> action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!picperms
+```
+
+Missing `user`, `channel`, `action`.
+
+</Accordion>
+
+<Accordion title="!translate">
+
+Translate supplied text with a public translation provider
+
+**Syntax**
+
+```text
+!translate <language> <text> [source]
+```
+
+**Example template**
+
+```text
+!translate language:<language> text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!translate
+```
+
+Missing `language`, `text`.
+
+</Accordion>
+
+</AccordionGroup>

@@ -49,3 +49,533 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!hardban">
+
+Ban a user and retain a permanent re-ban rule
+
+**Syntax**
+
+```text
+!hardban <user> [action] [reason]
+```
+
+**Example template**
+
+```text
+!hardban user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!hardban
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!jailadmin">
+
+Restrict a member to a configured jail role
+
+**Syntax**
+
+```text
+!jailadmin <user> <role>
+```
+
+**Example template**
+
+```text
+!jailadmin user:<user> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!jailadmin
+```
+
+Missing `user`, `role`.
+
+</Accordion>
+
+<Accordion title="!unjail">
+
+Restore member roles saved by the jail command
+
+**Syntax**
+
+```text
+!unjail <user>
+```
+
+**Example template**
+
+```text
+!unjail user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!unjail
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!temprole">
+
+Assign a role that expires automatically
+
+**Syntax**
+
+```text
+!temprole <user> <role> <minutes>
+```
+
+**Example template**
+
+```text
+!temprole user:<user> role:<role> minutes:<minutes>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!temprole
+```
+
+Missing `user`, `role`, `minutes`.
+
+</Accordion>
+
+<Accordion title="!rolepersist">
+
+Enable or disable stored roles for a member after rejoining
+
+**Syntax**
+
+```text
+!rolepersist <user> <enabled>
+```
+
+**Example template**
+
+```text
+!rolepersist user:<user> enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolepersist
+```
+
+Missing `user`, `enabled`.
+
+</Accordion>
+
+<Accordion title="!deafen">
+
+Server-deafen a member in voice
+
+**Syntax**
+
+```text
+!deafen <user>
+```
+
+**Example template**
+
+```text
+!deafen user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!deafen
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!undeafen">
+
+Undeafen a member in voice
+
+**Syntax**
+
+```text
+!undeafen <user>
+```
+
+**Example template**
+
+```text
+!undeafen user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!undeafen
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!activepunishments">
+
+List current timed Zone restrictions
+
+**Syntax**
+
+```text
+!activepunishments
+```
+
+**Example template**
+
+```text
+!activepunishments
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+activepunishments
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!diagnose">
+
+Check bot permissions, intents and available key features
+
+**Syntax**
+
+```text
+!diagnose
+```
+
+**Example template**
+
+```text
+!diagnose
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+diagnose
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!securityaudit">
+
+Audit common server security risks
+
+**Syntax**
+
+```text
+!securityaudit
+```
+
+**Example template**
+
+```text
+!securityaudit
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+securityaudit
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!incidents">
+
+Review Zone security incidents recorded by this expansion
+
+**Syntax**
+
+```text
+!incidents
+```
+
+**Example template**
+
+```text
+!incidents
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+incidents
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!strikes">
+
+Add, remove or list member moderation strike points
+
+**Syntax**
+
+```text
+!strikes <user> [action] [points]
+```
+
+**Example template**
+
+```text
+!strikes user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!strikes
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!staffstrip">
+
+Remove configured staff roles from a member
+
+**Syntax**
+
+```text
+!staffstrip <user> [confirm] [role]
+```
+
+**Example template**
+
+```text
+!staffstrip user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!staffstrip
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!imagemute">
+
+Temporarily restrict a member from attachments
+
+**Syntax**
+
+```text
+!imagemute <user> <channel> [minutes]
+```
+
+**Example template**
+
+```text
+!imagemute user:<user> channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!imagemute
+```
+
+Missing `user`, `channel`.
+
+</Accordion>
+
+<Accordion title="!reactionmute">
+
+Temporarily restrict a member from reactions
+
+**Syntax**
+
+```text
+!reactionmute <user> <channel> [minutes]
+```
+
+**Example template**
+
+```text
+!reactionmute user:<user> channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reactionmute
+```
+
+Missing `user`, `channel`.
+
+</Accordion>
+
+<Accordion title="!purgefilter">
+
+Delete recent messages matching a content or attachment filter
+
+**Syntax**
+
+```text
+!purgefilter <channel> <filter> [limit]
+```
+
+**Example template**
+
+```text
+!purgefilter channel:<channel> filter:<filter>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!purgefilter
+```
+
+Missing `channel`, `filter`.
+
+</Accordion>
+
+<Accordion title="!slowmodebatch">
+
+Set slowmode across selected text channels
+
+**Syntax**
+
+```text
+!slowmodebatch <channels> <seconds>
+```
+
+**Example template**
+
+```text
+!slowmodebatch channels:<channels> seconds:<seconds>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!slowmodebatch
+```
+
+Missing `channels`, `seconds`.
+
+</Accordion>
+
+<Accordion title="!permissiondiff">
+
+Compare effective server permissions for two members
+
+**Syntax**
+
+```text
+!permissiondiff <first> <second>
+```
+
+**Example template**
+
+```text
+!permissiondiff first:<first> second:<second>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!permissiondiff
+```
+
+Missing `first`, `second`.
+
+</Accordion>
+
+</AccordionGroup>

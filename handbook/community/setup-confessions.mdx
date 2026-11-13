@@ -43,6 +43,256 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!confessions add">
+
+Set the confessions channel and post the panel
+
+**Syntax**
+
+```text
+!confessions add <channel>
+```
+
+**Example template**
+
+```text
+!confessions add channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions add
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!confessions blacklist add">
+
+Blacklist a word
+
+**Syntax**
+
+```text
+!confessions blacklist add <word>
+```
+
+**Example template**
+
+```text
+!confessions blacklist add word:<word>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions blacklist add
+```
+
+Missing `word`.
+
+</Accordion>
+
+<Accordion title="!confessions blacklist remove">
+
+Remove a blacklisted word
+
+**Syntax**
+
+```text
+!confessions blacklist remove <word>
+```
+
+**Example template**
+
+```text
+!confessions blacklist remove word:<word>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions blacklist remove
+```
+
+Missing `word`.
+
+</Accordion>
+
+<Accordion title="!confessions blacklist clear">
+
+Clear the blacklist
+
+**Syntax**
+
+```text
+!confessions blacklist clear
+```
+
+**Example template**
+
+```text
+!confessions blacklist clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+confessions blacklist clear
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!confessions blacklist list">
+
+List blacklisted words
+
+**Syntax**
+
+```text
+!confessions blacklist list
+```
+
+**Example template**
+
+```text
+!confessions blacklist list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+confessions blacklist list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!confessions category add">
+
+Add or update a category
+
+**Syntax**
+
+```text
+!confessions category add <name> <channel>
+```
+
+**Example template**
+
+```text
+!confessions category add name:<name> channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions category add
+```
+
+Missing `name`, `channel`.
+
+</Accordion>
+
+<Accordion title="!confessions category list">
+
+List categories
+
+**Syntax**
+
+```text
+!confessions category list
+```
+
+**Example template**
+
+```text
+!confessions category list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+confessions category list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!confessions category remove">
+
+Remove a category
+
+**Syntax**
+
+```text
+!confessions category remove <name>
+```
+
+**Example template**
+
+```text
+!confessions category remove name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!confessions category remove
+```
+
+Missing `name`.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### channel

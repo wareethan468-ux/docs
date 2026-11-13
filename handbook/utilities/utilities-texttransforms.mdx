@@ -49,3 +49,337 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!textlength">
+
+Count characters, Unicode symbols and UTF-8 bytes
+
+**Syntax**
+
+```text
+!textlength <text>
+```
+
+**Example template**
+
+```text
+!textlength text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textlength
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textwords">
+
+Count words and unique words
+
+**Syntax**
+
+```text
+!textwords <text>
+```
+
+**Example template**
+
+```text
+!textwords text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textwords
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textlines">
+
+Count lines and nonempty lines
+
+**Syntax**
+
+```text
+!textlines <text>
+```
+
+**Example template**
+
+```text
+!textlines text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textlines
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textslugify">
+
+Create a URL-friendly slug from text
+
+**Syntax**
+
+```text
+!textslugify <text>
+```
+
+**Example template**
+
+```text
+!textslugify text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textslugify
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!texttitlecase">
+
+Title-case each word in a phrase
+
+**Syntax**
+
+```text
+!texttitlecase <text>
+```
+
+**Example template**
+
+```text
+!texttitlecase text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!texttitlecase
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textnormalize">
+
+Collapse repeated spaces and trim whitespace
+
+**Syntax**
+
+```text
+!textnormalize <text>
+```
+
+**Example template**
+
+```text
+!textnormalize text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textnormalize
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textdedupelines">
+
+Remove duplicate lines while keeping order
+
+**Syntax**
+
+```text
+!textdedupelines <text>
+```
+
+**Example template**
+
+```text
+!textdedupelines text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textdedupelines
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textsortlines">
+
+Sort text lines alphabetically
+
+**Syntax**
+
+```text
+!textsortlines <text>
+```
+
+**Example template**
+
+```text
+!textsortlines text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textsortlines
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textfrequency">
+
+Show the most common words
+
+**Syntax**
+
+```text
+!textfrequency <text>
+```
+
+**Example template**
+
+```text
+!textfrequency text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textfrequency
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textsplit">
+
+Split text into numbered pieces using a delimiter
+
+**Syntax**
+
+```text
+!textsplit <text> [delimiter]
+```
+
+**Example template**
+
+```text
+!textsplit text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textsplit
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!textjoin">
+
+Join newline-separated values with a delimiter
+
+**Syntax**
+
+```text
+!textjoin <text> [delimiter]
+```
+
+**Example template**
+
+```text
+!textjoin text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!textjoin
+```
+
+Missing `text`.
+
+</Accordion>
+
+</AccordionGroup>

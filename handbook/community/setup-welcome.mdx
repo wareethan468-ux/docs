@@ -43,6 +43,116 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/welcome set">
+
+Change greeting settings
+
+**Syntax**
+
+```text
+/welcome set <enabled> [leave_enabled] [channel] [message] [title] [leave_channel] [leave_message] [greet_bots]
+```
+
+**Example template**
+
+```text
+/welcome set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/welcome set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="/welcome preview">
+
+Preview privately without mentions
+
+**Syntax**
+
+```text
+/welcome preview [type]
+```
+
+**Example template**
+
+```text
+/welcome preview
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+welcome preview
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/welcome status">
+
+Show the greeting settings
+
+**Syntax**
+
+```text
+/welcome status
+```
+
+**Example template**
+
+```text
+/welcome status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+welcome status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### enabled

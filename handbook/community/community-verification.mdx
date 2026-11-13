@@ -45,6 +45,116 @@ Open /setup, choose **Community**, then **Verification**. Choose an action, fill
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/verify-setup">
+
+Post the verification panel and choose its member role
+
+**Syntax**
+
+```text
+/verify-setup [website_auth] [block_shared_ips] [allow_guild_join] [require_guild_join] [role] [channel] [title] [description] [rules_url]
+```
+
+**Example template**
+
+```text
+/verify-setup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+verify-setup
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!verificationstats">
+
+Summarize recorded website verification outcomes
+
+**Syntax**
+
+```text
+!verificationstats
+```
+
+**Example template**
+
+```text
+!verificationstats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+verificationstats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!verifyinfo">
+
+Inspect a member’s verification status without revealing IPs
+
+**Syntax**
+
+```text
+!verifyinfo <user>
+```
+
+**Example template**
+
+```text
+!verifyinfo user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!verifyinfo
+```
+
+Missing `user`.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Verification setup](/handbook/community/setup-verify-setup)

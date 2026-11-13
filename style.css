@@ -1,10 +1,13 @@
 :root { --zone-motion: cubic-bezier(.22,1,.36,1); }
 html { scroll-behavior: smooth; }
-#sidebar a, #sidebar button, #navbar a, #navbar button,
-#content-area a, #content-area button, #pagination a {
-  transition: color 220ms var(--zone-motion), background-color 220ms var(--zone-motion), border-color 220ms var(--zone-motion), opacity 220ms var(--zone-motion);
+a, button, summary, [role="button"], input, textarea {
+  transition: color 280ms var(--zone-motion), background-color 280ms var(--zone-motion), border-color 280ms var(--zone-motion), opacity 280ms var(--zone-motion), box-shadow 280ms var(--zone-motion);
 }
-#content-area { animation: zone-page-enter 280ms var(--zone-motion) both; }
+#content-area { animation: zone-page-enter 420ms var(--zone-motion) both; }
+details::details-content { transition: opacity 280ms var(--zone-motion), content-visibility 280ms allow-discrete; }
+details:not([open])::details-content { opacity:0; }
+details[open]::details-content { opacity:1; }
+summary svg, button[aria-expanded] svg { transition: transform 280ms var(--zone-motion); }
 @keyframes zone-page-enter {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
@@ -12,6 +15,6 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   #content-area { animation: none; }
-  #sidebar a, #sidebar button, #navbar a, #navbar button,
-  #content-area a, #content-area button, #pagination a { transition: none; }
+  a, button, summary, [role="button"], input, textarea,
+  details::details-content, summary svg, button[aria-expanded] svg { transition: none; }
 }

@@ -53,6 +53,368 @@ Open /setup, choose **Server & Content**, then **Configs**. Choose an action, fi
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!config-panel">
+
+Post a config panel
+
+**Syntax**
+
+```text
+!config-panel [channel] [panel]
+```
+
+**Example template**
+
+```text
+!config-panel
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+config-panel
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="/config-setup">
+
+Set up a config panel
+
+**Syntax**
+
+```text
+/config-setup [channel] [ping_role] [manager_role] [panel]
+```
+
+**Example template**
+
+```text
+/config-setup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+config-setup
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!addscript">
+
+Add a script (category) to the config panel
+
+**Syntax**
+
+```text
+!addscript <panel_id> <name> [description] [icon]
+```
+
+**Example template**
+
+```text
+!addscript panel_id:<panel_id> name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!addscript
+```
+
+Missing `panel_id`, `name`.
+
+</Accordion>
+
+<Accordion title="!removescript">
+
+Remove a script (and all its configs) from the panel
+
+**Syntax**
+
+```text
+!removescript <name> [panel]
+```
+
+**Example template**
+
+```text
+!removescript name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!removescript
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/addconfig">
+
+Add a config file to a selected panel and script
+
+**Syntax**
+
+```text
+/addconfig <panel_id> <name> <file> [script] [category] [description] [showcase] [showcase_type]
+```
+
+**Example template**
+
+```text
+/addconfig panel_id:<panel_id> name:<name> file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/addconfig
+```
+
+Missing `panel_id`, `name`, `file`.
+
+</Accordion>
+
+<Accordion title="!removeconfig">
+
+Remove one config file from a script
+
+**Syntax**
+
+```text
+!removeconfig <script> <name>
+```
+
+**Example template**
+
+```text
+!removeconfig script:<script> name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!removeconfig
+```
+
+Missing `script`, `name`.
+
+</Accordion>
+
+<Accordion title="!script-icon">
+
+Change a script image
+
+**Syntax**
+
+```text
+!script-icon <panel_id> <script> <icon>
+```
+
+**Example template**
+
+```text
+!script-icon panel_id:<panel_id> script:<script> icon:<icon>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!script-icon
+```
+
+Missing `panel_id`, `script`, `icon`.
+
+</Accordion>
+
+<Accordion title="!addconfigcategory">
+
+Create a config category inside a script
+
+**Syntax**
+
+```text
+!addconfigcategory <panel_id> <script> <name>
+```
+
+**Example template**
+
+```text
+!addconfigcategory panel_id:<panel_id> script:<script> name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!addconfigcategory
+```
+
+Missing `panel_id`, `script`, `name`.
+
+</Accordion>
+
+<Accordion title="!removeconfigcategory">
+
+Remove a config category inside a script
+
+**Syntax**
+
+```text
+!removeconfigcategory <panel_id> <script> <category>
+```
+
+**Example template**
+
+```text
+!removeconfigcategory panel_id:<panel_id> script:<script> category:<category>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!removeconfigcategory
+```
+
+Missing `panel_id`, `script`, `category`.
+
+</Accordion>
+
+<Accordion title="!configs browse">
+
+Interactive: pick a script, Panel ID, then a config (args skip straight to the menu)
+
+**Syntax**
+
+```text
+!configs browse [script] [panel_id] [name] [prefix]
+```
+
+**Example template**
+
+```text
+!configs browse
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+configs browse
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!configs download">
+
+Download a config by display name (no name → opens the picker)
+
+**Syntax**
+
+```text
+!configs download [name] [script] [panel_id]
+```
+
+**Example template**
+
+```text
+!configs download
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+configs download
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!configs info">
+
+Show a config’s info by display name (no name → opens the picker)
+
+**Syntax**
+
+```text
+!configs info [name] [script] [panel_id]
+```
+
+**Example template**
+
+```text
+!configs info
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+configs info
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Configuration panel setup](/handbook/server/setup-config-panel)

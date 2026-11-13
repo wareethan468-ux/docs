@@ -47,3 +47,505 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!bookmarkadd">
+
+Save a server message link with a name
+
+**Syntax**
+
+```text
+!bookmarkadd <name> <url>
+```
+
+**Example template**
+
+```text
+!bookmarkadd name:<name> url:<url>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarkadd
+```
+
+Missing `name`, `url`.
+
+</Accordion>
+
+<Accordion title="!bookmarkremove">
+
+Remove a saved message bookmark
+
+**Syntax**
+
+```text
+!bookmarkremove <name>
+```
+
+**Example template**
+
+```text
+!bookmarkremove name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarkremove
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!bookmarklist">
+
+List bookmarks and their source channels
+
+**Syntax**
+
+```text
+!bookmarklist
+```
+
+**Example template**
+
+```text
+!bookmarklist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bookmarklist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bookmarkshow">
+
+Open a saved message link and read its notes
+
+**Syntax**
+
+```text
+!bookmarkshow <name>
+```
+
+**Example template**
+
+```text
+!bookmarkshow name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarkshow
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!bookmarkrename">
+
+Rename a bookmark without changing its link
+
+**Syntax**
+
+```text
+!bookmarkrename <name> <target>
+```
+
+**Example template**
+
+```text
+!bookmarkrename name:<name> target:<target>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarkrename
+```
+
+Missing `name`, `target`.
+
+</Accordion>
+
+<Accordion title="!bookmarknote">
+
+Set a short note on a saved bookmark
+
+**Syntax**
+
+```text
+!bookmarknote <name> <note>
+```
+
+**Example template**
+
+```text
+!bookmarknote name:<name> note:<note>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarknote
+```
+
+Missing `name`, `note`.
+
+</Accordion>
+
+<Accordion title="!bookmarksearch">
+
+Search bookmark names, notes and tags
+
+**Syntax**
+
+```text
+!bookmarksearch <query>
+```
+
+**Example template**
+
+```text
+!bookmarksearch query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarksearch
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!bookmarktag">
+
+Add a searchable tag to a bookmark
+
+**Syntax**
+
+```text
+!bookmarktag <name> <tag>
+```
+
+**Example template**
+
+```text
+!bookmarktag name:<name> tag:<tag>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarktag
+```
+
+Missing `name`, `tag`.
+
+</Accordion>
+
+<Accordion title="!bookmarkuntag">
+
+Remove one tag from a bookmark
+
+**Syntax**
+
+```text
+!bookmarkuntag <name> <tag>
+```
+
+**Example template**
+
+```text
+!bookmarkuntag name:<name> tag:<tag>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarkuntag
+```
+
+Missing `name`, `tag`.
+
+</Accordion>
+
+<Accordion title="!bookmarktags">
+
+List all tags used by server bookmarks
+
+**Syntax**
+
+```text
+!bookmarktags
+```
+
+**Example template**
+
+```text
+!bookmarktags
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bookmarktags
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bookmarkstats">
+
+Show bookmark count and channel breakdown
+
+**Syntax**
+
+```text
+!bookmarkstats
+```
+
+**Example template**
+
+```text
+!bookmarkstats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bookmarkstats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bookmarkexport">
+
+Export bookmarks as a JSON archive
+
+**Syntax**
+
+```text
+!bookmarkexport
+```
+
+**Example template**
+
+```text
+!bookmarkexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bookmarkexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bookmarkimport">
+
+Import a single server message bookmark from JSON
+
+**Syntax**
+
+```text
+!bookmarkimport <json>
+```
+
+**Example template**
+
+```text
+!bookmarkimport json:<json>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarkimport
+```
+
+Missing `json`.
+
+</Accordion>
+
+<Accordion title="!bookmarkrecent">
+
+List most recently added bookmarks
+
+**Syntax**
+
+```text
+!bookmarkrecent
+```
+
+**Example template**
+
+```text
+!bookmarkrecent
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bookmarkrecent
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bookmarkoldest">
+
+List oldest surviving bookmarks
+
+**Syntax**
+
+```text
+!bookmarkoldest
+```
+
+**Example template**
+
+```text
+!bookmarkoldest
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bookmarkoldest
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bookmarkrandom">
+
+Choose one saved bookmark at random
+
+**Syntax**
+
+```text
+!bookmarkrandom
+```
+
+**Example template**
+
+```text
+!bookmarkrandom
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+bookmarkrandom
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!bookmarkpost">
+
+Share a saved bookmark link in a channel
+
+**Syntax**
+
+```text
+!bookmarkpost <name> [channel]
+```
+
+**Example template**
+
+```text
+!bookmarkpost name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!bookmarkpost
+```
+
+Missing `name`.
+
+</Accordion>
+
+</AccordionGroup>

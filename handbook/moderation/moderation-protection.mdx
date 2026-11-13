@@ -50,6 +50,1628 @@ Open /setup, choose **Moderation**, then **Rules & protection**. Choose an actio
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!rules show">
+
+Read the saved server rules
+
+**Syntax**
+
+```text
+!rules show
+```
+
+**Example template**
+
+```text
+!rules show
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rules show
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!rules set">
+
+Save server rules (Manage Server required)
+
+**Syntax**
+
+```text
+!rules set <text> [title]
+```
+
+**Example template**
+
+```text
+!rules set text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rules set
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!rules post">
+
+Post the saved rules panel (Manage Server required)
+
+**Syntax**
+
+```text
+!rules post [channel]
+```
+
+**Example template**
+
+```text
+!rules post
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+rules post
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="/honeypot set">
+
+Change honeypot settings
+
+**Syntax**
+
+```text
+/honeypot set <enabled> [channel] [action] [log_channel] [thumbnail] [exempt_staff]
+```
+
+**Example template**
+
+```text
+/honeypot set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/honeypot set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="/honeypot test">
+
+Explain whether a member would trigger the trap; does not moderate anyone
+
+**Syntax**
+
+```text
+/honeypot test [user]
+```
+
+**Example template**
+
+```text
+/honeypot test
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+honeypot test
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/honeypot status">
+
+Show the current trap settings
+
+**Syntax**
+
+```text
+/honeypot status
+```
+
+**Example template**
+
+```text
+/honeypot status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+honeypot status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/antinuke set">
+
+Change protection settings
+
+**Syntax**
+
+```text
+/antinuke set <enabled> [limit] [window] [log_channel]
+```
+
+**Example template**
+
+```text
+/antinuke set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/antinuke set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="/antinuke status">
+
+Show protection settings
+
+**Syntax**
+
+```text
+/antinuke status
+```
+
+**Example template**
+
+```text
+/antinuke status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+antinuke status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/antinuke trust">
+
+Add a protection exemption
+
+**Syntax**
+
+```text
+/antinuke trust <user>
+```
+
+**Example template**
+
+```text
+/antinuke trust user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/antinuke trust
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="/antinuke untrust">
+
+Remove a protection exemption
+
+**Syntax**
+
+```text
+/antinuke untrust <user>
+```
+
+**Example template**
+
+```text
+/antinuke untrust user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/antinuke untrust
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="/antispam set">
+
+Change protection settings
+
+**Syntax**
+
+```text
+/antispam set <enabled> [limit] [window] [log_channel] [duplicates] [mentions] [timeout] [mode] [channel_hops] [mention_burst] [invite_limit] [attachment_limit] [escalate_after] [max_timeout]
+```
+
+**Example template**
+
+```text
+/antispam set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/antispam set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="/antispam status">
+
+Show protection settings
+
+**Syntax**
+
+```text
+/antispam status
+```
+
+**Example template**
+
+```text
+/antispam status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+antispam status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/antispam exempt">
+
+Add a protection exemption
+
+**Syntax**
+
+```text
+/antispam exempt [role] [channel]
+```
+
+**Example template**
+
+```text
+/antispam exempt
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+antispam exempt
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/antispam unexempt">
+
+Remove a protection exemption
+
+**Syntax**
+
+```text
+/antispam unexempt [role] [channel]
+```
+
+**Example template**
+
+```text
+/antispam unexempt
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+antispam unexempt
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/antiraid set">
+
+Configure anti-raid
+
+**Syntax**
+
+```text
+/antiraid set <enabled> [join_limit] [window] [account_age_days] [slow_join_limit] [action] [timeout] [raid_duration] [log_channel]
+```
+
+**Example template**
+
+```text
+/antiraid set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/antiraid set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="/antiraid status">
+
+Show anti-raid settings
+
+**Syntax**
+
+```text
+/antiraid status
+```
+
+**Example template**
+
+```text
+/antiraid status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+antiraid status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/antiraid whitelist">
+
+Add, remove or list exempt members
+
+**Syntax**
+
+```text
+/antiraid whitelist <action> [user]
+```
+
+**Example template**
+
+```text
+/antiraid whitelist action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/antiraid whitelist
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!filter add">
+
+Add a filtered word
+
+**Syntax**
+
+```text
+!filter add <word>
+```
+
+**Example template**
+
+```text
+!filter add word:<word>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter add
+```
+
+Missing `word`.
+
+</Accordion>
+
+<Accordion title="!filter remove">
+
+Remove a filtered word
+
+**Syntax**
+
+```text
+!filter remove <word>
+```
+
+**Example template**
+
+```text
+!filter remove word:<word>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter remove
+```
+
+Missing `word`.
+
+</Accordion>
+
+<Accordion title="!filter list">
+
+View a list of filtered words in guild
+
+**Syntax**
+
+```text
+!filter list
+```
+
+**Example template**
+
+```text
+!filter list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter exempt">
+
+Exempt a role from all filters
+
+**Syntax**
+
+```text
+!filter exempt <role> [scope]
+```
+
+**Example template**
+
+```text
+!filter exempt role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter exempt
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!filter exempt-member">
+
+Exempt a member from all filters
+
+**Syntax**
+
+```text
+!filter exempt-member <user> [scope]
+```
+
+**Example template**
+
+```text
+!filter exempt-member user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter exempt-member
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!filter exempt-channel">
+
+Exempt a channel from filters
+
+**Syntax**
+
+```text
+!filter exempt-channel <channel> [scope]
+```
+
+**Example template**
+
+```text
+!filter exempt-channel channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter exempt-channel
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!filter edit-exempt">
+
+Edit an existing role, member or channel exemption
+
+**Syntax**
+
+```text
+!filter edit-exempt <target> [scope]
+```
+
+**Example template**
+
+```text
+!filter edit-exempt target:<target>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter edit-exempt
+```
+
+Missing `target`.
+
+</Accordion>
+
+<Accordion title="!filter exempt-list">
+
+View roles and members exempted from all filters
+
+**Syntax**
+
+```text
+!filter exempt-list
+```
+
+**Example template**
+
+```text
+!filter exempt-list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter exempt-list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter whitelist">
+
+Add or remove a whitelisted word
+
+**Syntax**
+
+```text
+!filter whitelist <word>
+```
+
+**Example template**
+
+```text
+!filter whitelist word:<word>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter whitelist
+```
+
+Missing `word`.
+
+</Accordion>
+
+<Accordion title="!filter reset">
+
+Reset all legacy filtered words
+
+**Syntax**
+
+```text
+!filter reset
+```
+
+**Example template**
+
+```text
+!filter reset
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter reset
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter wordmigrate">
+
+Migrate your filtered words to Discords Automod
+
+**Syntax**
+
+```text
+!filter wordmigrate
+```
+
+**Example template**
+
+```text
+!filter wordmigrate
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter wordmigrate
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter regex">
+
+Add or remove a regex pattern
+
+**Syntax**
+
+```text
+!filter regex <pattern>
+```
+
+**Example template**
+
+```text
+!filter regex pattern:<pattern>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter regex
+```
+
+Missing `pattern`.
+
+</Accordion>
+
+<Accordion title="!filter snipe">
+
+Filter snipe command from allowing certain content
+
+**Syntax**
+
+```text
+!filter snipe [state]
+```
+
+**Example template**
+
+```text
+!filter snipe
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter snipe
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter links">
+
+Delete any message that contains a link
+
+**Syntax**
+
+```text
+!filter links [state]
+```
+
+**Example template**
+
+```text
+!filter links
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter links
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter links-exempt">
+
+Exempt roles from the links filter
+
+**Syntax**
+
+```text
+!filter links-exempt <role>
+```
+
+**Example template**
+
+```text
+!filter links-exempt role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter links-exempt
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!filter links-exempt-list">
+
+View list of roles exempted from links filter
+
+**Syntax**
+
+```text
+!filter links-exempt-list
+```
+
+**Example template**
+
+```text
+!filter links-exempt-list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter links-exempt-list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter links-whitelist">
+
+Whitelist links from the links filter
+
+**Syntax**
+
+```text
+!filter links-whitelist <domain>
+```
+
+**Example template**
+
+```text
+!filter links-whitelist domain:<domain>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter links-whitelist
+```
+
+Missing `domain`.
+
+</Accordion>
+
+<Accordion title="!filter emoji">
+
+Delete any message exceeding the threshold for emojis
+
+**Syntax**
+
+```text
+!filter emoji [threshold]
+```
+
+**Example template**
+
+```text
+!filter emoji
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter emoji
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter emoji-exempt">
+
+Exempt roles from the emoji filter
+
+**Syntax**
+
+```text
+!filter emoji-exempt <role>
+```
+
+**Example template**
+
+```text
+!filter emoji-exempt role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter emoji-exempt
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!filter emoji-exempt-list">
+
+View list of roles exempted from emoji filter
+
+**Syntax**
+
+```text
+!filter emoji-exempt-list
+```
+
+**Example template**
+
+```text
+!filter emoji-exempt-list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter emoji-exempt-list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter spam">
+
+Delete messages from users that send messages too fast
+
+**Syntax**
+
+```text
+!filter spam [limit]
+```
+
+**Example template**
+
+```text
+!filter spam
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter spam
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter spam-exempt">
+
+Exempt roles from the antispam filter
+
+**Syntax**
+
+```text
+!filter spam-exempt <role>
+```
+
+**Example template**
+
+```text
+!filter spam-exempt role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter spam-exempt
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!filter spam-exempt-list">
+
+View list of roles exempted from spam filter
+
+**Syntax**
+
+```text
+!filter spam-exempt-list
+```
+
+**Example template**
+
+```text
+!filter spam-exempt-list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter spam-exempt-list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter caps">
+
+Delete messages that contain too many uppercase characters
+
+**Syntax**
+
+```text
+!filter caps [percent]
+```
+
+**Example template**
+
+```text
+!filter caps
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter caps
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter caps-exempt">
+
+Exempt roles from the caps filter
+
+**Syntax**
+
+```text
+!filter caps-exempt <role>
+```
+
+**Example template**
+
+```text
+!filter caps-exempt role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter caps-exempt
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!filter caps-exempt-list">
+
+View list of roles exempted from caps filter
+
+**Syntax**
+
+```text
+!filter caps-exempt-list
+```
+
+**Example template**
+
+```text
+!filter caps-exempt-list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter caps-exempt-list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter spoilers">
+
+Delete any message that contains spoilers
+
+**Syntax**
+
+```text
+!filter spoilers [state]
+```
+
+**Example template**
+
+```text
+!filter spoilers
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter spoilers
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter spoilers-exempt">
+
+Exempt roles from the spoilers filter
+
+**Syntax**
+
+```text
+!filter spoilers-exempt <role>
+```
+
+**Example template**
+
+```text
+!filter spoilers-exempt role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter spoilers-exempt
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!filter spoilers-exempt-list">
+
+View list of roles exempted from spoilers filter
+
+**Syntax**
+
+```text
+!filter spoilers-exempt-list
+```
+
+**Example template**
+
+```text
+!filter spoilers-exempt-list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter spoilers-exempt-list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter musicfiles">
+
+Delete any message that contains a music file
+
+**Syntax**
+
+```text
+!filter musicfiles [state]
+```
+
+**Example template**
+
+```text
+!filter musicfiles
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter musicfiles
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter names">
+
+Clean fancy text and hoisting symbols from member names
+
+**Syntax**
+
+```text
+!filter names [action]
+```
+
+**Example template**
+
+```text
+!filter names
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter names
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!filter musicfiles-exempt">
+
+Exempt roles from the music files filter
+
+**Syntax**
+
+```text
+!filter musicfiles-exempt <role>
+```
+
+**Example template**
+
+```text
+!filter musicfiles-exempt role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!filter musicfiles-exempt
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!filter musicfiles-exempt-list">
+
+View list of roles exempted from musicfiles filter
+
+**Syntax**
+
+```text
+!filter musicfiles-exempt-list
+```
+
+**Example template**
+
+```text
+!filter musicfiles-exempt-list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+filter musicfiles-exempt-list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!automod">
+
+Show protection settings
+
+**Syntax**
+
+```text
+!automod
+```
+
+**Example template**
+
+```text
+!automod
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+automod
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!raidstatus">
+
+View live join-surge detection and emergency settings
+
+**Syntax**
+
+```text
+!raidstatus
+```
+
+**Example template**
+
+```text
+!raidstatus
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+raidstatus
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!raidmode">
+
+Temporarily increase raid protection sensitivity
+
+**Syntax**
+
+```text
+!raidmode <mode> [minutes]
+```
+
+**Example template**
+
+```text
+!raidmode mode:<mode>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!raidmode
+```
+
+Missing `mode`.
+
+</Accordion>
+
+<Accordion title="!raidwhitelist">
+
+Manage accounts exempt from anti-raid actions
+
+**Syntax**
+
+```text
+!raidwhitelist <action> [user]
+```
+
+**Example template**
+
+```text
+!raidwhitelist action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!raidwhitelist
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!spamheat">
+
+Inspect a member’s current anti-spam activity score
+
+**Syntax**
+
+```text
+!spamheat <user>
+```
+
+**Example template**
+
+```text
+!spamheat user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spamheat
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!spamstrikes">
+
+View a member’s temporary anti-spam strikes
+
+**Syntax**
+
+```text
+!spamstrikes <user>
+```
+
+**Example template**
+
+```text
+!spamstrikes user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spamstrikes
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!spamreset">
+
+Clear a member’s in-memory spam counters
+
+**Syntax**
+
+```text
+!spamreset <user>
+```
+
+**Example template**
+
+```text
+!spamreset user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!spamreset
+```
+
+Missing `user`.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Server rules setup](/handbook/moderation/setup-rules)

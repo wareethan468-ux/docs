@@ -48,6 +48,536 @@ Open /setup, choose **Community**, then **Profiles & information**. Choose an ac
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!pfp">
+
+Show a user’s full-size profile picture
+
+**Syntax**
+
+```text
+!pfp [user]
+```
+
+**Example template**
+
+```text
+!pfp
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+pfp
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!banner">
+
+Show a user’s profile banner with a full-size download button
+
+**Syntax**
+
+```text
+!banner [user]
+```
+
+**Example template**
+
+```text
+!banner
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+banner
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!avatar">
+
+Show a profile picture
+
+**Syntax**
+
+```text
+!avatar [user]
+```
+
+**Example template**
+
+```text
+!avatar
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+avatar
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!userinfo">
+
+Show member info
+
+**Syntax**
+
+```text
+!userinfo [user]
+```
+
+**Example template**
+
+```text
+!userinfo
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+userinfo
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="/names view">
+
+View recorded name changes
+
+**Syntax**
+
+```text
+/names view [user]
+```
+
+**Example template**
+
+```text
+/names view
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+names view
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/names clear">
+
+Clear your history or the server history
+
+**Syntax**
+
+```text
+/names clear [scope]
+```
+
+**Example template**
+
+```text
+/names clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+names clear
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!serverinfo">
+
+View server information privately — only you see the reply
+
+**Syntax**
+
+```text
+!serverinfo
+```
+
+**Example template**
+
+```text
+!serverinfo
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+serverinfo
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!roleinfo">
+
+Show role information
+
+**Syntax**
+
+```text
+!roleinfo <role>
+```
+
+**Example template**
+
+```text
+!roleinfo role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roleinfo
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!channelinfo">
+
+Show channel information
+
+**Syntax**
+
+```text
+!channelinfo [channel]
+```
+
+**Example template**
+
+```text
+!channelinfo
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+channelinfo
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!badge set">
+
+Enable or disable the guild tag reward system
+
+**Syntax**
+
+```text
+!badge set <enabled>
+```
+
+**Example template**
+
+```text
+!badge set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!badge set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!badge message">
+
+Set or view the award message
+
+**Syntax**
+
+```text
+!badge message <action> [text]
+```
+
+**Example template**
+
+```text
+!badge message action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!badge message
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!badge role">
+
+Roles awarded for applying the guild tag
+
+**Syntax**
+
+```text
+!badge role <action> [role]
+```
+
+**Example template**
+
+```text
+!badge role action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!badge role
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!badge channel">
+
+Set an award channel for new guild tag members
+
+**Syntax**
+
+```text
+!badge channel [channel]
+```
+
+**Example template**
+
+```text
+!badge channel
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+badge channel
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!badge clear">
+
+Remove the award channel
+
+**Syntax**
+
+```text
+!badge clear
+```
+
+**Example template**
+
+```text
+!badge clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+badge clear
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!badge sync">
+
+Sync guild tag member roles
+
+**Syntax**
+
+```text
+!badge sync
+```
+
+**Example template**
+
+```text
+!badge sync
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+badge sync
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!serverinfo-panel">
+
+Post a public server information card that updates automatically
+
+**Syntax**
+
+```text
+!serverinfo-panel [channel]
+```
+
+**Example template**
+
+```text
+!serverinfo-panel
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+serverinfo-panel
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="/find">
+
+Search server members by name or ID
+
+**Syntax**
+
+```text
+/find <query>
+```
+
+**Example template**
+
+```text
+/find query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/find
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="/privacy">
+
+Control whether you appear in member search
+
+**Syntax**
+
+```text
+/privacy [action]
+```
+
+**Example template**
+
+```text
+/privacy
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+privacy
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Server information panel setup](/handbook/community/setup-serverinfo-panel)

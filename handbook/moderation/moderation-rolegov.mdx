@@ -44,3 +44,113 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!rolehoist">
+
+Show or hide a role in the member sidebar
+
+**Syntax**
+
+```text
+!rolehoist <role> <enabled>
+```
+
+**Example template**
+
+```text
+!rolehoist role:<role> enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolehoist
+```
+
+Missing `role`, `enabled`.
+
+</Accordion>
+
+<Accordion title="!rolemention">
+
+Enable or disable role mentions
+
+**Syntax**
+
+```text
+!rolemention <role> <enabled>
+```
+
+**Example template**
+
+```text
+!rolemention role:<role> enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolemention
+```
+
+Missing `role`, `enabled`.
+
+</Accordion>
+
+<Accordion title="!roleposition">
+
+Move a role within the server role list
+
+**Syntax**
+
+```text
+!roleposition <role> <position>
+```
+
+**Example template**
+
+```text
+!roleposition role:<role> position:<position>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roleposition
+```
+
+Missing `role`, `position`.
+
+</Accordion>
+
+</AccordionGroup>

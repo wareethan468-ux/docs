@@ -43,6 +43,144 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/antispam set">
+
+Change protection settings
+
+**Syntax**
+
+```text
+/antispam set <enabled> [limit] [window] [log_channel] [duplicates] [mentions] [timeout] [mode] [channel_hops] [mention_burst] [invite_limit] [attachment_limit] [escalate_after] [max_timeout]
+```
+
+**Example template**
+
+```text
+/antispam set enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/antispam set
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="/antispam status">
+
+Show protection settings
+
+**Syntax**
+
+```text
+/antispam status
+```
+
+**Example template**
+
+```text
+/antispam status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+antispam status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/antispam exempt">
+
+Add a protection exemption
+
+**Syntax**
+
+```text
+/antispam exempt [role] [channel]
+```
+
+**Example template**
+
+```text
+/antispam exempt
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+antispam exempt
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/antispam unexempt">
+
+Remove a protection exemption
+
+**Syntax**
+
+```text
+/antispam unexempt [role] [channel]
+```
+
+**Example template**
+
+```text
+/antispam unexempt
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+antispam unexempt
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### enabled

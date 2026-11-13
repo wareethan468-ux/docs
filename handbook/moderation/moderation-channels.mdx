@@ -50,6 +50,592 @@ Open /setup, choose **Moderation**, then **Channel controls**. Choose an action,
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!sticky setup">
+
+Set or replace the sticky message for a channel
+
+**Syntax**
+
+```text
+!sticky setup <message> [channel] [embed]
+```
+
+**Example template**
+
+```text
+!sticky setup message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!sticky setup
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!sticky remove">
+
+Remove the sticky message from a channel
+
+**Syntax**
+
+```text
+!sticky remove [channel]
+```
+
+**Example template**
+
+```text
+!sticky remove
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+sticky remove
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!sticky list">
+
+List channels with sticky messages
+
+**Syntax**
+
+```text
+!sticky list
+```
+
+**Example template**
+
+```text
+!sticky list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+sticky list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!createchannel">
+
+Create a text or voice channel
+
+**Syntax**
+
+```text
+!createchannel <name> [type]
+```
+
+**Example template**
+
+```text
+!createchannel name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!createchannel
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!deletechannel">
+
+Delete a channel after confirmation
+
+**Syntax**
+
+```text
+!deletechannel [channel] <confirm>
+```
+
+**Example template**
+
+```text
+!deletechannel confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!deletechannel
+```
+
+Missing `confirm`.
+
+</Accordion>
+
+<Accordion title="/revokefiles off">
+
+Block uploads and embeds for everyone
+
+**Syntax**
+
+```text
+/revokefiles off [channel]
+```
+
+**Example template**
+
+```text
+/revokefiles off
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+revokefiles off
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/revokefiles on">
+
+Allow uploads and embeds for everyone
+
+**Syntax**
+
+```text
+/revokefiles on [channel]
+```
+
+**Example template**
+
+```text
+/revokefiles on
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+revokefiles on
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/revokefiles reset">
+
+Restore inherited file and embed permissions
+
+**Syntax**
+
+```text
+/revokefiles reset [channel]
+```
+
+**Example template**
+
+```text
+/revokefiles reset
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+revokefiles reset
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!slowmode">
+
+Set this channel's slowmode
+
+**Syntax**
+
+```text
+!slowmode <seconds>
+```
+
+**Example template**
+
+```text
+!slowmode seconds:<seconds>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!slowmode
+```
+
+Missing `seconds`.
+
+</Accordion>
+
+<Accordion title="!lock">
+
+Lock a text channel
+
+**Syntax**
+
+```text
+!lock [channel]
+```
+
+**Example template**
+
+```text
+!lock
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+lock
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!unlock">
+
+Restore a text channel lock
+
+**Syntax**
+
+```text
+!unlock [channel]
+```
+
+**Example template**
+
+```text
+!unlock
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+unlock
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!hide">
+
+Hide a channel from a member or role
+
+**Syntax**
+
+```text
+!hide <channel> <target> [reason]
+```
+
+**Example template**
+
+```text
+!hide channel:<channel> target:<target>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!hide
+```
+
+Missing `channel`, `target`.
+
+</Accordion>
+
+<Accordion title="!nuke">
+
+Wipe this channel fresh — same look, one button to confirm
+
+**Syntax**
+
+```text
+!nuke
+```
+
+**Example template**
+
+```text
+!nuke
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+nuke
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!lockdown">
+
+Freeze ALL text channels — full lockdown mode
+
+**Syntax**
+
+```text
+!lockdown
+```
+
+**Example template**
+
+```text
+!lockdown
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+lockdown
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!lockdown-off">
+
+Lift the lockdown — reopen text channels
+
+**Syntax**
+
+```text
+!lockdown-off
+```
+
+**Example template**
+
+```text
+!lockdown-off
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+lockdown-off
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!counter set">
+
+Set a channel counter to an existing channel
+
+**Syntax**
+
+```text
+!counter set <name> <channel>
+```
+
+**Example template**
+
+```text
+!counter set name:<name> channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!counter set
+```
+
+Missing `name`, `channel`.
+
+</Accordion>
+
+<Accordion title="!counter list">
+
+List every counter available in this server
+
+**Syntax**
+
+```text
+!counter list
+```
+
+**Example template**
+
+```text
+!counter list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+counter list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!counter remove">
+
+Remove a channel counter
+
+**Syntax**
+
+```text
+!counter remove <name>
+```
+
+**Example template**
+
+```text
+!counter remove name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!counter remove
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!counter add">
+
+Create channel counter
+
+**Syntax**
+
+```text
+!counter add <name> <type> [emoji]
+```
+
+**Example template**
+
+```text
+!counter add name:<name> type:<type>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!counter add
+```
+
+Missing `name`, `type`.
+
+</Accordion>
+
+<Accordion title="!lockdownstatus">
+
+Inspect locked text channels without changing permissions
+
+**Syntax**
+
+```text
+!lockdownstatus
+```
+
+**Example template**
+
+```text
+!lockdownstatus
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+lockdownstatus
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Sticky note setup](/handbook/moderation/setup-sticky)

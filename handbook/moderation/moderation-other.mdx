@@ -42,3 +42,141 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!forcenick set">
+
+Force a member nickname
+
+**Syntax**
+
+```text
+!forcenick set <user> <nickname>
+```
+
+**Example template**
+
+```text
+!forcenick set user:<user> nickname:<nickname>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!forcenick set
+```
+
+Missing `user`, `nickname`.
+
+</Accordion>
+
+<Accordion title="!forcenick remove">
+
+Stop enforcing a nickname
+
+**Syntax**
+
+```text
+!forcenick remove <user>
+```
+
+**Example template**
+
+```text
+!forcenick remove user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!forcenick remove
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!forcenick view">
+
+View a member nickname lock
+
+**Syntax**
+
+```text
+!forcenick view <user>
+```
+
+**Example template**
+
+```text
+!forcenick view user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!forcenick view
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!forcenick list">
+
+List nickname locks
+
+**Syntax**
+
+```text
+!forcenick list [page]
+```
+
+**Example template**
+
+```text
+!forcenick list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+forcenick list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

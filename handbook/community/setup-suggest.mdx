@@ -40,6 +40,172 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!suggest setup">
+
+Set the suggestion channel
+
+**Syntax**
+
+```text
+!suggest setup <channel>
+```
+
+**Example template**
+
+```text
+!suggest setup channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!suggest setup
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!suggest submit">
+
+Send a suggestion
+
+**Syntax**
+
+```text
+!suggest submit <text>
+```
+
+**Example template**
+
+```text
+!suggest submit text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!suggest submit
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!suggest review">
+
+Change the status of a suggestion
+
+**Syntax**
+
+```text
+!suggest review <id> <status> [note]
+```
+
+**Example template**
+
+```text
+!suggest review id:<id> status:<status>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!suggest review
+```
+
+Missing `id`, `status`.
+
+</Accordion>
+
+<Accordion title="!suggest list">
+
+View recent suggestions
+
+**Syntax**
+
+```text
+!suggest list
+```
+
+**Example template**
+
+```text
+!suggest list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+suggest list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!suggest disable">
+
+Disable new suggestions
+
+**Syntax**
+
+```text
+!suggest disable
+```
+
+**Example template**
+
+```text
+!suggest disable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+suggest disable
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### channel

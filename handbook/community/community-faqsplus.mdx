@@ -47,3 +47,365 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!comfaqadd">
+
+Add an answer to the community FAQ directory
+
+**Syntax**
+
+```text
+!comfaqadd <name> <answer>
+```
+
+**Example template**
+
+```text
+!comfaqadd name:<name> answer:<answer>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comfaqadd
+```
+
+Missing `name`, `answer`.
+
+</Accordion>
+
+<Accordion title="!comfaqedit">
+
+Update a saved community FAQ answer
+
+**Syntax**
+
+```text
+!comfaqedit <name> <answer>
+```
+
+**Example template**
+
+```text
+!comfaqedit name:<name> answer:<answer>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comfaqedit
+```
+
+Missing `name`, `answer`.
+
+</Accordion>
+
+<Accordion title="!comfaqremove">
+
+Remove an answer from the community FAQ
+
+**Syntax**
+
+```text
+!comfaqremove <name>
+```
+
+**Example template**
+
+```text
+!comfaqremove name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comfaqremove
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comfaqlist">
+
+Browse FAQ names and topic categories
+
+**Syntax**
+
+```text
+!comfaqlist [category]
+```
+
+**Example template**
+
+```text
+!comfaqlist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comfaqlist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comfaqview">
+
+Read a community FAQ and its answer
+
+**Syntax**
+
+```text
+!comfaqview <name>
+```
+
+**Example template**
+
+```text
+!comfaqview name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comfaqview
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comfaqsearch">
+
+Search FAQs by name, category and answer
+
+**Syntax**
+
+```text
+!comfaqsearch <query>
+```
+
+**Example template**
+
+```text
+!comfaqsearch query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comfaqsearch
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!comfaqcategories">
+
+List available FAQ topic categories
+
+**Syntax**
+
+```text
+!comfaqcategories
+```
+
+**Example template**
+
+```text
+!comfaqcategories
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comfaqcategories
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comfaqcategorize">
+
+Move a saved FAQ into a topic category
+
+**Syntax**
+
+```text
+!comfaqcategorize <name> <category>
+```
+
+**Example template**
+
+```text
+!comfaqcategorize name:<name> category:<category>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comfaqcategorize
+```
+
+Missing `name`, `category`.
+
+</Accordion>
+
+<Accordion title="!comfaquncategorize">
+
+Move a community FAQ back to General
+
+**Syntax**
+
+```text
+!comfaquncategorize <name>
+```
+
+**Example template**
+
+```text
+!comfaquncategorize name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comfaquncategorize
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comfaqstats">
+
+Show community FAQ inventory and most-read answers
+
+**Syntax**
+
+```text
+!comfaqstats
+```
+
+**Example template**
+
+```text
+!comfaqstats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comfaqstats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comfaqexport">
+
+Export FAQ topics and answers as JSON
+
+**Syntax**
+
+```text
+!comfaqexport
+```
+
+**Example template**
+
+```text
+!comfaqexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comfaqexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comfaqimport">
+
+Import one FAQ from a JSON object
+
+**Syntax**
+
+```text
+!comfaqimport <json>
+```
+
+**Example template**
+
+```text
+!comfaqimport json:<json>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comfaqimport
+```
+
+Missing `json`.
+
+</Accordion>
+
+</AccordionGroup>

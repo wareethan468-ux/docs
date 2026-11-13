@@ -48,3 +48,225 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!roleoverviewplus">
+
+Role age, members, position and flags
+
+**Syntax**
+
+```text
+!roleoverviewplus <role>
+```
+
+**Example template**
+
+```text
+!roleoverviewplus role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roleoverviewplus
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!rolechannelaccess">
+
+Check role access to a selected channel
+
+**Syntax**
+
+```text
+!rolechannelaccess <role> [channel]
+```
+
+**Example template**
+
+```text
+!rolechannelaccess role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolechannelaccess
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!rolememberestimate">
+
+Count cached members who have a role
+
+**Syntax**
+
+```text
+!rolememberestimate <role>
+```
+
+**Example template**
+
+```text
+!rolememberestimate role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolememberestimate
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!rolecolorpreview">
+
+Show exact role color and mentionable/hoist flags
+
+**Syntax**
+
+```text
+!rolecolorpreview <role>
+```
+
+**Example template**
+
+```text
+!rolecolorpreview role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolecolorpreview
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!rolepermissionsummary">
+
+List the permission bits assigned to a role
+
+**Syntax**
+
+```text
+!rolepermissionsummary <role>
+```
+
+**Example template**
+
+```text
+!rolepermissionsummary role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolepermissionsummary
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!roleintegrationsource">
+
+Check whether a role is managed by an integration
+
+**Syntax**
+
+```text
+!roleintegrationsource <role>
+```
+
+**Example template**
+
+```text
+!roleintegrationsource role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!roleintegrationsource
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!rolevoicepermissions">
+
+List voice-related permissions on a role
+
+**Syntax**
+
+```text
+!rolevoicepermissions <role>
+```
+
+**Example template**
+
+```text
+!rolevoicepermissions role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rolevoicepermissions
+```
+
+Missing `role`.
+
+</Accordion>
+
+</AccordionGroup>

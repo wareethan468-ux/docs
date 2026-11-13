@@ -47,3 +47,365 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!comresourceadd">
+
+Add a curated HTTPS community resource
+
+**Syntax**
+
+```text
+!comresourceadd <name> <url> <description>
+```
+
+**Example template**
+
+```text
+!comresourceadd name:<name> url:<url> description:<description>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourceadd
+```
+
+Missing `name`, `url`, `description`.
+
+</Accordion>
+
+<Accordion title="!comresourceedit">
+
+Edit a resource URL or description
+
+**Syntax**
+
+```text
+!comresourceedit <name> [url] [description]
+```
+
+**Example template**
+
+```text
+!comresourceedit name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourceedit
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comresourcedelete">
+
+Remove a resource from the curated directory
+
+**Syntax**
+
+```text
+!comresourcedelete <name>
+```
+
+**Example template**
+
+```text
+!comresourcedelete name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourcedelete
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comresourcelist">
+
+Browse community resource links
+
+**Syntax**
+
+```text
+!comresourcelist [category]
+```
+
+**Example template**
+
+```text
+!comresourcelist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comresourcelist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comresourceview">
+
+Show one verified HTTPS resource
+
+**Syntax**
+
+```text
+!comresourceview <name>
+```
+
+**Example template**
+
+```text
+!comresourceview name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourceview
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comresourcesearch">
+
+Search community resources by name and description
+
+**Syntax**
+
+```text
+!comresourcesearch <query>
+```
+
+**Example template**
+
+```text
+!comresourcesearch query:<query>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourcesearch
+```
+
+Missing `query`.
+
+</Accordion>
+
+<Accordion title="!comresourcecategory">
+
+Set the topic category for a community link
+
+**Syntax**
+
+```text
+!comresourcecategory <name> <category>
+```
+
+**Example template**
+
+```text
+!comresourcecategory name:<name> category:<category>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourcecategory
+```
+
+Missing `name`, `category`.
+
+</Accordion>
+
+<Accordion title="!comresourceuncategorize">
+
+Move a resource back into General
+
+**Syntax**
+
+```text
+!comresourceuncategorize <name>
+```
+
+**Example template**
+
+```text
+!comresourceuncategorize name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourceuncategorize
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comresourcefeature">
+
+Feature a resource at the top of listings
+
+**Syntax**
+
+```text
+!comresourcefeature <name>
+```
+
+**Example template**
+
+```text
+!comresourcefeature name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourcefeature
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comresourceunfeature">
+
+Remove featured status from a resource
+
+**Syntax**
+
+```text
+!comresourceunfeature <name>
+```
+
+**Example template**
+
+```text
+!comresourceunfeature name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comresourceunfeature
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!comresourcestats">
+
+View curated link and category totals
+
+**Syntax**
+
+```text
+!comresourcestats
+```
+
+**Example template**
+
+```text
+!comresourcestats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comresourcestats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comresourceexport">
+
+Export the community HTTPS link directory
+
+**Syntax**
+
+```text
+!comresourceexport
+```
+
+**Example template**
+
+```text
+!comresourceexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comresourceexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

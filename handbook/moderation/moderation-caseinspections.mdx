@@ -49,3 +49,421 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!modcasecounts">
+
+Summarize total moderation cases
+
+**Syntax**
+
+```text
+!modcasecounts
+```
+
+**Example template**
+
+```text
+!modcasecounts
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modcasecounts
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modcasebyaction">
+
+Find moderation cases of one action
+
+**Syntax**
+
+```text
+!modcasebyaction <action>
+```
+
+**Example template**
+
+```text
+!modcasebyaction action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!modcasebyaction
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!modcasebymember">
+
+Show cases recorded for one member
+
+**Syntax**
+
+```text
+!modcasebymember <user>
+```
+
+**Example template**
+
+```text
+!modcasebymember user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!modcasebymember
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!modcasebystaff">
+
+Show moderation cases recorded by one moderator
+
+**Syntax**
+
+```text
+!modcasebystaff <user>
+```
+
+**Example template**
+
+```text
+!modcasebystaff user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!modcasebystaff
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!modcase24h">
+
+Review cases recorded in the last 24 hours
+
+**Syntax**
+
+```text
+!modcase24h
+```
+
+**Example template**
+
+```text
+!modcase24h
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modcase24h
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modcase7d">
+
+Review cases recorded in the last seven days
+
+**Syntax**
+
+```text
+!modcase7d
+```
+
+**Example template**
+
+```text
+!modcase7d
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modcase7d
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modcase30d">
+
+Review cases recorded in the last 30 days
+
+**Syntax**
+
+```text
+!modcase30d
+```
+
+**Example template**
+
+```text
+!modcase30d
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modcase30d
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modcasemissingreasons">
+
+Find cases with no meaningful recorded reason
+
+**Syntax**
+
+```text
+!modcasemissingreasons
+```
+
+**Example template**
+
+```text
+!modcasemissingreasons
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modcasemissingreasons
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modcaseoldest">
+
+Show oldest recorded moderation cases
+
+**Syntax**
+
+```text
+!modcaseoldest
+```
+
+**Example template**
+
+```text
+!modcaseoldest
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modcaseoldest
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modcaserecent">
+
+Show most recent moderation cases
+
+**Syntax**
+
+```text
+!modcaserecent
+```
+
+**Example template**
+
+```text
+!modcaserecent
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modcaserecent
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modwarnings24h">
+
+Review warnings recorded in the last 24 hours
+
+**Syntax**
+
+```text
+!modwarnings24h
+```
+
+**Example template**
+
+```text
+!modwarnings24h
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modwarnings24h
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modwarnings7d">
+
+Review warnings recorded in the last seven days
+
+**Syntax**
+
+```text
+!modwarnings7d
+```
+
+**Example template**
+
+```text
+!modwarnings7d
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modwarnings7d
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modwarningrepeat">
+
+List members with three or more warnings
+
+**Syntax**
+
+```text
+!modwarningrepeat
+```
+
+**Example template**
+
+```text
+!modwarningrepeat
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modwarningrepeat
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modwarningsbystaff">
+
+List warnings recorded by a moderator
+
+**Syntax**
+
+```text
+!modwarningsbystaff <user>
+```
+
+**Example template**
+
+```text
+!modwarningsbystaff user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!modwarningsbystaff
+```
+
+Missing `user`.
+
+</Accordion>
+
+</AccordionGroup>

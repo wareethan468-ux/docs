@@ -45,3 +45,813 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/config embed create">
+
+Save an embed
+
+**Syntax**
+
+```text
+/config embed create <name> <code>
+```
+
+**Example template**
+
+```text
+/config embed create name:<name> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config embed create
+```
+
+Missing `name`, `code`.
+
+</Accordion>
+
+<Accordion title="/config embed preview">
+
+Post a saved embed
+
+**Syntax**
+
+```text
+/config embed preview <name>
+```
+
+**Example template**
+
+```text
+/config embed preview name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config embed preview
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/config embed delete">
+
+Remove a saved embed
+
+**Syntax**
+
+```text
+/config embed delete <name>
+```
+
+**Example template**
+
+```text
+/config embed delete name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config embed delete
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/config embed list">
+
+List saved embeds
+
+**Syntax**
+
+```text
+/config embed list
+```
+
+**Example template**
+
+```text
+/config embed list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+config embed list
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/config embed code">
+
+Get the embed JSON
+
+**Syntax**
+
+```text
+/config embed code <name>
+```
+
+**Example template**
+
+```text
+/config embed code name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config embed code
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/config embed edit">
+
+Edit a saved embed
+
+**Syntax**
+
+```text
+/config embed edit <name> <code>
+```
+
+**Example template**
+
+```text
+/config embed edit name:<name> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config embed edit
+```
+
+Missing `name`, `code`.
+
+</Accordion>
+
+<Accordion title="/config component create">
+
+Save a Components V2 message
+
+**Syntax**
+
+```text
+/config component create <name> <code>
+```
+
+**Example template**
+
+```text
+/config component create name:<name> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config component create
+```
+
+Missing `name`, `code`.
+
+</Accordion>
+
+<Accordion title="/config component preview">
+
+Post a stored component
+
+**Syntax**
+
+```text
+/config component preview <name>
+```
+
+**Example template**
+
+```text
+/config component preview name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config component preview
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/config component delete">
+
+Remove a component
+
+**Syntax**
+
+```text
+/config component delete <name>
+```
+
+**Example template**
+
+```text
+/config component delete name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config component delete
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/config component list">
+
+List components
+
+**Syntax**
+
+```text
+/config component list
+```
+
+**Example template**
+
+```text
+/config component list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+config component list
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/config component code">
+
+Get the component JSON
+
+**Syntax**
+
+```text
+/config component code <name>
+```
+
+**Example template**
+
+```text
+/config component code name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config component code
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="/config component edit">
+
+Edit a component
+
+**Syntax**
+
+```text
+/config component edit <name> <code>
+```
+
+**Example template**
+
+```text
+/config component edit name:<name> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/config component edit
+```
+
+Missing `name`, `code`.
+
+</Accordion>
+
+<Accordion title="/config invites list">
+
+View active server invites (Manage Server required)
+
+**Syntax**
+
+```text
+/config invites list
+```
+
+**Example template**
+
+```text
+/config invites list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+config invites list
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!embed create">
+
+Save an embed
+
+**Syntax**
+
+```text
+!embed create <name> <code>
+```
+
+**Example template**
+
+```text
+!embed create name:<name> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed create
+```
+
+Missing `name`, `code`.
+
+</Accordion>
+
+<Accordion title="!embed edit">
+
+Update a saved embed
+
+**Syntax**
+
+```text
+!embed edit <name> <code>
+```
+
+**Example template**
+
+```text
+!embed edit name:<name> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed edit
+```
+
+Missing `name`, `code`.
+
+</Accordion>
+
+<Accordion title="!embed list">
+
+List saved embeds
+
+**Syntax**
+
+```text
+!embed list
+```
+
+**Example template**
+
+```text
+!embed list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+embed list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!embed preview">
+
+Preview a saved embed
+
+**Syntax**
+
+```text
+!embed preview <name>
+```
+
+**Example template**
+
+```text
+!embed preview name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed preview
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!embed copy">
+
+Copy saved embed code
+
+**Syntax**
+
+```text
+!embed copy <name>
+```
+
+**Example template**
+
+```text
+!embed copy name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed copy
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!embed delete">
+
+Delete saved embed
+
+**Syntax**
+
+```text
+!embed delete <name>
+```
+
+**Example template**
+
+```text
+!embed delete name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embed delete
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!pagination set">
+
+Enable pagination on an existing Zone embed
+
+**Syntax**
+
+```text
+!pagination set <message>
+```
+
+**Example template**
+
+```text
+!pagination set message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pagination set
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!pagination add">
+
+Add a page
+
+**Syntax**
+
+```text
+!pagination add <message> <code>
+```
+
+**Example template**
+
+```text
+!pagination add message:<message> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pagination add
+```
+
+Missing `message`, `code`.
+
+</Accordion>
+
+<Accordion title="!pagination remove">
+
+Remove a page
+
+**Syntax**
+
+```text
+!pagination remove <message> <page>
+```
+
+**Example template**
+
+```text
+!pagination remove message:<message> page:<page>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pagination remove
+```
+
+Missing `message`, `page`.
+
+</Accordion>
+
+<Accordion title="!pagination update">
+
+Update a page
+
+**Syntax**
+
+```text
+!pagination update <message> <page> <code>
+```
+
+**Example template**
+
+```text
+!pagination update message:<message> page:<page> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pagination update
+```
+
+Missing `message`, `page`, `code`.
+
+</Accordion>
+
+<Accordion title="!pagination list">
+
+List paginated messages
+
+**Syntax**
+
+```text
+!pagination list
+```
+
+**Example template**
+
+```text
+!pagination list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+pagination list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!pagination delete">
+
+Delete a pagination message
+
+**Syntax**
+
+```text
+!pagination delete <message>
+```
+
+**Example template**
+
+```text
+!pagination delete message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pagination delete
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!createembed">
+
+Post an embed from JSON or saved code
+
+**Syntax**
+
+```text
+!createembed <code>
+```
+
+**Example template**
+
+```text
+!createembed code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!createembed
+```
+
+Missing `code`.
+
+</Accordion>
+
+<Accordion title="!embedcode">
+
+Copy an embed from a message
+
+**Syntax**
+
+```text
+!embedcode <message>
+```
+
+**Example template**
+
+```text
+!embedcode message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!embedcode
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!editembed">
+
+Edit an embed posted by Zone
+
+**Syntax**
+
+```text
+!editembed <message> <code>
+```
+
+**Example template**
+
+```text
+!editembed message:<message> code:<code>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!editembed
+```
+
+Missing `message`, `code`.
+
+</Accordion>
+
+</AccordionGroup>

@@ -49,3 +49,477 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!channeltopic">
+
+Update a text channel topic
+
+**Syntax**
+
+```text
+!channeltopic <channel> <topic>
+```
+
+**Example template**
+
+```text
+!channeltopic channel:<channel> topic:<topic>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channeltopic
+```
+
+Missing `channel`, `topic`.
+
+</Accordion>
+
+<Accordion title="!channelnsfw">
+
+Enable or disable a channel NSFW flag
+
+**Syntax**
+
+```text
+!channelnsfw <channel> <enabled>
+```
+
+**Example template**
+
+```text
+!channelnsfw channel:<channel> enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelnsfw
+```
+
+Missing `channel`, `enabled`.
+
+</Accordion>
+
+<Accordion title="!channelcategory">
+
+Move a channel to a selected category
+
+**Syntax**
+
+```text
+!channelcategory <channel> <category>
+```
+
+**Example template**
+
+```text
+!channelcategory channel:<channel> category:<category>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelcategory
+```
+
+Missing `channel`, `category`.
+
+</Accordion>
+
+<Accordion title="!channelsync">
+
+Sync a channel permission overwrites with its category
+
+**Syntax**
+
+```text
+!channelsync <channel>
+```
+
+**Example template**
+
+```text
+!channelsync channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelsync
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!channelbitrate">
+
+Set voice channel bitrate in kbps
+
+**Syntax**
+
+```text
+!channelbitrate <channel> <kbps>
+```
+
+**Example template**
+
+```text
+!channelbitrate channel:<channel> kbps:<kbps>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelbitrate
+```
+
+Missing `channel`, `kbps`.
+
+</Accordion>
+
+<Accordion title="!channeluserlimit">
+
+Update the voice channel member limit
+
+**Syntax**
+
+```text
+!channeluserlimit <channel> <limit>
+```
+
+**Example template**
+
+```text
+!channeluserlimit channel:<channel> limit:<limit>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channeluserlimit
+```
+
+Missing `channel`, `limit`.
+
+</Accordion>
+
+<Accordion title="!channelclone">
+
+Duplicate a channel with its current settings
+
+**Syntax**
+
+```text
+!channelclone <channel> [name]
+```
+
+**Example template**
+
+```text
+!channelclone channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelclone
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!channelposition">
+
+Move a channel to a numeric position
+
+**Syntax**
+
+```text
+!channelposition <channel> <position>
+```
+
+**Example template**
+
+```text
+!channelposition channel:<channel> position:<position>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelposition
+```
+
+Missing `channel`, `position`.
+
+</Accordion>
+
+<Accordion title="!channelpins">
+
+List pinned messages in a text channel
+
+**Syntax**
+
+```text
+!channelpins <channel>
+```
+
+**Example template**
+
+```text
+!channelpins channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelpins
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!channel copyperms">
+
+Copy permission overwrites from one channel to another
+
+**Syntax**
+
+```text
+!channel copyperms <source> <target> [merge]
+```
+
+**Example template**
+
+```text
+!channel copyperms source:<source> target:<target>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channel copyperms
+```
+
+Missing `source`, `target`.
+
+</Accordion>
+
+<Accordion title="!pinmessage">
+
+Pin a message in a text channel
+
+**Syntax**
+
+```text
+!pinmessage <channel> <message_id>
+```
+
+**Example template**
+
+```text
+!pinmessage channel:<channel> message_id:<message_id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pinmessage
+```
+
+Missing `channel`, `message_id`.
+
+</Accordion>
+
+<Accordion title="!unpinmessage">
+
+Remove a message from pinned messages
+
+**Syntax**
+
+```text
+!unpinmessage <channel> <message_id>
+```
+
+**Example template**
+
+```text
+!unpinmessage channel:<channel> message_id:<message_id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!unpinmessage
+```
+
+Missing `channel`, `message_id`.
+
+</Accordion>
+
+<Accordion title="!threadarchive">
+
+Archive a discussion thread
+
+**Syntax**
+
+```text
+!threadarchive <channel>
+```
+
+**Example template**
+
+```text
+!threadarchive channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!threadarchive
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!threadunarchive">
+
+Reopen an archived discussion thread
+
+**Syntax**
+
+```text
+!threadunarchive <channel>
+```
+
+**Example template**
+
+```text
+!threadunarchive channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!threadunarchive
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!threadlock">
+
+Lock a discussion thread
+
+**Syntax**
+
+```text
+!threadlock <channel>
+```
+
+**Example template**
+
+```text
+!threadlock channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!threadlock
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!threadunlock">
+
+Unlock a discussion thread
+
+**Syntax**
+
+```text
+!threadunlock <channel>
+```
+
+**Example template**
+
+```text
+!threadunlock channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!threadunlock
+```
+
+Missing `channel`.
+
+</Accordion>
+
+</AccordionGroup>

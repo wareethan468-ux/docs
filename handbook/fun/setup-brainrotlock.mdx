@@ -42,6 +42,256 @@ Manage Server opens shared setup; action-specific checks still apply.
 
 Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!brainrotlock add">
+
+Brainrot a member
+
+**Syntax**
+
+```text
+!brainrotlock add <user>
+```
+
+**Example template**
+
+```text
+!brainrotlock add user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!brainrotlock add
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!brainrotlock remove">
+
+Remove a member from brainrotlock
+
+**Syntax**
+
+```text
+!brainrotlock remove <user>
+```
+
+**Example template**
+
+```text
+!brainrotlock remove user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!brainrotlock remove
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!brainrotlock list">
+
+List brainrotted members
+
+**Syntax**
+
+```text
+!brainrotlock list
+```
+
+**Example template**
+
+```text
+!brainrotlock list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+brainrotlock list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!brainrotlock protect">
+
+List protected members
+
+**Syntax**
+
+```text
+!brainrotlock protect
+```
+
+**Example template**
+
+```text
+!brainrotlock protect
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+brainrotlock protect
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!brainrotlock protect-add">
+
+Protect a member from brainrotlock
+
+**Syntax**
+
+```text
+!brainrotlock protect-add <user>
+```
+
+**Example template**
+
+```text
+!brainrotlock protect-add user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!brainrotlock protect-add
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!brainrotlock protect-remove">
+
+Remove protection from a member
+
+**Syntax**
+
+```text
+!brainrotlock protect-remove <user>
+```
+
+**Example template**
+
+```text
+!brainrotlock protect-remove user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!brainrotlock protect-remove
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!brainrotlock amount">
+
+Set how much brainrot locked messages get
+
+**Syntax**
+
+```text
+!brainrotlock amount [level]
+```
+
+**Example template**
+
+```text
+!brainrotlock amount
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+brainrotlock amount
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!brainrotlock roulette">
+
+Roulette: show, or start/stop and tune it
+
+**Syntax**
+
+```text
+!brainrotlock roulette [enabled] [chance] [limit]
+```
+
+**Example template**
+
+```text
+!brainrotlock roulette
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+brainrotlock roulette
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Settings
 
 ### user

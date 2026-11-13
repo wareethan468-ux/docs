@@ -47,3 +47,365 @@ This module has no dedicated entry in shared setup. Use its supported Discord wo
 ## Troubleshooting
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!comchallengecreate">
+
+Create a time-limited voluntary community challenge
+
+**Syntax**
+
+```text
+!comchallengecreate <title> <goal> <deadline>
+```
+
+**Example template**
+
+```text
+!comchallengecreate title:<title> goal:<goal> deadline:<deadline>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengecreate
+```
+
+Missing `title`, `goal`, `deadline`.
+
+</Accordion>
+
+<Accordion title="!comchallengelist">
+
+Browse open challenges and deadlines
+
+**Syntax**
+
+```text
+!comchallengelist
+```
+
+**Example template**
+
+```text
+!comchallengelist
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comchallengelist
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comchallengeview">
+
+Show challenge details and current participation
+
+**Syntax**
+
+```text
+!comchallengeview <id>
+```
+
+**Example template**
+
+```text
+!comchallengeview id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengeview
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comchallengejoin">
+
+Opt into an open community challenge
+
+**Syntax**
+
+```text
+!comchallengejoin <id>
+```
+
+**Example template**
+
+```text
+!comchallengejoin id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengejoin
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comchallengeleave">
+
+Leave an opted-in challenge
+
+**Syntax**
+
+```text
+!comchallengeleave <id>
+```
+
+**Example template**
+
+```text
+!comchallengeleave id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengeleave
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comchallengedone">
+
+Self-report completion of a challenge goal
+
+**Syntax**
+
+```text
+!comchallengedone <id>
+```
+
+**Example template**
+
+```text
+!comchallengedone id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengedone
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comchallengeundo">
+
+Remove your self-reported challenge completion
+
+**Syntax**
+
+```text
+!comchallengeundo <id>
+```
+
+**Example template**
+
+```text
+!comchallengeundo id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengeundo
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comchallengeclose">
+
+Close a challenge to new participants
+
+**Syntax**
+
+```text
+!comchallengeclose <id>
+```
+
+**Example template**
+
+```text
+!comchallengeclose id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengeclose
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comchallengereopen">
+
+Reopen a nonexpired challenge
+
+**Syntax**
+
+```text
+!comchallengereopen <id>
+```
+
+**Example template**
+
+```text
+!comchallengereopen id:<id>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengereopen
+```
+
+Missing `id`.
+
+</Accordion>
+
+<Accordion title="!comchallengestats">
+
+Summarize saved challenge participation
+
+**Syntax**
+
+```text
+!comchallengestats
+```
+
+**Example template**
+
+```text
+!comchallengestats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comchallengestats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comchallengeexport">
+
+Export challenge dates and opt-in participation
+
+**Syntax**
+
+```text
+!comchallengeexport
+```
+
+**Example template**
+
+```text
+!comchallengeexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+comchallengeexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!comchallengedelete">
+
+Delete a saved challenge with explicit confirmation
+
+**Syntax**
+
+```text
+!comchallengedelete <id> <confirm>
+```
+
+**Example template**
+
+```text
+!comchallengedelete id:<id> confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!comchallengedelete
+```
+
+Missing `id`, `confirm`.
+
+</Accordion>
+
+</AccordionGroup>

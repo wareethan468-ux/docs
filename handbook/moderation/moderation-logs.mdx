@@ -49,6 +49,508 @@ Open /setup, choose **Moderation**, then **Logs & appeals**. Choose an action, f
 
 Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
 
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!modlogs">
+
+Show member moderation history
+
+**Syntax**
+
+```text
+!modlogs [user] [page]
+```
+
+**Example template**
+
+```text
+!modlogs
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modlogs
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!audit">
+
+Show recent server audit entries and saved bot actions
+
+**Syntax**
+
+```text
+!audit [source] [page]
+```
+
+**Example template**
+
+```text
+!audit
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+audit
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!modstats">
+
+Show moderation action totals
+
+**Syntax**
+
+```text
+!modstats
+```
+
+**Example template**
+
+```text
+!modstats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+modstats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!appeal disable">
+
+Stop accepting appeals.
+
+**Syntax**
+
+```text
+!appeal disable
+```
+
+**Example template**
+
+```text
+!appeal disable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+appeal disable
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!appeal enable">
+
+Start accepting appeals.
+
+**Syntax**
+
+```text
+!appeal enable
+```
+
+**Example template**
+
+```text
+!appeal enable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+appeal enable
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!appeal form">
+
+List the appeal forms this server has.
+
+**Syntax**
+
+```text
+!appeal form
+```
+
+**Example template**
+
+```text
+!appeal form
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+appeal form
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!appeal form-add">
+
+Create a new appeal form.
+
+**Syntax**
+
+```text
+!appeal form-add <name>
+```
+
+**Example template**
+
+```text
+!appeal form-add name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!appeal form-add
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!appeal form-list">
+
+List the appeal forms this server has.
+
+**Syntax**
+
+```text
+!appeal form-list
+```
+
+**Example template**
+
+```text
+!appeal form-list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+appeal form-list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!appeal form-remove">
+
+Delete an appeal form by name.
+
+**Syntax**
+
+```text
+!appeal form-remove <name>
+```
+
+**Example template**
+
+```text
+!appeal form-remove name:<name>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!appeal form-remove
+```
+
+Missing `name`.
+
+</Accordion>
+
+<Accordion title="!appeal idlookup">
+
+Allow or block appealing via your server ID.
+
+**Syntax**
+
+```text
+!appeal idlookup [setting]
+```
+
+**Example template**
+
+```text
+!appeal idlookup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+appeal idlookup
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!appeal invite">
+
+Set the invite accepted appellants receive, or generate one.
+
+**Syntax**
+
+```text
+!appeal invite [invite]
+```
+
+**Example template**
+
+```text
+!appeal invite
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+appeal invite
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!appeal logs">
+
+Set the channel appeal activity is logged to.
+
+**Syntax**
+
+```text
+!appeal logs <channel>
+```
+
+**Example template**
+
+```text
+!appeal logs channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!appeal logs
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="/logs set">
+
+Enable or disable selected log types
+
+**Syntax**
+
+```text
+/logs set <enabled> <types> [channel] [message_content]
+```
+
+**Example template**
+
+```text
+/logs set enabled:<enabled> types:<types>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/logs set
+```
+
+Missing `enabled`, `types`.
+
+</Accordion>
+
+<Accordion title="/logs status">
+
+Show each log type and its channel
+
+**Syntax**
+
+```text
+/logs status
+```
+
+**Example template**
+
+```text
+/logs status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+logs status
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="/logs test">
+
+Send a test log
+
+**Syntax**
+
+```text
+/logs test <type>
+```
+
+**Example template**
+
+```text
+/logs test type:<type>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/logs test
+```
+
+Missing `type`.
+
+</Accordion>
+
+<Accordion title="!setlogs">
+
+Send all log types to a channel
+
+**Syntax**
+
+```text
+!setlogs <channel>
+```
+
+**Example template**
+
+```text
+!setlogs channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!setlogs
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!setstaff">
+
+Choose the support staff role
+
+**Syntax**
+
+```text
+!setstaff <role>
+```
+
+**Example template**
+
+```text
+!setstaff role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!setstaff
+```
+
+Missing `role`.
+
+</Accordion>
+
+</AccordionGroup>
+
 ## Setup guides
 
 - [Logging setup](/handbook/moderation/setup-logs)
