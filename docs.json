@@ -515,7 +515,8 @@
     }
   },
   "background": {
-    "image": "/images/imagestretcherIO-2026-11-12_18-51-46.png"
+    "image": "/images/38d3babeac16069c86e2aca36692e485.webp",
+    "decoration": "gradient"
   },
   "navbar": {
     "links": [
