@@ -1,0 +1,95 @@
+---
+
+title: "Leveling and reward roles"
+
+description: "Configure and view server levels"
+
+---
+
+Award server XP and grant configured roles at milestones.
+
+## Before you start
+
+Choose XP and cooldown values that do not encourage spam.
+
+Create reward roles below Zone and choose an optional announcement channel.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Leveling** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Enable leveling and save the XP range/cooldown.
+2. Map milestones to reward roles.
+3. Send eligible messages and inspect rank/leaderboard views.
+4. Check role access if XP increases without a reward.
+
+## Verify your setup
+
+- Bots, webhooks and handled commands do not earn ordinary message XP.
+- Messages inside the cooldown do not add XP.
+- Progress is per server; role grants obey hierarchy.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### enabled
+
+Enable message XP
+
+### channel
+
+Level-up message channel
+
+### xp_min
+
+Minimum XP per message
+
+Range: 1 to 100.
+
+### xp_max
+
+Maximum XP per message
+
+Range: 1 to 100.
+
+### cooldown
+
+Seconds between XP awards
+
+Range: 5 to 3600.
+
+### action
+
+Action
+
+Choices: Add or update, Remove, List.
+
+### level
+
+Required level
+
+Range: 1 to 10000.
+
+### role
+
+Reward role
+
+### user
+
+Member (default: you)
+
+### page
+
+Page number
+
+Range: 1 to 100.

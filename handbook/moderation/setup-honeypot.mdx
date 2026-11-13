@@ -1,0 +1,74 @@
+---
+
+title: "Honeypot setup"
+
+description: "Catch spam accounts that post in a trap channel"
+
+---
+
+Use a clearly marked trap channel to act on non-exempt messages.
+
+<Warning>This feature affects real members. Make the channel warning and server policy clear.</Warning>
+
+## Before you start
+
+Choose separate trap and log channels.
+
+Review the action, exemptions and bot permissions before enabling it.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Rules & protection** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Save the destination and response.
+2. Read the public warning and use the supported dry-run.
+3. Inspect status and counts after a controlled test.
+4. Disable the module when it is no longer wanted.
+
+## Verify your setup
+
+- The server owner, bot and configured exempt members are protected.
+- Logs do not feed back into the trap channel.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### enabled
+
+Enable or disable this module
+
+### channel
+
+Trap channel; leave empty to reuse the saved channel
+
+### action
+
+Action on non-staff members (default: timeout)
+
+Choices: Timeout for 1 hour, Kick, Ban, Softban (wipe messages, kick and allow rejoining).
+
+### log_channel
+
+Optional staff log channel
+
+### thumbnail
+
+Optional HTTPS image URL for the warning card
+
+### exempt_staff
+
+Skip staff with moderation permissions (default: true)
+
+### user
+
+Member to check (default: you)

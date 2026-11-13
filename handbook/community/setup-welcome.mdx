@@ -1,0 +1,80 @@
+---
+
+title: "Welcome and farewell setup"
+
+description: "Set up welcome and optional leave messages"
+
+---
+
+Send welcome messages on join and optional farewell messages on leave.
+
+## Before you start
+
+Choose writable text channels.
+
+Prepare text with the supported user, username, server and count placeholders.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Welcome & greetings** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Save the welcome channel and text.
+2. Enable farewell messages separately and choose their destination.
+3. Preview substituted text before a real member event.
+4. Keep bot greetings off unless wanted.
+
+## Verify your setup
+
+- Destinations and substituted values are correct.
+- Previews and farewell messages do not ping.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### enabled
+
+Enable or disable greetings
+
+### leave_enabled
+
+Turn leave messages on or off; keeps the channel
+
+### channel
+
+Welcome channel; saved channel or here by default
+
+### message
+
+Use &#123;user&#125;, &#123;username&#125;, &#123;server&#125;, &#123;count&#125;
+
+### title
+
+Welcome heading
+
+### leave_channel
+
+Optional leave-message channel
+
+### leave_message
+
+Leave text; same placeholders
+
+### greet_bots
+
+Also greet bot accounts (default off)
+
+### type
+
+Which greeting to preview
+
+Choices: Welcome, Leave.

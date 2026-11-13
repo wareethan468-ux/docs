@@ -1,0 +1,84 @@
+---
+
+title: "Giveaway setup"
+
+description: "Run server giveaways"
+
+---
+
+Run a timed giveaway with a prize, winners and eligibility rules.
+
+## Before you start
+
+Confirm the prize, duration, audience and destination.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Giveaways** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Save any defaults the server should reuse.
+2. Create the event and inspect its posted end time.
+3. Review participants through its controls.
+4. End or reroll only when the server policy calls for it.
+
+## Verify your setup
+
+- The saved schedule and public message refer to the same event.
+- Results reflect eligible participants.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### enabled
+
+Allow new giveaways
+
+### channel
+
+Default giveaway channel
+
+### duration
+
+Default duration, 1 minute to 30 days
+
+### winners
+
+Default winner count
+
+Range: 1 to 5.
+
+### prize
+
+Prize
+
+### duration
+
+Duration, such as 1h or 3d; blank uses saved setting
+
+### winners
+
+Winner count; blank uses saved setting
+
+Range: 1 to 5.
+
+### channel
+
+Post channel; saved channel or here by default
+
+### blacklisted_roles
+
+Blocked role mentions or IDs, separated by commas
+
+### id
+
+Giveaway ID (from /giveaway list)

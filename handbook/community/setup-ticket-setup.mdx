@@ -1,0 +1,75 @@
+---
+
+title: "Ticket panel setup"
+
+description: "Set up the ticket panel"
+
+---
+
+Give members private support channels with claims, access controls and transcripts.
+
+<Warning>Administrator permissions can bypass private channel rules. Give support access only to trusted roles.</Warning>
+
+## Before you start
+
+Choose a support category, public panel channel and trusted staff roles.
+
+Give Zone access to the support area and permission to manage its channels.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Tickets** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Save the support roles and destination, then post the panel.
+2. Open a ticket as a test member and claim it as staff.
+3. Inspect access for the opener, assigned staff and added members.
+4. Close the test ticket and download its transcript before deleting its channel.
+
+## Verify your setup
+
+- The opener can reach the ticket.
+- Current staff can use the appropriate controls.
+- A failed close or transcript is reported rather than treated as complete.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### staff_role
+
+Support role; blank keeps saved roles
+
+### staff_roles
+
+Support roles, separated by commas
+
+### channel
+
+Panel channel; blank keeps the saved channel
+
+### category
+
+Category for new tickets
+
+### notify_role
+
+Role to notify for new tickets
+
+### transcript_channel
+
+Where ticket transcripts are saved; blank keeps the saved channel
+
+### max_open_tickets
+
+Open tickets allowed per member (1–25); blank keeps saved limit
+
+Range: 1 to 25.

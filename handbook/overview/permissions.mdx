@@ -1,0 +1,27 @@
+---
+
+title: "Permissions and role order"
+
+description: "Check staff permissions, channel access and hierarchy."
+
+---
+
+These are separate checks. Satisfying one does not automatically satisfy the others.
+
+## Staff and owner access
+
+Manage Server opens shared setup. Stronger and owner-only actions still apply their own rules. Server administration does not grant bot-owner access.
+
+## Bot access
+
+Zone must see the destination and perform the action there. Channel overrides can deny access even when a server role grants it.
+
+## Role hierarchy
+
+Place Zone above roles it must assign or change. Moderation also checks actor and target order. Managed roles and protected targets have additional restrictions.
+
+## Review access
+
+- Keep sensitive reviews and logs in approved staff channels.
+- Test as a normal member.
+- Administrator bypasses many private-channel rules; grant it deliberately.

@@ -1,72 +1,297 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Zone",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5D9FDB",
+    "light": "#8CBCE8",
+    "dark": "#4B8CC7"
+  },
+  "appearance": {
+    "default": "dark"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/zone.svg",
+    "dark": "/logo/zone.svg"
+  },
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Welcome",
         "pages": [
-          "index",
-          "quickstart"
+          "index"
+        ]
+      },
+      {
+        "group": "Getting started",
+        "pages": [
+          "handbook/overview/introduction",
+          "handbook/overview/first-setup",
+          "handbook/overview/using-zone",
+          "handbook/overview/permissions",
+          "handbook/overview/troubleshooting",
+          "handbook/overview/faq"
+        ]
+      },
+      {
+        "group": "Community",
+        "pages": [
+          "handbook/community/community-eventsplus",
+          "handbook/community/community-faqsplus",
+          "handbook/community/community-clubsplus",
+          "handbook/community/community-resourcesplus",
+          "handbook/community/community-challengesplus",
+          "handbook/community/community-essentials",
+          {
+            "group": "Profiles & information",
+            "pages": [
+              "handbook/community/community-profiles",
+              "handbook/community/setup-serverinfo-panel"
+            ]
+          },
+          {
+            "group": "Tickets",
+            "pages": [
+              "handbook/community/community-tickets",
+              "handbook/community/setup-ticket-setup",
+              "handbook/community/setup-ticket-blacklist"
+            ]
+          },
+          {
+            "group": "Staff applications",
+            "pages": [
+              "handbook/community/community-staff",
+              "handbook/community/setup-staffapp-setup"
+            ]
+          },
+          {
+            "group": "Welcome & greetings",
+            "pages": [
+              "handbook/community/community-greetings",
+              "handbook/community/setup-welcome"
+            ]
+          },
+          {
+            "group": "Verification",
+            "pages": [
+              "handbook/community/community-verification",
+              "handbook/community/setup-verify-setup"
+            ]
+          },
+          {
+            "group": "Engagement",
+            "pages": [
+              "handbook/community/community-engagement",
+              "handbook/community/setup-reactionroles",
+              "handbook/community/setup-starboard",
+              "handbook/community/setup-suggest",
+              "handbook/community/setup-bumpreminder",
+              "handbook/community/setup-automessage",
+              "handbook/community/setup-tag"
+            ]
+          },
+          {
+            "group": "Messages & responses",
+            "pages": [
+              "handbook/community/community-messages",
+              "handbook/community/setup-confessions"
+            ]
+          },
+          "handbook/community/community-zone-131",
+          "handbook/community/community-zone-147",
+          "handbook/community/community-other"
+        ]
+      },
+      {
+        "group": "Moderation",
+        "pages": [
+          "handbook/moderation/moderation-filteredcleanup",
+          "handbook/moderation/moderation-roleinspections",
+          "handbook/moderation/moderation-channelinspections",
+          "handbook/moderation/moderation-caseinspections",
+          "handbook/moderation/moderation-audits",
+          "handbook/moderation/moderation-maintenance",
+          "handbook/moderation/moderation-rolegov",
+          {
+            "group": "Member moderation",
+            "pages": [
+              "handbook/moderation/moderation-members",
+              "handbook/moderation/setup-warn-setup"
+            ]
+          },
+          "handbook/moderation/moderation-permissions",
+          {
+            "group": "Channel controls",
+            "pages": [
+              "handbook/moderation/moderation-channels",
+              "handbook/moderation/setup-sticky"
+            ]
+          },
+          {
+            "group": "Rules & protection",
+            "pages": [
+              "handbook/moderation/moderation-protection",
+              "handbook/moderation/setup-rules",
+              "handbook/moderation/setup-honeypot",
+              "handbook/moderation/setup-antinuke",
+              "handbook/moderation/setup-antispam",
+              "handbook/moderation/setup-antiraid"
+            ]
+          },
+          {
+            "group": "Logs & appeals",
+            "pages": [
+              "handbook/moderation/moderation-logs",
+              "handbook/moderation/setup-logs"
+            ]
+          },
+          {
+            "group": "Command access",
+            "pages": [
+              "handbook/moderation/moderation-access",
+              "handbook/moderation/setup-prefix"
+            ]
+          },
+          "handbook/moderation/moderation-zone-200",
+          "handbook/moderation/moderation-zone-211",
+          "handbook/moderation/moderation-zone-219",
+          "handbook/moderation/moderation-other"
+        ]
+      },
+      {
+        "group": "Fun & Games",
+        "pages": [
+          "handbook/fun/fun-economy",
+          "handbook/fun/fun-games",
+          "handbook/fun/fun-slang",
+          "handbook/fun/fun-sessions",
+          "handbook/fun/fun-texttoys",
+          "handbook/fun/fun-random",
+          "handbook/fun/fun-tools",
+          "handbook/fun/fun-animals",
+          "handbook/fun/fun-interactions",
+          "handbook/fun/fun-spicy",
+          "handbook/fun/fun-characters",
+          "handbook/fun/fun-reactions",
+          {
+            "group": "Giveaways",
+            "pages": [
+              "handbook/fun/fun-giveaways",
+              "handbook/fun/setup-giveaway"
+            ]
+          },
+          "handbook/fun/fun-polls",
+          {
+            "group": "Leveling",
+            "pages": [
+              "handbook/fun/fun-leveling",
+              "handbook/fun/setup-leveling"
+            ]
+          },
+          {
+            "group": "Fun message tools",
+            "pages": [
+              "handbook/fun/fun-messages",
+              "handbook/fun/setup-brainrotlock",
+              "handbook/fun/setup-uwulock"
+            ]
+          },
+          "handbook/fun/fun-streetcore",
+          "handbook/fun/fun-streetcrime",
+          "handbook/fun/fun-streetprog",
+          "handbook/fun/fun-streetshop",
+          "handbook/fun/fun-streetcrew",
+          "handbook/fun/fun-zone-351",
+          "handbook/fun/fun-zone-355",
+          "handbook/fun/fun-zone-360"
+        ]
+      },
+      {
+        "group": "Server & Content",
+        "pages": [
+          "handbook/server/server-contentaudits",
+          "handbook/server/server-texttemplates",
+          "handbook/server/server-savedlinks",
+          "handbook/server/server-editorial",
+          "handbook/server/server-assethealth",
+          "handbook/server/server-embeds",
+          {
+            "group": "Roblox lookups & scripts",
+            "pages": [
+              "handbook/server/server-roblox",
+              "handbook/server/setup-scriptsearch-setup",
+              "handbook/server/setup-weao-setup",
+              "handbook/server/setup-weaonotify"
+            ]
+          },
+          {
+            "group": "Configs",
+            "pages": [
+              "handbook/server/server-configs",
+              "handbook/server/setup-config-panel",
+              "handbook/server/setup-config-setup"
+            ]
+          },
+          {
+            "group": "Script Dumper & Deobfuscation",
+            "pages": [
+              "handbook/server/server-scripts",
+              "handbook/server/setup-script-panel"
+            ]
+          },
+          "handbook/server/server-emojis",
+          "handbook/server/server-backups"
+        ]
+      },
+      {
+        "group": "Voice & Music",
+        "pages": [
+          {
+            "group": "Voice Master",
+            "pages": [
+              "handbook/voice/voice-rooms",
+              "handbook/voice/setup-voicemaster"
+            ]
+          },
+          "handbook/voice/voice-music",
+          "handbook/voice/voice-youtube",
+          "handbook/voice/voice-downloads"
+        ]
+      },
+      {
+        "group": "Utilities",
+        "pages": [
+          "handbook/utilities/utilities-commandstats",
+          "handbook/utilities/utilities-servermetrics",
+          "handbook/utilities/utilities-channelmetrics",
+          "handbook/utilities/utilities-membermetrics",
+          "handbook/utilities/utilities-rolemetrics",
+          "handbook/utilities/utilities-jsoncsv",
+          "handbook/utilities/utilities-texttransforms",
+          "handbook/utilities/utilities-encode",
+          "handbook/utilities/utilities-numbers",
+          "handbook/utilities/utilities-toolbox",
+          "handbook/utilities/utilities-links",
+          "handbook/utilities/utilities-conversion",
+          "handbook/utilities/utilities-information",
+          "handbook/utilities/utilities-recovery",
+          "handbook/utilities/utilities-status",
+          "handbook/utilities/utilities-zone-102",
+          "handbook/utilities/utilities-zone-110"
+        ]
+      },
+      {
+        "group": "Other",
+        "pages": [
+          "handbook/other/other-more"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/wareethan468-ux/zone-bot-src"
     }
   }
 }

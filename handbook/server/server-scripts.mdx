@@ -1,0 +1,47 @@
+---
+
+title: "Script Dumper & Deobfuscation"
+
+description: "Script panels, sandbox analysis and best-effort deobfuscation."
+
+---
+
+Inspect supplied Luau with static analysis and the limited sandbox workflow.
+
+<Warning>Analysis does not prove that supplied code is safe to execute.</Warning>
+
+## What this module does
+
+- Post the script panel (loader · key status · HWID reset) here or in a chosen channel
+- Sandbox, dynamically check and dump supplied Lua/Luau payloads
+- Decode obfuscated Lua/Luau through repeated recovery passes
+
+## Before you start
+
+Keep the original input and confirm permission to inspect it.
+
+Depending on the action, this module uses **Manage Server**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+Open /setup, choose **Server & Content**, then **Script Dumper & Deobfuscation**. Choose an action, fill required settings and run it. Use the linked setup guides for each system.
+
+## Everyday workflow
+
+1. Submit source or an attachment.
+2. Read analysis status and recovery choices.
+3. Download the archive and read its report.
+4. Independently check recovered candidates before using them.
+
+## Check the result
+
+- Sandbox failure yields an explicit static-only result.
+- Original source, candidates and event reports are distinguishable.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Setup guides
+
+- [Script panel setup](/handbook/server/setup-script-panel)

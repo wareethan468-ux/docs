@@ -1,0 +1,55 @@
+---
+
+title: "Sticky note setup"
+
+description: "Keep a message pinned at the bottom of a channel"
+
+---
+
+Keep a saved note near the latest messages in a channel.
+
+## Before you start
+
+Choose a writable channel and prepare the exact note text.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Channel controls** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Save the note and its supported text/container format.
+2. Send a test message and allow the note to repost.
+3. Edit or remove the saved note when it changes.
+
+## Verify your setup
+
+- Reposting keeps one tracked note.
+- Omitting the format on edit preserves the saved style.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### message
+
+The sticky text; use actual newlines or \n
+
+### channel
+
+Channel to keep sticky in (default: here)
+
+### embed
+
+Post as a styled container card instead of plain text
+
+### channel
+
+Channel whose sticky is removed (default: here)

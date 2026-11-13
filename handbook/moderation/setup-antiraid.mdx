@@ -1,0 +1,103 @@
+---
+
+title: "Anti-raid setup"
+
+description: "Configure join-burst protection"
+
+---
+
+Detect join bursts and act on eligible young accounts.
+
+## Before you start
+
+Choose a join threshold, rolling window and minimum account age.
+
+Check timeout/kick permissions and trusted exceptions.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Rules & protection** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Save the join-rate policy and response.
+2. Enable protection deliberately; it starts disabled.
+3. Review current status and protection reports.
+4. Review affected members after an incident.
+
+## Verify your setup
+
+- The bot, server owner and whitelisted members are exempt.
+- Account age limits the affected cohort.
+- The response is the configured action rather than a blanket automatic ban.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### enabled
+
+Enable or disable anti-raid
+
+### join_limit
+
+Joins before a raid is detected
+
+Range: 2 to 30.
+
+### window
+
+Join counting window in seconds
+
+Range: 5 to 60.
+
+### account_age_days
+
+Target accounts younger than this many days
+
+Range: 1 to 365.
+
+### slow_join_limit
+
+Joins in 60 seconds to detect a sustained raid (0 = off)
+
+Range: 0 to 100.
+
+### action
+
+Action for young accounts
+
+Choices: Alert only, Timeout, Kick.
+
+### timeout
+
+Timeout duration in seconds
+
+Range: 60 to 86400.
+
+### raid_duration
+
+How long to treat later joins as part of the raid
+
+Range: 10 to 3600.
+
+### log_channel
+
+Where anti-raid reports are sent
+
+### action
+
+Whitelist action
+
+Choices: Add, Remove, List.
+
+### user
+
+Member to add or remove

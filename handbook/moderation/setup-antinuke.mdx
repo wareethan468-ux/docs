@@ -1,0 +1,67 @@
+---
+
+title: "Anti-nuke setup"
+
+description: "Protect against destructive server actions"
+
+---
+
+React to bursts of destructive administrative events using a saved protection policy.
+
+<Warning>Anti-nuke reacts after events occur. It cannot restore deleted content or guarantee prevention of the first destructive event.</Warning>
+
+## Before you start
+
+The server owner should review thresholds and trusted exceptions.
+
+Check audit-log access, permissions and Zone role order.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Rules & protection** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Choose thresholds and responses.
+2. Set trusted exceptions deliberately.
+3. Enable the policy and review its status and logs.
+
+## Verify your setup
+
+- The saved thresholds and destinations are correct.
+- Zone can apply the selected response.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### enabled
+
+Enable or disable this module
+
+### limit
+
+Actions before intervention (default 3)
+
+Range: 2 to 30.
+
+### window
+
+Counting window in seconds
+
+Range: 3 to 60.
+
+### log_channel
+
+Where protection reports are sent
+
+### user
+
+Trusted account

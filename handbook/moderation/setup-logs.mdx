@@ -1,0 +1,64 @@
+---
+
+title: "Logging setup"
+
+description: "Configure log types and channels"
+
+---
+
+Route selected server events to independent staff destinations.
+
+## Before you start
+
+Choose staff channels and event types.
+
+Decide whether message-content logging is appropriate.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Logs & appeals** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Select event types and destinations.
+2. Run the supported delivery test.
+3. Review each type; bulk changes affect selected types.
+4. Disable unwanted types while retaining saved destinations.
+
+## Verify your setup
+
+- Tests arrive in the intended channel.
+- Private content is not exposed to an inappropriate audience.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### enabled
+
+Enable or disable these log types
+
+### types
+
+Comma-separated types, or all
+
+### channel
+
+Log channel; blank keeps saved channels
+
+### message_content
+
+Include message text in edit/delete logs (default off)
+
+### type
+
+Log type
+
+Choices: Commands & dashboard, Voice, Verification, Giveaways, Messages, Members, Roles, Channels, Moderation, Tickets, Configs & scripts, Staff applications, Protection, Server.

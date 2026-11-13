@@ -1,0 +1,77 @@
+---
+
+title: "Verification setup"
+
+description: "Post the verification panel and choose its member role"
+
+---
+
+Post a persistent verification panel that grants a configured member role.
+
+## Before you start
+
+Create a regular member role below Zone.
+
+Give Zone Manage Roles and choose a public panel channel.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Verification** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Choose the role and destination.
+2. Post the panel and verify as a member without the role.
+3. Check access granted by the role and repeat as an already-verified member.
+
+## Verify your setup
+
+- Managed, missing and uneditable roles do not grant access.
+- The role opens only the channels members should reach.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### website_auth
+
+Require Discord login on the verification website
+
+### block_shared_ips
+
+Block other accounts on a previously verified network
+
+### allow_guild_join
+
+Offer optional Join servers for you authorization
+
+### require_guild_join
+
+Require Join servers for you authorization to verify
+
+### role
+
+Verified role; leave blank to reuse the saved role
+
+### channel
+
+Panel channel (default: here)
+
+### title
+
+Panel title
+
+### description
+
+Panel description
+
+### rules_url
+
+Optional rules link

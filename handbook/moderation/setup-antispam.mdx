@@ -1,0 +1,130 @@
+---
+
+title: "Anti-spam setup"
+
+description: "Protect against floods, repeats and mass mentions"
+
+---
+
+Detect rapid message bursts and apply a configured response.
+
+## Before you start
+
+Choose a reasonable message limit and rolling window.
+
+Review exceptions and the action duration.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Rules & protection** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Set the threshold and response.
+2. Add only needed channel/role exceptions.
+3. Test with a controlled account and inspect the result.
+4. Tune limits if normal conversation is flagged.
+
+## Verify your setup
+
+- Staff and bot exceptions behave as intended.
+- Deletion, timeout and logging results reflect actual API outcomes.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### enabled
+
+Enable or disable this module
+
+### limit
+
+Messages before intervention (default 6)
+
+Range: 3 to 30.
+
+### window
+
+Counting window in seconds
+
+Range: 3 to 60.
+
+### log_channel
+
+Where protection reports are sent
+
+### duplicates
+
+Repeated messages before intervention (default 4)
+
+Range: 3 to 30.
+
+### mentions
+
+Unique mentions in one message (default 5)
+
+Range: 3 to 50.
+
+### timeout
+
+Timeout in seconds (default 60)
+
+Range: 10 to 86400.
+
+### mode
+
+Alert only, or delete and timeout
+
+Choices: Alert only, Enforce.
+
+### channel_hops
+
+Distinct channels for flood detection (0 = off)
+
+Range: 0 to 20.
+
+### mention_burst
+
+Unique mentions across messages (0 = off)
+
+Range: 0 to 40.
+
+### invite_limit
+
+Invites in a window (0 = off)
+
+Range: 0 to 30.
+
+### attachment_limit
+
+Attachments in a window (0 = off)
+
+Range: 0 to 40.
+
+### escalate_after
+
+Repeated violations before escalating timeout
+
+Range: 1 to 10.
+
+### max_timeout
+
+Maximum escalation duration in seconds
+
+Range: 60 to 86400.
+
+### role
+
+Role to exempt
+
+### channel
+
+Channel or category to exempt

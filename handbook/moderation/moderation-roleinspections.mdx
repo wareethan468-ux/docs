@@ -1,0 +1,47 @@
+---
+
+title: "Role permission inspections"
+
+description: "Inspect risky permissions and role flags."
+
+---
+
+Role permission inspections groups the workflows below. Inspect risky permissions and role flags.
+
+## What this module does
+
+- List roles granting Administrator or Manage Server
+- List roles Zone cannot currently assign
+- List roles with visible custom colors
+- List roles that have custom role icons
+- List roles hoisted in the member list
+- List roles capable of managing roles
+- List roles able to create invites
+- List roles able to manage messages
+
+## Before you start
+
+Confirm the affected target and your permission.
+
+Check Zone role order.
+
+Depending on the action, this module uses **Manage Roles**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review current state.
+2. Apply the action matching server policy.
+3. Inspect the result and moderation history.
+
+## Check the result
+
+- Roles at or above Zone cannot be managed by it.
+- Reports cannot reconstruct unknown historical events.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.

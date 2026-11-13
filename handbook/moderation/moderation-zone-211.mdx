@@ -1,0 +1,47 @@
+---
+
+title: "Moderation case reviews"
+
+description: "Dry-run filters, case review, activity trends and bounded cleanup."
+
+---
+
+Moderation case reviews groups the workflows below. Dry-run filters, case review, activity trends and bounded cleanup.
+
+## What this module does
+
+- Simulate the current word and link filters without deleting messages
+- Delete recent messages within a bounded message-ID range
+- Search saved moderation cases by member and action
+- Append a private staff note to an existing moderation case
+- Mark a mistaken moderation case void without deleting its audit trail
+- Flag a moderation case for later staff review
+- Resolve a previously flagged moderation case
+- List flagged moderation cases awaiting review
+
+## Before you start
+
+Confirm the affected target and your permission.
+
+Check Zone role order.
+
+Depending on the action, this module uses **Manage Server, Manage Messages, Moderate Members**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review current state.
+2. Apply the action matching server policy.
+3. Inspect the result and moderation history.
+
+## Check the result
+
+- Roles at or above Zone cannot be managed by it.
+- Reports cannot reconstruct unknown historical events.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.

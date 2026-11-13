@@ -1,0 +1,57 @@
+---
+
+title: "Warning ladder setup"
+
+description: "Set automatic punishment thresholds for warnings"
+
+---
+
+Configure warning thresholds and escalation actions matching staff policy.
+
+## Before you start
+
+Agree on thresholds and check permissions for each automatic action.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Member moderation** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Save the warning ladder.
+2. Review it before use with real members.
+3. Use a controlled test and inspect moderation history.
+
+## Verify your setup
+
+- Each action is available to Zone.
+- Failed escalation is not reported as success.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### count
+
+Warning number to configure (1–100)
+
+Range: 1 to 100.
+
+### action
+
+Punishment when this count is reached; None removes the rule
+
+Choices: Timeout, Kick, Ban, None (remove rule).
+
+### minutes
+
+Timeout duration in minutes (1–40320; default 60)
+
+Range: 1 to 40320.

@@ -1,0 +1,46 @@
+---
+
+title: "Confession setup"
+
+description: "Anonymous confessions with a word blacklist and categories"
+
+---
+
+Collect anonymous form submissions with optional category routing.
+
+## Before you start
+
+Choose approved text channels.
+
+Give Zone View Channel, Send Messages and Manage Webhooks; review prohibited words.
+
+Manage Server opens shared setup; action-specific checks still apply.
+
+## Open the setup flow
+
+1. Open /setup in the server being configured.
+2. Choose the category and **Messages & responses** module.
+3. Choose the relevant action and edit its settings. Required fields gate Run action.
+4. Run the action and read its result. Reopen expired menus when needed.
+
+## Configure and test
+
+1. Configure the main destination and post the panel.
+2. Add category destinations if needed.
+3. Submit a harmless test and inspect its anonymous post.
+4. Test that a prohibited word refuses the entire submission.
+
+## Verify your setup
+
+- Each submission reaches its chosen category or the main channel.
+- Blocked content is not partially posted.
+
+## Maintain the configuration
+
+Keep destination channels and roles current. Replace deleted Discord objects through the matching setting. Disabling, resetting and deleting are different operations; inspect the selected action before applying it.
+
+## Settings
+
+### channel
+
+Where confessions are posted
