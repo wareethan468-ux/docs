@@ -314,7 +314,8 @@
               "handbook/other/other-more"
             ]
           }
-        ]
+        ],
+        "icon": "book-open"
       },
       {
         "tab": "Guides",
@@ -373,7 +374,8 @@
               "reference/update-log"
             ]
           }
-        ]
+        ],
+        "icon": "compass"
       },
       {
         "tab": "Modules",
@@ -502,7 +504,8 @@
               "modules/extended/activity-reports"
             ]
           }
-        ]
+        ],
+        "icon": "layers"
       }
     ]
   },
@@ -513,5 +516,17 @@
   },
   "background": {
     "image": "/images/imagestretcherIO-2026-11-12_18-51-46.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Back to Zone",
+        "href": "https://zone-bot.freebuff.page"
+      },
+      {
+        "label": "Commands",
+        "href": "https://zone-bot.freebuff.page/#/commands"
+      }
+    ]
   }
 }

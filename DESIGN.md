@@ -7,3 +7,5 @@ Page changes use a 420 ms fade with at most 6 px of vertical movement and a shor
 Explain systems and setup workflows. Keep the command catalogue on the Zone website. Do not publish restricted owner-only guides.
 
 Owner-requested addition: module and setup guides include collapsible command syntax, example templates and clearly labelled wrong examples explaining missing inputs. Generate these from the real command registry. Never execute examples. Templates use placeholders rather than invented IDs or settings.
+
+Keep the Handbook, Guides and Modules tabs. Use restrained icons, comfortable spacing and a smooth thin underline on hover, focus and selection. Integrate with the main website using same-tab Docs links and explicit Back to Zone/Commands links; Mintlify's frame policy prevents iframe embedding.

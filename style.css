@@ -1,4 +1,15 @@
 :root { --zone-motion: cubic-bezier(.22,1,.36,1); }
+.nav-tabs-item { padding-inline:12px; gap:8px; text-shadow:none; }
+.nav-tabs-item[data-active="true"] { color:var(--primary-light, #8cbce8); }
+.nav-tabs-item > div:last-child {
+  transition: background-color 280ms var(--zone-motion), opacity 280ms var(--zone-motion), transform 280ms var(--zone-motion);
+  transform:scaleX(.72); opacity:0; transform-origin:center;
+}
+.nav-tabs-item:hover > div:last-child,
+.nav-tabs-item:focus-visible > div:last-child,
+.nav-tabs-item[data-active="true"] > div:last-child { transform:scaleX(1); opacity:1; }
+.nav-tabs-item svg { flex-shrink:0; opacity:.8; }
+.nav-tabs-item[data-active="true"] svg { opacity:1; }
 html { scroll-behavior: smooth; }
 a, button, summary, [role="button"], input, textarea {
   transition: color 280ms var(--zone-motion), background-color 280ms var(--zone-motion), border-color 280ms var(--zone-motion), opacity 280ms var(--zone-motion), box-shadow 280ms var(--zone-motion);
@@ -17,4 +28,5 @@ summary svg, button[aria-expanded] svg { transition: transform 280ms var(--zone-
   #content-area { animation: none; }
   a, button, summary, [role="button"], input, textarea,
   details::details-content, summary svg, button[aria-expanded] svg { transition: none; }
+  .nav-tabs-item > div:last-child { transition:none; }
 }
