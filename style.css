@@ -1,0 +1,17 @@
+:root { --zone-motion: cubic-bezier(.22,1,.36,1); }
+html { scroll-behavior: smooth; }
+#sidebar a, #sidebar button, #navbar a, #navbar button,
+#content-area a, #content-area button, #pagination a {
+  transition: color 220ms var(--zone-motion), background-color 220ms var(--zone-motion), border-color 220ms var(--zone-motion), opacity 220ms var(--zone-motion);
+}
+#content-area { animation: zone-page-enter 280ms var(--zone-motion) both; }
+@keyframes zone-page-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  #content-area { animation: none; }
+  #sidebar a, #sidebar button, #navbar a, #navbar button,
+  #content-area a, #content-area button, #pagination a { transition: none; }
+}
