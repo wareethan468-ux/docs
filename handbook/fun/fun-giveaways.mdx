@@ -2,7 +2,7 @@
 
 title: "Giveaways"
 
-description: "Start and manage giveaways."
+description: "Start, edit, end, reroll and cancel giveaways."
 
 icon: "gift"
 
@@ -14,6 +14,7 @@ Run a timed giveaway with a prize, winners and eligibility rules.
 
 ## What this module does
 
+- Start, edit and end giveaways
 - Run server giveaways
 
 ## Before you start
@@ -65,6 +66,230 @@ Missing the slash. Select `/setup` from Discord’s command picker.
 Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
 
 <AccordionGroup>
+
+<Accordion title="!giveaways start">
+
+Start a giveaway
+
+**Syntax**
+
+```text
+!giveaways start <prize> <duration> [winners] [channel]
+```
+
+**Example template**
+
+```text
+!giveaways start prize:<prize> duration:<duration>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!giveaways start
+```
+
+Missing `prize`, `duration`.
+
+</Accordion>
+
+<Accordion title="!giveaways list">
+
+List giveaways in this server
+
+**Syntax**
+
+```text
+!giveaways list
+```
+
+**Example template**
+
+```text
+!giveaways list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+giveaways list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!giveaways end">
+
+End a giveaway now and draw winners
+
+**Syntax**
+
+```text
+!giveaways end <giveaway>
+```
+
+**Example template**
+
+```text
+!giveaways end giveaway:<giveaway>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!giveaways end
+```
+
+Missing `giveaway`.
+
+</Accordion>
+
+<Accordion title="!giveaways reroll">
+
+Draw new winners for an ended giveaway
+
+**Syntax**
+
+```text
+!giveaways reroll <giveaway>
+```
+
+**Example template**
+
+```text
+!giveaways reroll giveaway:<giveaway>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!giveaways reroll
+```
+
+Missing `giveaway`.
+
+</Accordion>
+
+<Accordion title="!giveaways cancel">
+
+Cancel a giveaway without drawing winners
+
+**Syntax**
+
+```text
+!giveaways cancel <giveaway>
+```
+
+**Example template**
+
+```text
+!giveaways cancel giveaway:<giveaway>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!giveaways cancel
+```
+
+Missing `giveaway`.
+
+</Accordion>
+
+<Accordion title="!giveaways edit prize">
+
+Change the prize
+
+**Syntax**
+
+```text
+!giveaways edit prize <giveaway> <value>
+```
+
+**Example template**
+
+```text
+!giveaways edit prize giveaway:<giveaway> value:<value>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!giveaways edit prize
+```
+
+Missing `giveaway`, `value`.
+
+</Accordion>
+
+<Accordion title="!giveaways edit winners">
+
+Change the winner count
+
+**Syntax**
+
+```text
+!giveaways edit winners <giveaway> <value>
+```
+
+**Example template**
+
+```text
+!giveaways edit winners giveaway:<giveaway> value:<value>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!giveaways edit winners
+```
+
+Missing `giveaway`, `value`.
+
+</Accordion>
+
+<Accordion title="!giveaways edit duration">
+
+Extend a running giveaway
+
+**Syntax**
+
+```text
+!giveaways edit duration <giveaway> <value>
+```
+
+**Example template**
+
+```text
+!giveaways edit duration giveaway:<giveaway> value:<value>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!giveaways edit duration
+```
+
+Missing `giveaway`, `value`.
+
+</Accordion>
 
 <Accordion title="/giveaway set">
 

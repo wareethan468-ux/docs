@@ -19,12 +19,14 @@ Server maintenance groups the workflows below. Backups, cleanup and whitelisting
 - Delete all non-managed server roles after confirmation
 - Delete all server channels and categories after confirmation
 - Set the role allowed to use approved owner commands
+- Back up this server bot configuration
+- Restore server bot settings from a backup
 
 ## Before you start
 
 Confirm access and permission to change the content.
 
-Depending on the action, this module uses **Administrator**. Stronger ownership and channel checks may apply.
+Depending on the action, this module uses **Administrator, Manage Server**. Stronger ownership and channel checks may apply.
 
 ## Setup and access
 
@@ -206,6 +208,62 @@ setwhitelistrole
 ```
 
 Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!backupbotsettings">
+
+Back up this server bot configuration
+
+**Syntax**
+
+```text
+!backupbotsettings [name]
+```
+
+**Example template**
+
+```text
+!backupbotsettings
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+backupbotsettings
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!restorebotsettings">
+
+Restore server bot settings from a backup
+
+**Syntax**
+
+```text
+!restorebotsettings <backup> <confirm>
+```
+
+**Example template**
+
+```text
+!restorebotsettings backup:<backup> confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!restorebotsettings
+```
+
+Missing `backup`, `confirm`.
 
 </Accordion>
 

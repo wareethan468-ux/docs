@@ -15,7 +15,7 @@ Message recovery groups the workflows below. Snipe deleted messages and reaction
 ## What this module does
 
 - Recover recent deleted or edited content
-- Recover reaction removals
+- Configure automatic reactions and view reaction history
 - Clear all results for reactions, edits and messages
 - View metadata for a message without copying its content
 - Look up details about a supplied Discord invite
@@ -183,6 +183,258 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 ```
 
 Missing `message`.
+
+</Accordion>
+
+<Accordion title="!reaction apply">
+
+React to a message now
+
+**Syntax**
+
+```text
+!reaction apply <message> <emoji>
+```
+
+**Example template**
+
+```text
+!reaction apply message:<message> emoji:<emoji>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reaction apply
+```
+
+Missing `message`, `emoji`.
+
+</Accordion>
+
+<Accordion title="!reaction add">
+
+React whenever a message contains a trigger
+
+**Syntax**
+
+```text
+!reaction add <emoji> <trigger>
+```
+
+**Example template**
+
+```text
+!reaction add emoji:<emoji> trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reaction add
+```
+
+Missing `emoji`, `trigger`.
+
+</Accordion>
+
+<Accordion title="!reaction owner">
+
+Show who added a trigger
+
+**Syntax**
+
+```text
+!reaction owner <trigger>
+```
+
+**Example template**
+
+```text
+!reaction owner trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reaction owner
+```
+
+Missing `trigger`.
+
+</Accordion>
+
+<Accordion title="!reaction remove">
+
+Remove one trigger reaction
+
+**Syntax**
+
+```text
+!reaction remove <emoji> <trigger>
+```
+
+**Example template**
+
+```text
+!reaction remove emoji:<emoji> trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reaction remove
+```
+
+Missing `emoji`, `trigger`.
+
+</Accordion>
+
+<Accordion title="!reaction removeall">
+
+Remove every reaction for a trigger
+
+**Syntax**
+
+```text
+!reaction removeall <trigger>
+```
+
+**Example template**
+
+```text
+!reaction removeall trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reaction removeall
+```
+
+Missing `trigger`.
+
+</Accordion>
+
+<Accordion title="!reaction list">
+
+List every reaction trigger
+
+**Syntax**
+
+```text
+!reaction list
+```
+
+**Example template**
+
+```text
+!reaction list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+reaction list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!reaction messages set">
+
+Add a reaction to new messages in a channel
+
+**Syntax**
+
+```text
+!reaction messages set <channel> <first>
+```
+
+**Example template**
+
+```text
+!reaction messages set channel:<channel> first:<first>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reaction messages set
+```
+
+Missing `channel`, `first`.
+
+</Accordion>
+
+<Accordion title="!reaction messages remove">
+
+Stop reacting in a channel
+
+**Syntax**
+
+```text
+!reaction messages remove <channel>
+```
+
+**Example template**
+
+```text
+!reaction messages remove channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!reaction messages remove
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!reaction messages list">
+
+List channels that receive reactions
+
+**Syntax**
+
+```text
+!reaction messages list
+```
+
+**Example template**
+
+```text
+!reaction messages list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+reaction messages list
+```
+
+Missing the ! command prefix.
 
 </Accordion>
 

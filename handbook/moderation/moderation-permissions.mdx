@@ -2,7 +2,7 @@
 
 title: "Roles & permissions"
 
-description: "Role grants, permissions and role tools."
+description: "Role grants, button and dropdown menus, vanity rewards, permissions and role tools."
 
 icon: "key-round"
 
@@ -10,18 +10,18 @@ icon: "key-round"
 
 <Icon icon="key-round" size={28} />
 
-Roles & permissions groups the workflows below. Role grants, permissions and role tools.
+Roles & permissions groups the workflows below. Role grants, button and dropdown menus, vanity rewards, permissions and role tools.
 
 ## What this module does
 
 - List every server role from highest to lowest
+- Assign roles from buttons on a message
+- Assign roles from a dropdown menu
+- Reward members who advertise your vanity
 - Add or remove permissions for a role or user
 - Add permissions to a role or user
 - Remove permissions to a role or user
 - Add a role to a member
-- Remove a role from a member
-- Remove a role from all members with it
-- Give a role to all server members
 
 ## Before you start
 
@@ -96,6 +96,566 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 
 ```text
 roles
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!buttonrole add">
+
+Add a button role to a message
+
+**Syntax**
+
+```text
+!buttonrole add <message> <role> [label]
+```
+
+**Example template**
+
+```text
+!buttonrole add message:<message> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!buttonrole add
+```
+
+Missing `message`, `role`.
+
+</Accordion>
+
+<Accordion title="!buttonrole remove">
+
+Remove a button role from a message
+
+**Syntax**
+
+```text
+!buttonrole remove <message> <role>
+```
+
+**Example template**
+
+```text
+!buttonrole remove message:<message> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!buttonrole remove
+```
+
+Missing `message`, `role`.
+
+</Accordion>
+
+<Accordion title="!buttonrole removeall">
+
+Remove every button role from a message
+
+**Syntax**
+
+```text
+!buttonrole removeall <message>
+```
+
+**Example template**
+
+```text
+!buttonrole removeall message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!buttonrole removeall
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!buttonrole list">
+
+List every button role message
+
+**Syntax**
+
+```text
+!buttonrole list
+```
+
+**Example template**
+
+```text
+!buttonrole list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+buttonrole list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!buttonrole reset">
+
+Remove every button role in the server
+
+**Syntax**
+
+```text
+!buttonrole reset
+```
+
+**Example template**
+
+```text
+!buttonrole reset
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+buttonrole reset
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!dropdownrole create">
+
+Post a dropdown role menu
+
+**Syntax**
+
+```text
+!dropdownrole create [channel] [message]
+```
+
+**Example template**
+
+```text
+!dropdownrole create
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+dropdownrole create
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!dropdownrole add">
+
+Add a role to a dropdown
+
+**Syntax**
+
+```text
+!dropdownrole add <message> <role> [label] [description]
+```
+
+**Example template**
+
+```text
+!dropdownrole add message:<message> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!dropdownrole add
+```
+
+Missing `message`, `role`.
+
+</Accordion>
+
+<Accordion title="!dropdownrole edit">
+
+Change an option label or description
+
+**Syntax**
+
+```text
+!dropdownrole edit <message> <role> [label] [description]
+```
+
+**Example template**
+
+```text
+!dropdownrole edit message:<message> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!dropdownrole edit
+```
+
+Missing `message`, `role`.
+
+</Accordion>
+
+<Accordion title="!dropdownrole remove">
+
+Remove a role from a dropdown
+
+**Syntax**
+
+```text
+!dropdownrole remove <message> <role>
+```
+
+**Example template**
+
+```text
+!dropdownrole remove message:<message> role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!dropdownrole remove
+```
+
+Missing `message`, `role`.
+
+</Accordion>
+
+<Accordion title="!dropdownrole removeall">
+
+Remove a dropdown and every role on it
+
+**Syntax**
+
+```text
+!dropdownrole removeall <message>
+```
+
+**Example template**
+
+```text
+!dropdownrole removeall message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!dropdownrole removeall
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!dropdownrole reset">
+
+Remove every dropdown role menu in the server
+
+**Syntax**
+
+```text
+!dropdownrole reset
+```
+
+**Example template**
+
+```text
+!dropdownrole reset
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+dropdownrole reset
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!vanity set">
+
+Choose the substring to look for
+
+**Syntax**
+
+```text
+!vanity set <substring>
+```
+
+**Example template**
+
+```text
+!vanity set substring:<substring>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!vanity set
+```
+
+Missing `substring`.
+
+</Accordion>
+
+<Accordion title="!vanity add">
+
+Reward a role for advertising
+
+**Syntax**
+
+```text
+!vanity add <role>
+```
+
+**Example template**
+
+```text
+!vanity add role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!vanity add
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!vanity remove">
+
+Stop rewarding a role
+
+**Syntax**
+
+```text
+!vanity remove <role>
+```
+
+**Example template**
+
+```text
+!vanity remove role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!vanity remove
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!vanity list">
+
+Show the vanity settings and rewarded roles
+
+**Syntax**
+
+```text
+!vanity list
+```
+
+**Example template**
+
+```text
+!vanity list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+vanity list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!vanity role add">
+
+Reward a role for advertising
+
+**Syntax**
+
+```text
+!vanity role add <role>
+```
+
+**Example template**
+
+```text
+!vanity role add role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!vanity role add
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!vanity role remove">
+
+Stop rewarding a role
+
+**Syntax**
+
+```text
+!vanity role remove <role>
+```
+
+**Example template**
+
+```text
+!vanity role remove role:<role>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!vanity role remove
+```
+
+Missing `role`.
+
+</Accordion>
+
+<Accordion title="!vanity role list">
+
+View all roles being rewarded
+
+**Syntax**
+
+```text
+!vanity role list
+```
+
+**Example template**
+
+```text
+!vanity role list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+vanity role list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!vanity message">
+
+Set the award message
+
+**Syntax**
+
+```text
+!vanity message <message>
+```
+
+**Example template**
+
+```text
+!vanity message message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!vanity message
+```
+
+Missing `message`.
+
+</Accordion>
+
+<Accordion title="!vanity award">
+
+Choose where the award message is sent
+
+**Syntax**
+
+```text
+!vanity award [channel]
+```
+
+**Example template**
+
+```text
+!vanity award
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+vanity award
 ```
 
 Missing the ! command prefix.

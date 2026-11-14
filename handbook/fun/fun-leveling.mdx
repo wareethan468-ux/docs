@@ -2,7 +2,7 @@
 
 title: "Leveling"
 
-description: "XP, ranks and leaderboard."
+description: "XP, level rewards, ignored channels, ranks and leaderboards."
 
 icon: "trophy"
 
@@ -15,9 +15,12 @@ Award server XP and grant configured roles at milestones.
 ## What this module does
 
 - Configure and view server levels
+- Configure level rewards, ignored targets and XP
 - Give XP and levels to members, or set up level roles in one step
 - Show a member level card
 - Preview the level card without awarding XP
+- Configures a user's level.
+- Removes experience from a user.
 
 ## Before you start
 
@@ -181,6 +184,622 @@ leveling leaderboard
 ```
 
 Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!levels config">
+
+View this server's leveling configuration
+
+**Syntax**
+
+```text
+!levels config
+```
+
+**Example template**
+
+```text
+!levels config
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels config
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels add">
+
+Create a level reward role
+
+**Syntax**
+
+```text
+!levels add <role> <level>
+```
+
+**Example template**
+
+```text
+!levels add role:<role> level:<level>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levels add
+```
+
+Missing `role`, `level`.
+
+</Accordion>
+
+<Accordion title="!levels remove">
+
+Remove the reward for a level
+
+**Syntax**
+
+```text
+!levels remove <level>
+```
+
+**Example template**
+
+```text
+!levels remove level:<level>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levels remove
+```
+
+Missing `level`.
+
+</Accordion>
+
+<Accordion title="!levels list">
+
+List reward roles and ignored targets
+
+**Syntax**
+
+```text
+!levels list
+```
+
+**Example template**
+
+```text
+!levels list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels ignore">
+
+Ignore a channel or role for XP
+
+**Syntax**
+
+```text
+!levels ignore [channel] [role]
+```
+
+**Example template**
+
+```text
+!levels ignore
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels ignore
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels unignore">
+
+Stop ignoring a channel or role
+
+**Syntax**
+
+```text
+!levels unignore [channel] [role]
+```
+
+**Example template**
+
+```text
+!levels unignore
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels unignore
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels lock">
+
+Pause XP tracking
+
+**Syntax**
+
+```text
+!levels lock
+```
+
+**Example template**
+
+```text
+!levels lock
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels lock
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels unlock">
+
+Start tracking XP
+
+**Syntax**
+
+```text
+!levels unlock
+```
+
+**Example template**
+
+```text
+!levels unlock
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels unlock
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels rank">
+
+View a member's level
+
+**Syntax**
+
+```text
+!levels rank [user]
+```
+
+**Example template**
+
+```text
+!levels rank
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels rank
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels leaderboard">
+
+View the highest ranked members
+
+**Syntax**
+
+```text
+!levels leaderboard [page]
+```
+
+**Example template**
+
+```text
+!levels leaderboard
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels leaderboard
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels setlevel">
+
+Set a member's level directly
+
+**Syntax**
+
+```text
+!levels setlevel <user> <level>
+```
+
+**Example template**
+
+```text
+!levels setlevel user:<user> level:<level>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levels setlevel
+```
+
+Missing `user`, `level`.
+
+</Accordion>
+
+<Accordion title="!levels setxp">
+
+Set a member's total XP
+
+**Syntax**
+
+```text
+!levels setxp <user> <xp>
+```
+
+**Example template**
+
+```text
+!levels setxp user:<user> xp:<xp>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levels setxp
+```
+
+Missing `user`, `xp`.
+
+</Accordion>
+
+<Accordion title="!levels removexp">
+
+Remove XP from a member
+
+**Syntax**
+
+```text
+!levels removexp <user> <xp>
+```
+
+**Example template**
+
+```text
+!levels removexp user:<user> xp:<xp>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levels removexp
+```
+
+Missing `user`, `xp`.
+
+</Accordion>
+
+<Accordion title="!levels cleanup">
+
+Remove XP rows for members who left
+
+**Syntax**
+
+```text
+!levels cleanup [user]
+```
+
+**Example template**
+
+```text
+!levels cleanup
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels cleanup
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels messages">
+
+Toggle level-up messages for yourself
+
+**Syntax**
+
+```text
+!levels messages
+```
+
+**Example template**
+
+```text
+!levels messages
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels messages
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels message set">
+
+Set the level-up message
+
+**Syntax**
+
+```text
+!levels message set <text>
+```
+
+**Example template**
+
+```text
+!levels message set text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levels message set
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!levels message view">
+
+View the level-up message
+
+**Syntax**
+
+```text
+!levels message view
+```
+
+**Example template**
+
+```text
+!levels message view
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels message view
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels message clear">
+
+Return to the default message
+
+**Syntax**
+
+```text
+!levels message clear
+```
+
+**Example template**
+
+```text
+!levels message clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels message clear
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels messagemode channel">
+
+Send them to one channel
+
+**Syntax**
+
+```text
+!levels messagemode channel <channel>
+```
+
+**Example template**
+
+```text
+!levels messagemode channel channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levels messagemode channel
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!levels messagemode dm">
+
+Send them to the member directly
+
+**Syntax**
+
+```text
+!levels messagemode dm
+```
+
+**Example template**
+
+```text
+!levels messagemode dm
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels messagemode dm
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels messagemode here">
+
+Send them where the member is talking
+
+**Syntax**
+
+```text
+!levels messagemode here
+```
+
+**Example template**
+
+```text
+!levels messagemode here
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels messagemode here
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!levels messagemode off">
+
+Stop sending level-up messages
+
+**Syntax**
+
+```text
+!levels messagemode off
+```
+
+**Example template**
+
+```text
+!levels messagemode off
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+levels messagemode off
+```
+
+Missing the ! command prefix.
 
 </Accordion>
 
@@ -349,6 +968,62 @@ rankpreview
 ```
 
 Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!setlevel">
+
+Configures a user's level.
+
+**Syntax**
+
+```text
+!setlevel <level> <member>
+```
+
+**Example template**
+
+```text
+!setlevel level:<level> member:<member>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!setlevel
+```
+
+Missing `level`, `member`.
+
+</Accordion>
+
+<Accordion title="!removexp">
+
+Removes experience from a user.
+
+**Syntax**
+
+```text
+!removexp <member> [xp] [levels]
+```
+
+**Example template**
+
+```text
+!removexp member:<member>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!removexp
+```
+
+Missing `member`.
 
 </Accordion>
 
