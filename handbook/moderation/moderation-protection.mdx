@@ -21,7 +21,7 @@ Rules & protection groups the workflows below. Honeypot, anti-nuke, anti-spam an
 - Configure join-burst protection
 - Filter words, links, spam and more from chat
 - Show protection settings
-- View live join-surge detection and emergency settings
+- Stop members reacting to their own messages
 
 ## Before you start
 
@@ -1496,6 +1496,202 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 
 ```text
 automod
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!noselfreact toggle">
+
+Enable or disable self-reaction monitoring
+
+**Syntax**
+
+```text
+!noselfreact toggle
+```
+
+**Example template**
+
+```text
+!noselfreact toggle
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+noselfreact toggle
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!noselfreact emoji">
+
+Add or remove a monitored emoji
+
+**Syntax**
+
+```text
+!noselfreact emoji <emoji>
+```
+
+**Example template**
+
+```text
+!noselfreact emoji emoji:<emoji>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!noselfreact emoji
+```
+
+Missing `emoji`.
+
+</Accordion>
+
+<Accordion title="!noselfreact emojis">
+
+List the monitored emojis
+
+**Syntax**
+
+```text
+!noselfreact emojis
+```
+
+**Example template**
+
+```text
+!noselfreact emojis
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+noselfreact emojis
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!noselfreact exempt">
+
+Exempt a member, channel or role
+
+**Syntax**
+
+```text
+!noselfreact exempt [member] [channel] [role]
+```
+
+**Example template**
+
+```text
+!noselfreact exempt
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+noselfreact exempt
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!noselfreact exemptions">
+
+List every exemption
+
+**Syntax**
+
+```text
+!noselfreact exemptions
+```
+
+**Example template**
+
+```text
+!noselfreact exemptions
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+noselfreact exemptions
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!noselfreact punishment">
+
+Choose what happens to a self-reaction
+
+**Syntax**
+
+```text
+!noselfreact punishment <punishment>
+```
+
+**Example template**
+
+```text
+!noselfreact punishment punishment:<punishment>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!noselfreact punishment
+```
+
+Missing `punishment`.
+
+</Accordion>
+
+<Accordion title="!noselfreact bypass">
+
+Toggle whether staff with Manage Messages are exempt
+
+**Syntax**
+
+```text
+!noselfreact bypass
+```
+
+**Example template**
+
+```text
+!noselfreact bypass
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+noselfreact bypass
 ```
 
 Missing the ! command prefix.

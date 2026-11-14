@@ -1,0 +1,383 @@
+---
+
+title: "Support workflows"
+
+description: "Ticket priorities, staff notes, support responses and assignment."
+
+icon: "ticket"
+
+---
+
+<Icon icon="ticket" size={28} />
+
+Support workflows groups the workflows below. Ticket priorities, staff notes, support responses and assignment.
+
+## What this module does
+
+- Set priority for a ticket
+- Add or view private staff ticket notes
+- Ask ticket opener to confirm closing
+- Transfer a ticket to a new category
+- Configure and send saved support responses
+- Display support ticket workload
+- Invite a server member to open a ticket
+- Configure new-ticket onboarding questions
+
+## Before you start
+
+Agree on the audience before posting or changing shared records.
+
+Individual actions can still check channel access, ownership and service authorization.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Find the matching workflow in the command browser.
+2. Supply the real member, record or channel.
+3. Inspect the saved or posted result.
+
+## Check the result
+
+- Check visibility as a member.
+- Use record identifiers when names are ambiguous.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!ticketpriority">
+
+Set priority for a ticket
+
+**Syntax**
+
+```text
+!ticketpriority [priority] [ticket_id]
+```
+
+**Example template**
+
+```text
+!ticketpriority
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticketpriority
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!ticketnote">
+
+Add or view private staff ticket notes
+
+**Syntax**
+
+```text
+!ticketnote <action> [text] [ticket_id]
+```
+
+**Example template**
+
+```text
+!ticketnote action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticketnote
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!ticketrequestclose">
+
+Ask ticket opener to confirm closing
+
+**Syntax**
+
+```text
+!ticketrequestclose [ticket_id]
+```
+
+**Example template**
+
+```text
+!ticketrequestclose
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticketrequestclose
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!tickettransfer">
+
+Transfer a ticket to a new category
+
+**Syntax**
+
+```text
+!tickettransfer <category> [ticket_id]
+```
+
+**Example template**
+
+```text
+!tickettransfer category:<category>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!tickettransfer
+```
+
+Missing `category`.
+
+</Accordion>
+
+<Accordion title="!ticketreply">
+
+Configure and send saved support responses
+
+**Syntax**
+
+```text
+!ticketreply <action> [name] [text] [ticket_id]
+```
+
+**Example template**
+
+```text
+!ticketreply action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticketreply
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!ticketstatusboard">
+
+Display support ticket workload
+
+**Syntax**
+
+```text
+!ticketstatusboard
+```
+
+**Example template**
+
+```text
+!ticketstatusboard
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+ticketstatusboard
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!ticketrequest">
+
+Invite a server member to open a ticket
+
+**Syntax**
+
+```text
+!ticketrequest <user>
+```
+
+**Example template**
+
+```text
+!ticketrequest user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticketrequest
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!ticketforms">
+
+Configure new-ticket onboarding questions
+
+**Syntax**
+
+```text
+!ticketforms <action> [question]
+```
+
+**Example template**
+
+```text
+!ticketforms action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticketforms
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!ticketassign">
+
+Assign support staff or enable automatic assignment
+
+**Syntax**
+
+```text
+!ticketassign <action> [user] [ticket_id]
+```
+
+**Example template**
+
+```text
+!ticketassign action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticketassign
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!ticketmerge">
+
+Archive a duplicate ticket and link its primary ticket
+
+**Syntax**
+
+```text
+!ticketmerge <main> <duplicate> <confirm>
+```
+
+**Example template**
+
+```text
+!ticketmerge main:<main> duplicate:<duplicate> confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticketmerge
+```
+
+Missing `main`, `duplicate`, `confirm`.
+
+</Accordion>
+
+<Accordion title="!ticketsla">
+
+Configure support targets and list overdue unclaimed tickets
+
+**Syntax**
+
+```text
+!ticketsla <action> [minutes]
+```
+
+**Example template**
+
+```text
+!ticketsla action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ticketsla
+```
+
+Missing `action`.
+
+</Accordion>
+
+</AccordionGroup>

@@ -1,0 +1,212 @@
+---
+
+title: "Interactive games"
+
+description: "Interactive trivia, language games and turn-based chess."
+
+icon: "dices"
+
+---
+
+<Icon icon="dices" size={28} />
+
+Interactive games groups the workflows below. Interactive trivia, language games and turn-based chess.
+
+## What this module does
+
+- Play a timed multiplayer trivia question
+- Start or play the shared hangman game
+- Play a multiplayer word chaining game
+- Start a typing race and compare speed with accuracy
+- Challenge another member to a turn-based chess game
+
+## Before you start
+
+Choose a suitable channel and check balance, cooldown and consent.
+
+Individual actions can still check channel access, ownership and service authorization.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review the activity inputs and limits.
+2. Use its controls to finish the session.
+3. Read the result before starting another round.
+
+## Check the result
+
+- A failed provider lookup does not complete an activity.
+- Coin results use the saved server wallet and game rules.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!trivia">
+
+Play a timed multiplayer trivia question
+
+**Syntax**
+
+```text
+!trivia <action> [answer]
+```
+
+**Example template**
+
+```text
+!trivia action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!trivia
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!hangman">
+
+Start or play the shared hangman game
+
+**Syntax**
+
+```text
+!hangman <action> [letter]
+```
+
+**Example template**
+
+```text
+!hangman action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!hangman
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!wordchain">
+
+Play a multiplayer word chaining game
+
+**Syntax**
+
+```text
+!wordchain <action> [word]
+```
+
+**Example template**
+
+```text
+!wordchain action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!wordchain
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!typingrace">
+
+Start a typing race and compare speed with accuracy
+
+**Syntax**
+
+```text
+!typingrace <action> [text]
+```
+
+**Example template**
+
+```text
+!typingrace action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!typingrace
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!chess">
+
+Challenge another member to a turn-based chess game
+
+**Syntax**
+
+```text
+!chess <action> [user] [move]
+```
+
+**Example template**
+
+```text
+!chess action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!chess
+```
+
+Missing `action`.
+
+</Accordion>
+
+</AccordionGroup>

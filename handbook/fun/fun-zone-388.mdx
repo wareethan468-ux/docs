@@ -1,0 +1,183 @@
+---
+
+title: "Experience controls"
+
+description: "Voice XP, role stacking, exclusions and boosted XP."
+
+icon: "activity"
+
+---
+
+<Icon icon="activity" size={28} />
+
+Experience controls groups the workflows below. Voice XP, role stacking, exclusions and boosted XP.
+
+## What this module does
+
+- Configure XP for active voice chat sessions
+- Exclude a channel or role from earning experience
+- Configure whether role rewards stack across levels
+- Configure temporary server XP multipliers
+
+## Before you start
+
+Choose a suitable channel and check balance, cooldown and consent.
+
+Depending on the action, this module uses **Manage Server**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review the activity inputs and limits.
+2. Use its controls to finish the session.
+3. Read the result before starting another round.
+
+## Check the result
+
+- A failed provider lookup does not complete an activity.
+- Coin results use the saved server wallet and game rules.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!voicelevels">
+
+Configure XP for active voice chat sessions
+
+**Syntax**
+
+```text
+!voicelevels <enabled> [xp_per_5m]
+```
+
+**Example template**
+
+```text
+!voicelevels enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!voicelevels
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!levelignore">
+
+Exclude a channel or role from earning experience
+
+**Syntax**
+
+```text
+!levelignore <action> [role] [channel]
+```
+
+**Example template**
+
+```text
+!levelignore action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levelignore
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!levelstack">
+
+Configure whether role rewards stack across levels
+
+**Syntax**
+
+```text
+!levelstack <enabled>
+```
+
+**Example template**
+
+```text
+!levelstack enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!levelstack
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!xpboost">
+
+Configure temporary server XP multipliers
+
+**Syntax**
+
+```text
+!xpboost <multiplier> [minutes]
+```
+
+**Example template**
+
+```text
+!xpboost multiplier:<multiplier>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!xpboost
+```
+
+Missing `multiplier`.
+
+</Accordion>
+
+</AccordionGroup>

@@ -1,0 +1,462 @@
+---
+
+title: "Case notes & evidence"
+
+description: "Staff notes, evidence links, reason corrections and case removal."
+
+icon: "file-text"
+
+---
+
+<Icon icon="file-text" size={28} />
+
+Case notes & evidence groups the workflows below. Staff notes, evidence links, reason corrections and case removal.
+
+## What this module does
+
+- Case notes, evidence, reasons and removal
+
+## Before you start
+
+Confirm the affected target and your permission.
+
+Check Zone role order.
+
+Depending on the action, this module uses **Moderate Members**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review current state.
+2. Apply the action matching server policy.
+3. Inspect the result and moderation history.
+
+## Check the result
+
+- Roles at or above Zone cannot be managed by it.
+- Reports cannot reconstruct unknown historical events.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!case view">
+
+View a case or a member's cases
+
+**Syntax**
+
+```text
+!case view [case] [user]
+```
+
+**Example template**
+
+```text
+!case view
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+case view
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!case reason">
+
+Update the reason on a case
+
+**Syntax**
+
+```text
+!case reason <case> <reason>
+```
+
+**Example template**
+
+```text
+!case reason case:<case> reason:<reason>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case reason
+```
+
+Missing `case`, `reason`.
+
+</Accordion>
+
+<Accordion title="!case remove">
+
+Remove a case record
+
+**Syntax**
+
+```text
+!case remove <case>
+```
+
+**Example template**
+
+```text
+!case remove case:<case>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case remove
+```
+
+Missing `case`.
+
+</Accordion>
+
+<Accordion title="!case removeall">
+
+Remove every case for a member
+
+**Syntax**
+
+```text
+!case removeall <user>
+```
+
+**Example template**
+
+```text
+!case removeall user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case removeall
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!case recentbans">
+
+View the most recent bans in this server
+
+**Syntax**
+
+```text
+!case recentbans [limit]
+```
+
+**Example template**
+
+```text
+!case recentbans
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+case recentbans
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!case notes add">
+
+Add a note
+
+**Syntax**
+
+```text
+!case notes add <user> <note>
+```
+
+**Example template**
+
+```text
+!case notes add user:<user> note:<note>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case notes add
+```
+
+Missing `user`, `note`.
+
+</Accordion>
+
+<Accordion title="!case notes view">
+
+View notes for a member
+
+**Syntax**
+
+```text
+!case notes view <user>
+```
+
+**Example template**
+
+```text
+!case notes view user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case notes view
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!case notes remove">
+
+Remove one note with its number
+
+**Syntax**
+
+```text
+!case notes remove <user> <number>
+```
+
+**Example template**
+
+```text
+!case notes remove user:<user> number:<number>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case notes remove
+```
+
+Missing `user`, `number`.
+
+</Accordion>
+
+<Accordion title="!case notes clear">
+
+Clear every note for a member
+
+**Syntax**
+
+```text
+!case notes clear <user>
+```
+
+**Example template**
+
+```text
+!case notes clear user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case notes clear
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!case proof add">
+
+Attach evidence to a case
+
+**Syntax**
+
+```text
+!case proof add <case> <url>
+```
+
+**Example template**
+
+```text
+!case proof add case:<case> url:<url>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case proof add
+```
+
+Missing `case`, `url`.
+
+</Accordion>
+
+<Accordion title="!case proof view">
+
+View evidence for a case
+
+**Syntax**
+
+```text
+!case proof view <case>
+```
+
+**Example template**
+
+```text
+!case proof view case:<case>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case proof view
+```
+
+Missing `case`.
+
+</Accordion>
+
+<Accordion title="!case proof remove">
+
+Remove one evidence link
+
+**Syntax**
+
+```text
+!case proof remove <case> <number>
+```
+
+**Example template**
+
+```text
+!case proof remove case:<case> number:<number>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case proof remove
+```
+
+Missing `case`, `number`.
+
+</Accordion>
+
+<Accordion title="!case proof set">
+
+Replace every evidence link on a case
+
+**Syntax**
+
+```text
+!case proof set <case> <urls>
+```
+
+**Example template**
+
+```text
+!case proof set case:<case> urls:<urls>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!case proof set
+```
+
+Missing `case`, `urls`.
+
+</Accordion>
+
+<Accordion title="!case proof list">
+
+List cases that have evidence
+
+**Syntax**
+
+```text
+!case proof list [user]
+```
+
+**Example template**
+
+```text
+!case proof list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+case proof list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

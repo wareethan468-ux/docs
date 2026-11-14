@@ -1,0 +1,301 @@
+---
+
+title: "Security incidents and archives"
+
+description: "Track incidents, inspect webhooks and archive or restore channels."
+
+icon: "shield-check"
+
+---
+
+<Icon icon="shield-check" size={28} />
+
+Security incidents and archives groups the workflows below. Track incidents, inspect webhooks and archive or restore channels.
+
+## What this module does
+
+- Record a security incident without taking a punitive action
+- Close a recorded security incident with a resolution note
+- Send recorded security incidents to staff privately as CSV
+- List webhook names and owners without exposing webhook URLs
+- Archive a text channel with its current settings preserved
+- Restore channel settings saved before archiving
+- Compare effective channel permissions for two members
+- Review channels without recent visible messages
+
+## Before you start
+
+Confirm the affected target and your permission.
+
+Check Zone role order.
+
+Depending on the action, this module uses **Manage Server, Manage Webhooks, Manage Channels**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review current state.
+2. Apply the action matching server policy.
+3. Inspect the result and moderation history.
+
+## Check the result
+
+- Roles at or above Zone cannot be managed by it.
+- Reports cannot reconstruct unknown historical events.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!incidentlog">
+
+Record a security incident without taking a punitive action
+
+**Syntax**
+
+```text
+!incidentlog <title> [severity] [details]
+```
+
+**Example template**
+
+```text
+!incidentlog title:<title>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!incidentlog
+```
+
+Missing `title`.
+
+</Accordion>
+
+<Accordion title="!incidentresolve">
+
+Close a recorded security incident with a resolution note
+
+**Syntax**
+
+```text
+!incidentresolve <id> <resolution>
+```
+
+**Example template**
+
+```text
+!incidentresolve id:<id> resolution:<resolution>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!incidentresolve
+```
+
+Missing `id`, `resolution`.
+
+</Accordion>
+
+<Accordion title="!incidentexport">
+
+Send recorded security incidents to staff privately as CSV
+
+**Syntax**
+
+```text
+!incidentexport
+```
+
+**Example template**
+
+```text
+!incidentexport
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+incidentexport
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!webhookinventory">
+
+List webhook names and owners without exposing webhook URLs
+
+**Syntax**
+
+```text
+!webhookinventory [channel]
+```
+
+**Example template**
+
+```text
+!webhookinventory
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+webhookinventory
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!channelarchive">
+
+Archive a text channel with its current settings preserved
+
+**Syntax**
+
+```text
+!channelarchive <channel> <confirm>
+```
+
+**Example template**
+
+```text
+!channelarchive channel:<channel> confirm:<confirm>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelarchive
+```
+
+Missing `channel`, `confirm`.
+
+</Accordion>
+
+<Accordion title="!channelrestore">
+
+Restore channel settings saved before archiving
+
+**Syntax**
+
+```text
+!channelrestore <channel>
+```
+
+**Example template**
+
+```text
+!channelrestore channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!channelrestore
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!permissiondiffchannel">
+
+Compare effective channel permissions for two members
+
+**Syntax**
+
+```text
+!permissiondiffchannel <channel> <first> <second>
+```
+
+**Example template**
+
+```text
+!permissiondiffchannel channel:<channel> first:<first> second:<second>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!permissiondiffchannel
+```
+
+Missing `channel`, `first`, `second`.
+
+</Accordion>
+
+<Accordion title="!inactivechannels">
+
+Review channels without recent visible messages
+
+**Syntax**
+
+```text
+!inactivechannels
+```
+
+**Example template**
+
+```text
+!inactivechannels
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+inactivechannels
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

@@ -1,0 +1,156 @@
+---
+
+title: "Pins & translation"
+
+description: "Pin, unpin and translate text in your server."
+
+icon: "pencil"
+
+---
+
+<Icon icon="pencil" size={28} />
+
+Pins & translation groups the workflows below. Pin, unpin and translate text in your server.
+
+## What this module does
+
+- Pin a specific message
+- Unpin a specific message
+- Translate text into English or another language
+
+## Before you start
+
+Choose the actual server, member, public URL or text.
+
+Keep credentials and private data out of public chat.
+
+Depending on the action, this module uses **Manage Messages**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review the accepted input.
+2. Supply it and inspect the result.
+3. Copy or download the artifact when one is produced.
+
+## Check the result
+
+- Missing records are reported instead of invented.
+- Lookups show only accessible data.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="/pin">
+
+Pin a specific message
+
+**Syntax**
+
+```text
+/pin [message]
+```
+
+**Example template**
+
+```text
+/pin
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+pin
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+<Accordion title="!unpin">
+
+Unpin a specific message
+
+**Syntax**
+
+```text
+!unpin [message]
+```
+
+**Example template**
+
+```text
+!unpin
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+unpin
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="/translate">
+
+Translate text into English or another language
+
+**Syntax**
+
+```text
+/translate [input]
+```
+
+**Example template**
+
+```text
+/translate
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+translate
+```
+
+Missing the / command prefix.
+
+</Accordion>
+
+</AccordionGroup>

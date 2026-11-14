@@ -1,0 +1,488 @@
+---
+
+title: "Clownboard"
+
+description: "Highlight messages with a configurable reaction board."
+
+icon: "server"
+
+---
+
+<Icon icon="server" size={28} />
+
+Clownboard groups the workflows below. Highlight messages with a configurable reaction board.
+
+## What this module does
+
+- Highlight messages with a clown emoji
+
+## Before you start
+
+Confirm access and permission to change the content.
+
+Depending on the action, this module uses **Manage Server**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Locate and inspect the correct resource.
+2. Apply the supported operation.
+3. Inspect the returned file or record before removing an original.
+
+## Check the result
+
+- Inspection does not automatically publish or approve content.
+- Keep sources when an export or deletion fails.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!clownboard set">
+
+Set the clownboard channel
+
+**Syntax**
+
+```text
+!clownboard set <channel>
+```
+
+**Example template**
+
+```text
+!clownboard set channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clownboard set
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!clownboard config">
+
+Show the clownboard configuration
+
+**Syntax**
+
+```text
+!clownboard config
+```
+
+**Example template**
+
+```text
+!clownboard config
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+clownboard config
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!clownboard reset">
+
+Delete the clownboard configuration
+
+**Syntax**
+
+```text
+!clownboard reset
+```
+
+**Example template**
+
+```text
+!clownboard reset
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+clownboard reset
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!clownboard clear">
+
+Forget every posted clownboard entry
+
+**Syntax**
+
+```text
+!clownboard clear
+```
+
+**Example template**
+
+```text
+!clownboard clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+clownboard clear
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!clownboard lock">
+
+Stop new messages reaching the clownboard
+
+**Syntax**
+
+```text
+!clownboard lock
+```
+
+**Example template**
+
+```text
+!clownboard lock
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+clownboard lock
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!clownboard unlock">
+
+Allow new messages on the clownboard
+
+**Syntax**
+
+```text
+!clownboard unlock
+```
+
+**Example template**
+
+```text
+!clownboard unlock
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+clownboard unlock
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!clownboard emoji">
+
+Set the clownboard emoji
+
+**Syntax**
+
+```text
+!clownboard emoji <emoji>
+```
+
+**Example template**
+
+```text
+!clownboard emoji emoji:<emoji>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clownboard emoji
+```
+
+Missing `emoji`.
+
+</Accordion>
+
+<Accordion title="!clownboard threshold">
+
+Set how many reactions are needed
+
+**Syntax**
+
+```text
+!clownboard threshold <count>
+```
+
+**Example template**
+
+```text
+!clownboard threshold count:<count>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clownboard threshold
+```
+
+Missing `count`.
+
+</Accordion>
+
+<Accordion title="!clownboard attachments">
+
+Toggle attachment previews
+
+**Syntax**
+
+```text
+!clownboard attachments <enabled>
+```
+
+**Example template**
+
+```text
+!clownboard attachments enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clownboard attachments
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!clownboard color">
+
+Set the entry accent colour
+
+**Syntax**
+
+```text
+!clownboard color <hex>
+```
+
+**Example template**
+
+```text
+!clownboard color hex:<hex>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clownboard color
+```
+
+Missing `hex`.
+
+</Accordion>
+
+<Accordion title="!clownboard jumpurl">
+
+Toggle the jump link
+
+**Syntax**
+
+```text
+!clownboard jumpurl <enabled>
+```
+
+**Example template**
+
+```text
+!clownboard jumpurl enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clownboard jumpurl
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!clownboard timestamp">
+
+Toggle the message timestamp
+
+**Syntax**
+
+```text
+!clownboard timestamp <enabled>
+```
+
+**Example template**
+
+```text
+!clownboard timestamp enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clownboard timestamp
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!clownboard selfstar">
+
+Allow members to react to their own message
+
+**Syntax**
+
+```text
+!clownboard selfstar <enabled>
+```
+
+**Example template**
+
+```text
+!clownboard selfstar enabled:<enabled>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!clownboard selfstar
+```
+
+Missing `enabled`.
+
+</Accordion>
+
+<Accordion title="!clownboard ignore">
+
+Ignore a channel, role or member
+
+**Syntax**
+
+```text
+!clownboard ignore [channel] [role] [member]
+```
+
+**Example template**
+
+```text
+!clownboard ignore
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+clownboard ignore
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!clownboard ignores">
+
+List clownboard ignores
+
+**Syntax**
+
+```text
+!clownboard ignores
+```
+
+**Example template**
+
+```text
+!clownboard ignores
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+clownboard ignores
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

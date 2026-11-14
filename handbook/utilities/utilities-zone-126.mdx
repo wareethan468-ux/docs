@@ -1,0 +1,301 @@
+---
+
+title: "Activity reports"
+
+description: "Opt-in activity counting and server digest reports."
+
+icon: "activity"
+
+---
+
+<Icon icon="activity" size={28} />
+
+Activity reports groups the workflows below. Opt-in activity counting and server digest reports.
+
+## What this module does
+
+- Configure or view opt-in server message statistics
+- View tracked voice time by member
+- Show a 7-day message activity chart
+- Find the most active hours for the server
+- Rank frequently used custom and unicode emoji
+- Compare message activity among current member roles
+- List active and inactive channels from tracked messages
+- Configure recurring weekly server activity reports
+
+## Before you start
+
+Choose the actual server, member, public URL or text.
+
+Keep credentials and private data out of public chat.
+
+Individual actions can still check channel access, ownership and service authorization.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review the accepted input.
+2. Supply it and inspect the result.
+3. Copy or download the artifact when one is produced.
+
+## Check the result
+
+- Missing records are reported instead of invented.
+- Lookups show only accessible data.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!messagestats">
+
+Configure or view opt-in server message statistics
+
+**Syntax**
+
+```text
+!messagestats [action]
+```
+
+**Example template**
+
+```text
+!messagestats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+messagestats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!voicestats">
+
+View tracked voice time by member
+
+**Syntax**
+
+```text
+!voicestats [user]
+```
+
+**Example template**
+
+```text
+!voicestats
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+voicestats
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!activitychart">
+
+Show a 7-day message activity chart
+
+**Syntax**
+
+```text
+!activitychart
+```
+
+**Example template**
+
+```text
+!activitychart
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+activitychart
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!peakactivity">
+
+Find the most active hours for the server
+
+**Syntax**
+
+```text
+!peakactivity
+```
+
+**Example template**
+
+```text
+!peakactivity
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+peakactivity
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!emojiusage">
+
+Rank frequently used custom and unicode emoji
+
+**Syntax**
+
+```text
+!emojiusage
+```
+
+**Example template**
+
+```text
+!emojiusage
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emojiusage
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!roleactivity">
+
+Compare message activity among current member roles
+
+**Syntax**
+
+```text
+!roleactivity
+```
+
+**Example template**
+
+```text
+!roleactivity
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+roleactivity
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!channelhealth">
+
+List active and inactive channels from tracked messages
+
+**Syntax**
+
+```text
+!channelhealth
+```
+
+**Example template**
+
+```text
+!channelhealth
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+channelhealth
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!serverdigest">
+
+Configure recurring weekly server activity reports
+
+**Syntax**
+
+```text
+!serverdigest <action> [channel]
+```
+
+**Example template**
+
+```text
+!serverdigest action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!serverdigest
+```
+
+Missing `action`.
+
+</Accordion>
+
+</AccordionGroup>

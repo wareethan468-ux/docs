@@ -1,0 +1,210 @@
+---
+
+title: "Punishment messages"
+
+description: "Customize the direct message and response text for each punishment."
+
+icon: "gavel"
+
+---
+
+<Icon icon="gavel" size={28} />
+
+Punishment messages groups the workflows below. Customize the direct message and response text for each punishment.
+
+## What this module does
+
+- Customize the messages sent for punishments
+
+## Before you start
+
+Confirm the affected target and your permission.
+
+Check Zone role order.
+
+Depending on the action, this module uses **Manage Server**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review current state.
+2. Apply the action matching server policy.
+3. Inspect the result and moderation history.
+
+## Check the result
+
+- Roles at or above Zone cannot be managed by it.
+- Reports cannot reconstruct unknown historical events.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!invoke set">
+
+Set a punishment message or direct message
+
+**Syntax**
+
+```text
+!invoke set <punishment> <target> <message>
+```
+
+**Example template**
+
+```text
+!invoke set punishment:<punishment> target:<target> message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!invoke set
+```
+
+Missing `punishment`, `target`, `message`.
+
+</Accordion>
+
+<Accordion title="!invoke view">
+
+View a saved punishment message
+
+**Syntax**
+
+```text
+!invoke view <punishment> [target]
+```
+
+**Example template**
+
+```text
+!invoke view punishment:<punishment>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!invoke view
+```
+
+Missing `punishment`.
+
+</Accordion>
+
+<Accordion title="!invoke clear">
+
+Remove a saved punishment message
+
+**Syntax**
+
+```text
+!invoke clear <punishment> [target]
+```
+
+**Example template**
+
+```text
+!invoke clear punishment:<punishment>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!invoke clear
+```
+
+Missing `punishment`.
+
+</Accordion>
+
+<Accordion title="!invoke list">
+
+List every customized punishment message
+
+**Syntax**
+
+```text
+!invoke list
+```
+
+**Example template**
+
+```text
+!invoke list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+invoke list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!invoke reset">
+
+Clear every punishment message in this server
+
+**Syntax**
+
+```text
+!invoke reset
+```
+
+**Example template**
+
+```text
+!invoke reset
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+invoke reset
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

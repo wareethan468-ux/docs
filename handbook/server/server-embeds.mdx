@@ -17,7 +17,7 @@ Embeds & Components groups the workflows below. Save, edit and paginate custom e
 - Create and manage server embed and component templates
 - Manage custom server embeds
 - Manage pages on a single embed
-- Send messages through a channel webhook
+- Manage webhooks
 - Post an embed from JSON, a script or saved code
 - Copy an embed from a message
 - Edit an embed posted by Zone
@@ -941,18 +941,18 @@ Missing `message`.
 
 <Accordion title="!webhook create">
 
-Create a webhook for a channel
+Create a webhook in the current channel
 
 **Syntax**
 
 ```text
-!webhook create <channel> [name]
+!webhook create [name]
 ```
 
 **Example template**
 
 ```text
-!webhook create channel:<channel>
+!webhook create
 ```
 
 Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
@@ -960,27 +960,27 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 **Wrong**
 
 ```text
-!webhook create
+webhook create
 ```
 
-Missing `channel`.
+Missing the ! command prefix.
 
 </Accordion>
 
 <Accordion title="!webhook send">
 
-Send a message through the webhook
+Send a message through a webhook
 
 **Syntax**
 
 ```text
-!webhook send <channel> <message>
+!webhook send [channel] <message>
 ```
 
 **Example template**
 
 ```text
-!webhook send channel:<channel> message:<message>
+!webhook send message:<message>
 ```
 
 Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
@@ -991,24 +991,24 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 !webhook send
 ```
 
-Missing `channel`, `message`.
+Missing `message`.
 
 </Accordion>
 
 <Accordion title="!webhook edit">
 
-Edit the last webhook message
+Edit a message a webhook sent
 
 **Syntax**
 
 ```text
-!webhook edit <channel> <message>
+!webhook edit [channel] <message>
 ```
 
 **Example template**
 
 ```text
-!webhook edit channel:<channel> message:<message>
+!webhook edit message:<message>
 ```
 
 Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
@@ -1019,24 +1019,24 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 !webhook edit
 ```
 
-Missing `channel`, `message`.
+Missing `message`.
 
 </Accordion>
 
 <Accordion title="!webhook delete">
 
-Delete the channel webhook
+Delete a webhook
 
 **Syntax**
 
 ```text
-!webhook delete <channel>
+!webhook delete [channel]
 ```
 
 **Example template**
 
 ```text
-!webhook delete channel:<channel>
+!webhook delete
 ```
 
 Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
@@ -1044,16 +1044,44 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 **Wrong**
 
 ```text
-!webhook delete
+webhook delete
 ```
 
-Missing `channel`.
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!webhook avatar">
+
+Set a webhook's avatar (URL or attachment)
+
+**Syntax**
+
+```text
+!webhook avatar [channel] [avatar]
+```
+
+**Example template**
+
+```text
+!webhook avatar
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+webhook avatar
+```
+
+Missing the ! command prefix.
 
 </Accordion>
 
 <Accordion title="!webhook list">
 
-List the webhooks saved for this server
+List the server's webhooks
 
 **Syntax**
 
@@ -1073,6 +1101,146 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 
 ```text
 webhook list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!webhook firewall settings">
+
+Show the webhook firewall settings
+
+**Syntax**
+
+```text
+!webhook firewall settings
+```
+
+**Example template**
+
+```text
+!webhook firewall settings
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+webhook firewall settings
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!webhook firewall allow">
+
+Toggle a webhook that may post anything
+
+**Syntax**
+
+```text
+!webhook firewall allow <webhook>
+```
+
+**Example template**
+
+```text
+!webhook firewall allow webhook:<webhook>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!webhook firewall allow
+```
+
+Missing `webhook`.
+
+</Accordion>
+
+<Accordion title="!webhook firewall list">
+
+List allowed webhooks
+
+**Syntax**
+
+```text
+!webhook firewall list
+```
+
+**Example template**
+
+```text
+!webhook firewall list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+webhook firewall list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!webhook firewall off">
+
+Turn the webhook firewall off
+
+**Syntax**
+
+```text
+!webhook firewall off
+```
+
+**Example template**
+
+```text
+!webhook firewall off
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+webhook firewall off
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!webhook firewall on">
+
+Turn the webhook firewall on
+
+**Syntax**
+
+```text
+!webhook firewall on
+```
+
+**Example template**
+
+```text
+!webhook firewall on
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+webhook firewall on
 ```
 
 Missing the ! command prefix.

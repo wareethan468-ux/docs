@@ -16,12 +16,12 @@ Member moderation groups the workflows below. Kick, ban, timeout and other membe
 
 - Kick someone from the server
 - Ban a member or user, including users outside the server
+- Time a member out so they cannot speak
 - Remove a member and delete recent messages without keeping the ban
 - Inspect or correct a saved moderation case
 - Manage private staff notes about members
 - Temporarily ban a member
 - Ban a user by ID, including users outside the server
-- Ban listed members
 
 ## Before you start
 
@@ -127,6 +127,146 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 ```
 
 Missing `user`.
+
+</Accordion>
+
+<Accordion title="!mute add">
+
+Mute a member
+
+**Syntax**
+
+```text
+!mute add <user> [duration] [reason]
+```
+
+**Example template**
+
+```text
+!mute add user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!mute add
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!mute remove">
+
+Lift a mute
+
+**Syntax**
+
+```text
+!mute remove <user> [reason]
+```
+
+**Example template**
+
+```text
+!mute remove user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!mute remove
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!mute status">
+
+Show whether a member is muted
+
+**Syntax**
+
+```text
+!mute status <user>
+```
+
+**Example template**
+
+```text
+!mute status user:<user>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!mute status
+```
+
+Missing `user`.
+
+</Accordion>
+
+<Accordion title="!mute list">
+
+List every muted member
+
+**Syntax**
+
+```text
+!mute list
+```
+
+**Example template**
+
+```text
+!mute list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+mute list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!mute default">
+
+Set the default mute duration
+
+**Syntax**
+
+```text
+!mute default <duration>
+```
+
+**Example template**
+
+```text
+!mute default duration:<duration>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!mute default
+```
+
+Missing `duration`.
 
 </Accordion>
 

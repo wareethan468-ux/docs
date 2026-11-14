@@ -17,6 +17,7 @@ Command access groups the workflows below. Prefixes, command channels and disabl
 - View or change this server’s command prefix
 - Set member command channels
 - Manage disabled commands
+- React automatically when messages contain trigger words
 
 ## Before you start
 
@@ -206,6 +207,174 @@ disable
 ```
 
 Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!previousreact add">
+
+Add a reaction trigger
+
+**Syntax**
+
+```text
+!previousreact add <trigger> <emoji>
+```
+
+**Example template**
+
+```text
+!previousreact add trigger:<trigger> emoji:<emoji>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!previousreact add
+```
+
+Missing `trigger`, `emoji`.
+
+</Accordion>
+
+<Accordion title="!previousreact delete">
+
+Remove one trigger reaction
+
+**Syntax**
+
+```text
+!previousreact delete <trigger> <emoji>
+```
+
+**Example template**
+
+```text
+!previousreact delete trigger:<trigger> emoji:<emoji>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!previousreact delete
+```
+
+Missing `trigger`, `emoji`.
+
+</Accordion>
+
+<Accordion title="!previousreact deleteall">
+
+Remove every reaction for a trigger
+
+**Syntax**
+
+```text
+!previousreact deleteall <trigger>
+```
+
+**Example template**
+
+```text
+!previousreact deleteall trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!previousreact deleteall
+```
+
+Missing `trigger`.
+
+</Accordion>
+
+<Accordion title="!previousreact clear">
+
+Remove every trigger in this server
+
+**Syntax**
+
+```text
+!previousreact clear
+```
+
+**Example template**
+
+```text
+!previousreact clear
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+previousreact clear
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!previousreact list">
+
+List every trigger reaction
+
+**Syntax**
+
+```text
+!previousreact list
+```
+
+**Example template**
+
+```text
+!previousreact list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+previousreact list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!previousreact owner">
+
+Show who added a trigger
+
+**Syntax**
+
+```text
+!previousreact owner <trigger>
+```
+
+**Example template**
+
+```text
+!previousreact owner trigger:<trigger>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!previousreact owner
+```
+
+Missing `trigger`.
 
 </Accordion>
 

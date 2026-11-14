@@ -20,7 +20,7 @@ Emojis & stickers groups the workflows below. Add, list and remove emojis and st
 - Install Zone emojis
 - List server emojis
 - Delete a server emoji by name
-- Manage server emojis and view usage
+- Manage server emojis
 - Manage server stickers
 
 ## Before you start
@@ -242,18 +242,18 @@ Missing `name`.
 
 <Accordion title="!emoji add">
 
-Add an emoji from an uploaded image
+Add an emoji from an emoji, URL, upload, or reply
 
 **Syntax**
 
 ```text
-!emoji add <name> <file>
+!emoji add [emoji] [name] [file]
 ```
 
 **Example template**
 
 ```text
-!emoji add name:<name> file:<file>
+!emoji add
 ```
 
 Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
@@ -261,16 +261,16 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 **Wrong**
 
 ```text
-!emoji add
+emoji add
 ```
 
-Missing `name`, `file`.
+Missing the ! command prefix.
 
 </Accordion>
 
 <Accordion title="!emoji remove">
 
-Remove an emoji
+Remove a custom emoji
 
 **Syntax**
 
@@ -298,7 +298,7 @@ Missing `name`.
 
 <Accordion title="!emoji rename">
 
-Rename an emoji
+Rename a custom emoji
 
 **Syntax**
 
@@ -326,12 +326,12 @@ Missing `target`, `name`.
 
 <Accordion title="!emoji addmany">
 
-Add up to five attached images as emojis
+Add many emojis at once
 
 **Syntax**
 
 ```text
-!emoji addmany [prefix]
+!emoji addmany [prefix] [emojis]
 ```
 
 **Example template**
@@ -352,9 +352,121 @@ Missing the ! command prefix.
 
 </Accordion>
 
+<Accordion title="!emoji enlarge">
+
+Show a custom emoji at full size
+
+**Syntax**
+
+```text
+!emoji enlarge [emoji]
+```
+
+**Example template**
+
+```text
+!emoji enlarge
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emoji enlarge
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!emoji list">
+
+List the server's custom emojis
+
+**Syntax**
+
+```text
+!emoji list
+```
+
+**Example template**
+
+```text
+!emoji list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emoji list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!emoji steal">
+
+Steal an emoji into this server
+
+**Syntax**
+
+```text
+!emoji steal [emoji]
+```
+
+**Example template**
+
+```text
+!emoji steal
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emoji steal
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!emoji stealmany">
+
+Steal many emojis at once
+
+**Syntax**
+
+```text
+!emoji stealmany [emojis]
+```
+
+**Example template**
+
+```text
+!emoji stealmany
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+emoji stealmany
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
 <Accordion title="!emoji removemany">
 
-Remove selected emojis, with confirmation
+Remove many custom emojis at once
 
 **Syntax**
 

@@ -1,0 +1,244 @@
+---
+
+title: "AI staff actions"
+
+description: "Summarize staff moderation activity with AI on a schedule or on demand."
+
+icon: "gavel"
+
+---
+
+<Icon icon="gavel" size={28} />
+
+Summarize staff moderation activity with AI, rate each member and optionally act on low ratings.
+
+<Warning>AI can make mistakes. A rating summarizes recorded signals, not performance, and is never a recommendation. Automated actions are optional, and without `manual:true` or `dryrun:true` they remove the role as soon as the review lands; review every report and every action yourself.</Warning>
+
+## What this module does
+
+- AI staff review — schedule reviews, pick days and a report channel
+
+## Before you start
+
+Point reviews at a private staff channel.
+
+Add OPENROUTER_API_KEY to the host environment so the model can answer.
+
+Decide the staff role to remove and the star threshold before enabling automated actions.
+
+Depending on the action, this module uses **Manage Server**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Run `aistaff check days:7 channel:#staff-reports`.
+2. Run `aistaff now` and read the rating card before relying on it.
+3. Configure `aistaff actions stars:2 role:@Staff dryrun:true` and inspect who would be demoted.
+4. Turn the dry run off and add `manual:true` when you want a person to confirm each demotion.
+
+## Check the result
+
+- Ratings name real members and use only Zone-recorded cases, support tickets, ticket ratings and opt-in message counts.
+- The server owner, bots, administrators and members above Zone never lose the role.
+- A member needs at least three recorded signals in the window before any demotion.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!aistaff check">
+
+Schedule staff reviews and choose the days and report channel
+
+**Syntax**
+
+```text
+!aistaff check [days] [channel]
+```
+
+**Example template**
+
+```text
+!aistaff check
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+aistaff check
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!aistaff now">
+
+Write and post a staff review right now
+
+**Syntax**
+
+```text
+!aistaff now [days]
+```
+
+**Example template**
+
+```text
+!aistaff now
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+aistaff now
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!aistaff actions">
+
+Choose what happens to staff the review rates low
+
+**Syntax**
+
+```text
+!aistaff actions [enable] [stars] [role] [manual] [dryrun]
+```
+
+**Example template**
+
+```text
+!aistaff actions
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+aistaff actions
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!aistaff list">
+
+List saved staff reviews and when they ran
+
+**Syntax**
+
+```text
+!aistaff list
+```
+
+**Example template**
+
+```text
+!aistaff list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+aistaff list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!aistaff status">
+
+Show the current staff review settings
+
+**Syntax**
+
+```text
+!aistaff status
+```
+
+**Example template**
+
+```text
+!aistaff status
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+aistaff status
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!aistaff disable">
+
+Stop the scheduled staff reviews
+
+**Syntax**
+
+```text
+!aistaff disable
+```
+
+**Example template**
+
+```text
+!aistaff disable
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+aistaff disable
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

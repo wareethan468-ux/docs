@@ -1,0 +1,208 @@
+---
+
+title: "Boost messages"
+
+description: "Send a configurable message when someone boosts the server."
+
+icon: "server"
+
+---
+
+<Icon icon="server" size={28} />
+
+Boost messages groups the workflows below. Send a configurable message when someone boosts the server.
+
+## What this module does
+
+- Send a message when someone boosts this server
+
+## Before you start
+
+Confirm access and permission to change the content.
+
+Depending on the action, this module uses **Manage Server**. Stronger ownership and channel checks may apply.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Locate and inspect the correct resource.
+2. Apply the supported operation.
+3. Inspect the returned file or record before removing an original.
+
+## Check the result
+
+- Inspection does not automatically publish or approve content.
+- Keep sources when an export or deletion fails.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!boosts add">
+
+Add a boost message to a channel
+
+**Syntax**
+
+```text
+!boosts add <channel> <message>
+```
+
+**Example template**
+
+```text
+!boosts add channel:<channel> message:<message>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!boosts add
+```
+
+Missing `channel`, `message`.
+
+</Accordion>
+
+<Accordion title="!boosts remove">
+
+Remove the boost message from a channel
+
+**Syntax**
+
+```text
+!boosts remove <channel>
+```
+
+**Example template**
+
+```text
+!boosts remove channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!boosts remove
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!boosts view">
+
+View the boost message for a channel
+
+**Syntax**
+
+```text
+!boosts view <channel>
+```
+
+**Example template**
+
+```text
+!boosts view channel:<channel>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!boosts view
+```
+
+Missing `channel`.
+
+</Accordion>
+
+<Accordion title="!boosts list">
+
+List channels that receive boost messages
+
+**Syntax**
+
+```text
+!boosts list
+```
+
+**Example template**
+
+```text
+!boosts list
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+boosts list
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!boosts variables">
+
+Show the variables a boost message can use
+
+**Syntax**
+
+```text
+!boosts variables
+```
+
+**Example template**
+
+```text
+!boosts variables
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+boosts variables
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+</AccordionGroup>

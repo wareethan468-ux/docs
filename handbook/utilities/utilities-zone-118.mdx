@@ -1,0 +1,385 @@
+---
+
+title: "Public developer lookups"
+
+description: "Useful public package, certificate, repository, image and JSON utilities."
+
+icon: "terminal"
+
+---
+
+<Icon icon="terminal" size={28} />
+
+Public developer lookups groups the workflows below. Useful public package, certificate, repository, image and JSON utilities.
+
+## What this module does
+
+- Evaluate arithmetic without executing JavaScript
+- Look up Python packages from PyPI
+- Look up npm package metadata
+- Inspect public DNS records for a domain
+- Inspect a public HTTPS certificate
+- Create a QR code image from supplied text
+- Validate and pretty-print JSON
+- Look up a public GitHub issue or pull request
+
+## Before you start
+
+Choose the actual server, member, public URL or text.
+
+Keep credentials and private data out of public chat.
+
+Individual actions can still check channel access, ownership and service authorization.
+
+## Setup and access
+
+This module has no dedicated entry in shared setup. Use its supported Discord workflows. The command browser provides exact inputs; one-time configuration tools may still exist outside /setup.
+
+## Everyday workflow
+
+1. Review the accepted input.
+2. Supply it and inspect the result.
+3. Copy or download the artifact when one is produced.
+
+## Check the result
+
+- Missing records are reported instead of invented.
+- Lookups show only accessible data.
+
+## Troubleshooting
+
+Check the target, destination and saved settings before repeating a mutation. Use the current browser inputs and the Troubleshooting guide for access, hierarchy and provider issues.
+
+## Open shared setup
+
+**Syntax and example**
+
+```text
+/setup
+```
+
+Choose the module using the menu; module names are not arguments to this command.
+
+**Wrong**
+
+```text
+setup
+```
+
+Missing the slash. Select `/setup` from Discord’s command picker.
+
+## Command syntax and examples
+
+Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
+
+<AccordionGroup>
+
+<Accordion title="!calc">
+
+Evaluate arithmetic without executing JavaScript
+
+**Syntax**
+
+```text
+!calc <expression>
+```
+
+**Example template**
+
+```text
+!calc expression:<expression>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!calc
+```
+
+Missing `expression`.
+
+</Accordion>
+
+<Accordion title="!pypi">
+
+Look up Python packages from PyPI
+
+**Syntax**
+
+```text
+!pypi <package>
+```
+
+**Example template**
+
+```text
+!pypi package:<package>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!pypi
+```
+
+Missing `package`.
+
+</Accordion>
+
+<Accordion title="!npm">
+
+Look up npm package metadata
+
+**Syntax**
+
+```text
+!npm <package>
+```
+
+**Example template**
+
+```text
+!npm package:<package>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!npm
+```
+
+Missing `package`.
+
+</Accordion>
+
+<Accordion title="!dnslookup">
+
+Inspect public DNS records for a domain
+
+**Syntax**
+
+```text
+!dnslookup <domain> [type]
+```
+
+**Example template**
+
+```text
+!dnslookup domain:<domain>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!dnslookup
+```
+
+Missing `domain`.
+
+</Accordion>
+
+<Accordion title="!sslcheck">
+
+Inspect a public HTTPS certificate
+
+**Syntax**
+
+```text
+!sslcheck <domain>
+```
+
+**Example template**
+
+```text
+!sslcheck domain:<domain>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!sslcheck
+```
+
+Missing `domain`.
+
+</Accordion>
+
+<Accordion title="!qrcode">
+
+Create a QR code image from supplied text
+
+**Syntax**
+
+```text
+!qrcode <text>
+```
+
+**Example template**
+
+```text
+!qrcode text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!qrcode
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!jsonformat">
+
+Validate and pretty-print JSON
+
+**Syntax**
+
+```text
+!jsonformat <text>
+```
+
+**Example template**
+
+```text
+!jsonformat text:<text>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!jsonformat
+```
+
+Missing `text`.
+
+</Accordion>
+
+<Accordion title="!githubissue">
+
+Look up a public GitHub issue or pull request
+
+**Syntax**
+
+```text
+!githubissue <repository> <number>
+```
+
+**Example template**
+
+```text
+!githubissue repository:<repository> number:<number>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!githubissue
+```
+
+Missing `repository`, `number`.
+
+</Accordion>
+
+<Accordion title="!lastfm">
+
+Link and view your public Last.fm listening activity
+
+**Syntax**
+
+```text
+!lastfm <action> [username]
+```
+
+**Example template**
+
+```text
+!lastfm action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!lastfm
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!ocr">
+
+Read text from an image using a configured OCR provider
+
+**Syntax**
+
+```text
+!ocr <action> [file]
+```
+
+**Example template**
+
+```text
+!ocr action:<action>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!ocr
+```
+
+Missing `action`.
+
+</Accordion>
+
+<Accordion title="!webshot">
+
+Capture a public webpage using configured Browserless
+
+**Syntax**
+
+```text
+!webshot <url>
+```
+
+**Example template**
+
+```text
+!webshot url:<url>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!webshot
+```
+
+Missing `url`.
+
+</Accordion>
+
+</AccordionGroup>
