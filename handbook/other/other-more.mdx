@@ -14,8 +14,14 @@ More commands groups the workflows below. Uncategorised commands.
 
 ## What this module does
 
-- Back up this server bot configuration
-- Restore server bot settings from a backup
+- Unicode details for a single character
+- Generate a random hex color
+- Time difference between two Discord snowflakes
+- Most used Zone commands in this server
+- Evaluate arithmetic safely; arbitrary code is disabled
+- Convert an attached audio or video file to MP3
+- Transcribe an attached audio or video file
+- Compress an uploaded image to JPEG
 
 ## Before you start
 
@@ -63,6 +69,286 @@ Missing the slash. Select `/setup` from Discord’s command picker.
 Templates show the expected argument structure, not literal values to send. These examples do not execute commands.
 
 <AccordionGroup>
+
+<Accordion title="!charinfo">
+
+Unicode details for a single character
+
+**Syntax**
+
+```text
+!charinfo <character>
+```
+
+**Example template**
+
+```text
+!charinfo character:<character>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!charinfo
+```
+
+Missing `character`.
+
+</Accordion>
+
+<Accordion title="!randomhex">
+
+Generate a random hex color
+
+**Syntax**
+
+```text
+!randomhex
+```
+
+**Example template**
+
+```text
+!randomhex
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+randomhex
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!timediff">
+
+Time difference between two Discord snowflakes
+
+**Syntax**
+
+```text
+!timediff <first> <second>
+```
+
+**Example template**
+
+```text
+!timediff first:<first> second:<second>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!timediff
+```
+
+Missing `first`, `second`.
+
+</Accordion>
+
+<Accordion title="!topcommands">
+
+Most used Zone commands in this server
+
+**Syntax**
+
+```text
+!topcommands
+```
+
+**Example template**
+
+```text
+!topcommands
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+topcommands
+```
+
+Missing the ! command prefix.
+
+</Accordion>
+
+<Accordion title="!run">
+
+Evaluate arithmetic safely; arbitrary code is disabled
+
+**Syntax**
+
+```text
+!run <expression>
+```
+
+**Example template**
+
+```text
+!run expression:<expression>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!run
+```
+
+Missing `expression`.
+
+</Accordion>
+
+<Accordion title="!makemp3">
+
+Convert an attached audio or video file to MP3
+
+**Syntax**
+
+```text
+!makemp3 <file>
+```
+
+**Example template**
+
+```text
+!makemp3 file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!makemp3
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="!transcribe">
+
+Transcribe an attached audio or video file
+
+**Syntax**
+
+```text
+!transcribe <file>
+```
+
+**Example template**
+
+```text
+!transcribe file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!transcribe
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="!compress">
+
+Compress an uploaded image to JPEG
+
+**Syntax**
+
+```text
+!compress <file> [quality]
+```
+
+**Example template**
+
+```text
+!compress file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!compress
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="!rotate">
+
+Rotate an uploaded image by 90, 180 or 270 degrees
+
+**Syntax**
+
+```text
+!rotate <file> <degrees>
+```
+
+**Example template**
+
+```text
+!rotate file:<file> degrees:<degrees>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!rotate
+```
+
+Missing `file`, `degrees`.
+
+</Accordion>
+
+<Accordion title="!invert">
+
+Invert the colors of an uploaded image
+
+**Syntax**
+
+```text
+!invert <file>
+```
+
+**Example template**
+
+```text
+!invert file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+!invert
+```
+
+Missing `file`.
+
+</Accordion>
 
 <Accordion title="!backupbotsettings">
 

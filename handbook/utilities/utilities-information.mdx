@@ -2,7 +2,7 @@
 
 title: "Lookup & image tools"
 
-description: "Public profiles, definitions, weather, server info and images."
+description: "Public profiles, definitions, docs search, weather, server info and images."
 
 icon: "eye"
 
@@ -10,18 +10,18 @@ icon: "eye"
 
 <Icon icon="eye" size={28} />
 
-Lookup & image tools groups the workflows below. Public profiles, definitions, weather, server info and images.
+Lookup & image tools groups the workflows below. Public profiles, definitions, docs search, weather, server info and images.
 
 ## What this module does
 
 - Look up public profiles and definitions
+- Search the Zone documentation
 - Look up a standard English dictionary definition
 - View current weather by city (no user location needed)
 - Your crew NPCs and the member count
 - Show the server icon at full size
 - View or erase observed member name history
 - Edit uploaded images inside Discord
-- Recognize a song from audio or video
 
 ## Before you start
 
@@ -183,6 +183,34 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 ```
 
 Missing `term`.
+
+</Accordion>
+
+<Accordion title="!docs">
+
+Search the Zone documentation
+
+**Syntax**
+
+```text
+!docs [query]
+```
+
+**Example template**
+
+```text
+!docs
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Use your server prefix if it differs from !.
+
+**Wrong**
+
+```text
+docs
+```
+
+Missing the ! command prefix.
 
 </Accordion>
 
@@ -460,6 +488,314 @@ Replace angle-bracket placeholders with real values; omit square-bracket options
 
 ```text
 /media transcribe
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter blur">
+
+Gaussian blur
+
+**Syntax**
+
+```text
+/media filter blur <file> [strength]
+```
+
+**Example template**
+
+```text
+/media filter blur file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter blur
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter pixelate">
+
+Pixelate
+
+**Syntax**
+
+```text
+/media filter pixelate <file> [size]
+```
+
+**Example template**
+
+```text
+/media filter pixelate file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter pixelate
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter grayscale">
+
+Greyscale
+
+**Syntax**
+
+```text
+/media filter grayscale <file>
+```
+
+**Example template**
+
+```text
+/media filter grayscale file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter grayscale
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter invert">
+
+Invert colours
+
+**Syntax**
+
+```text
+/media filter invert <file>
+```
+
+**Example template**
+
+```text
+/media filter invert file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter invert
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter deepfry">
+
+Deep fried
+
+**Syntax**
+
+```text
+/media filter deepfry <file> [strength]
+```
+
+**Example template**
+
+```text
+/media filter deepfry file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter deepfry
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter neon">
+
+Neon outline
+
+**Syntax**
+
+```text
+/media filter neon <file>
+```
+
+**Example template**
+
+```text
+/media filter neon file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter neon
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter rainbow">
+
+Rainbow hue
+
+**Syntax**
+
+```text
+/media filter rainbow <file> [hue]
+```
+
+**Example template**
+
+```text
+/media filter rainbow file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter rainbow
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter bloom">
+
+Soft bloom
+
+**Syntax**
+
+```text
+/media filter bloom <file>
+```
+
+**Example template**
+
+```text
+/media filter bloom file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter bloom
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter fisheye">
+
+Fisheye lens
+
+**Syntax**
+
+```text
+/media filter fisheye <file>
+```
+
+**Example template**
+
+```text
+/media filter fisheye file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter fisheye
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter zoomblur">
+
+Zoom blur
+
+**Syntax**
+
+```text
+/media filter zoomblur <file>
+```
+
+**Example template**
+
+```text
+/media filter zoomblur file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter zoomblur
+```
+
+Missing `file`.
+
+</Accordion>
+
+<Accordion title="/media filter vignette">
+
+Vignette
+
+**Syntax**
+
+```text
+/media filter vignette <file>
+```
+
+**Example template**
+
+```text
+/media filter vignette file:<file>
+```
+
+Replace angle-bracket placeholders with real values; omit square-bracket options you do not need. Quote text containing spaces. Select the slash command in Discord and fill its named fields.
+
+**Wrong**
+
+```text
+/media filter vignette
 ```
 
 Missing `file`.
