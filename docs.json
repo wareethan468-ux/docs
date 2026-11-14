@@ -236,6 +236,7 @@
               "handbook/server/server-editorial",
               "handbook/server/server-assethealth",
               "handbook/server/server-embeds",
+              "handbook/server/scripting",
               {
                 "group": "Roblox lookups & scripts",
                 "icon": "terminal",

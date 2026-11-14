@@ -1,0 +1,55 @@
+---
+
+title: "Scripting messages"
+
+description: "Build embeds and Components V2 cards with brace scripts."
+
+icon: "server"
+
+---
+
+<Icon icon="server" size={28} />
+
+A script is a series of brace parts. It can build an embed or a components message, never both, and the same variables work in text, links, labels and replies.
+
+<Warning>Saving a script with a part in the wrong place is refused with the reason, so read the reply before posting the message again.</Warning>
+
+## Write a script
+
+- Each part is wrapped in braces and parts sit next to each other; spaces and new lines between them change nothing.
+- Older scripts that join parts with $v still work the same way.
+- A script can use embed scripting or components, but not both.
+
+## Containers
+
+- &#123;container&#125; opens a rounded box and &#123;/container&#125; closes it. A container needs at least one text part.
+- &#123;color: #5865F2&#125; sets the box stripe; &#123;spoiler&#125; hides the whole box until clicked.
+- Close each container before opening the next. The last container in a message may stay open.
+
+## Text, images and separators
+
+- &#123;content: Hello&#125; adds text inside a box; &#123;text: Hello&#125; works anywhere, including outside one.
+- &#123;separator&#125; draws a line; add .large, .empty or .large.empty to change the gap and the line.
+- &#123;image: URL&#125; shows one image, &#123;gallery: URL, URL&#125; shows up to ten.
+- &#123;thumbnail: URL && 2&#125; places a small image beside text block 2.
+
+## Buttons and menus
+
+- &#123;button: green && row && 1 && Open && reply: Hello!&#125; sets the style, placement, row number, label and private reply.
+- Styles are blurple, grey, green, red, or an https:// link for a link button.
+- &#123;button1&#125; marks where a row appears. A colored button without a reply is decorative.
+- &#123;select: 1 && Pick one && enabled&#125; opens a menu; &#123;option: 1 && Red && red && The color of fire&#125; adds a choice.
+
+## Variables
+
+- Member and guild values such as &#123;user.mention&#125;, &#123;user.name&#125;, &#123;user.avatar&#125;, &#123;guild.name&#125; and &#123;guild.icon&#125; fill in when the message is posted or clicked.
+- Date and time values include &#123;date.timestamp&#125;, &#123;date.now&#125;, &#123;time.now&#125; and &#123;time.utc_now_military&#125;.
+- &#123;proper(track.plays)&#125; adds thousands separators, &#123;unix(date.timestamp)&#125; produces a Unix stamp, and lower()/upper() change case.
+- A misspelled variable is shown as raw text rather than raising an error.
+
+## Limits
+
+- 40 components and 4,000 text characters per message.
+- Five buttons per row, labels up to 80 characters and link URLs up to 512.
+- A gallery holds ten images; a select menu holds 25 options.
+- Zone checks these before sending and names the limit that was exceeded.
